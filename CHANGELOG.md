@@ -17,6 +17,7 @@ Improve the public repository's demonstration, architecture documentation, and r
 - **README**: Add a compact quick start, four-part capability grid, real CLI walkthrough, Mermaid flow, annotated repository map, and explicit maturity limits.
 - **Engineering notes**: Explain concept coverage, field-weighted BM25, lexical scoring, bounded output, and release verification without claiming unmeasured performance.
 - **Assets**: Add reproducible SVGs, real search JSON, and a social-preview PNG with a capture specification.
+- **Architecture fallback**: Add a static SVG alongside expandable Mermaid source after the native embed remained on a loading indicator during headless inspection.
 - **History**: Record the initial release and this presentation pass in a maintained changelog.
 
 ### Tooling & Hygiene

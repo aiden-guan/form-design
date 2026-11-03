@@ -94,6 +94,11 @@ It returns a contrast ratio of approximately **15.04:1** and text-threshold flag
 
 The host agent performs design and implementation. FORM supplies instructions and optional deterministic utilities; it does not call a model API itself.
 
+![Architecture: the brief and skill guide your coding agent; optional offline search uses bundled JSON and returns bounded candidates with attribution and evidence.](docs/assets/architecture.svg)
+
+<details>
+<summary>Mermaid source and native diagram</summary>
+
 ```mermaid
 flowchart TD
     subgraph Host["Your coding agent"]
@@ -112,6 +117,8 @@ flowchart TD
     Guide --> CLI
     Results --> Work
 ```
+
+</details>
 
 1. The host loads [SKILL.md](skills/form-design/SKILL.md) for a matching task and reads the relevant reference files.
 2. Optional discovery enters through [scripts/search.mjs](skills/form-design/scripts/search.mjs), which reads local JSON relative to its installed path.

@@ -21,6 +21,7 @@ node skills/form-design/scripts/search.mjs "retro texture but not glass" --limit
 | --- | --- |
 | [search-demo.json](assets/search-demo.json) | Full JSON response from the real command, without terminal decoration or invented fields. |
 | [hero.svg](assets/hero.svg) | 1600×800 vector graphic; projects title, creator, and recorded rights from those results. |
+| [architecture.svg](assets/architecture.svg) | 1600×760 static diagram of the host/skill and optional offline search paths; keeps the overview visible without GitHub's dynamic Mermaid renderer. |
 | [social-preview.svg](assets/social-preview.svg) | 1280×640 brand graphic using the snapshot's actual reference count. |
 | [social-preview.png](assets/social-preview.png) | Raster copy prepared for optional GitHub social-preview upload. |
 

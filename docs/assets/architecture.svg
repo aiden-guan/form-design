@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+<title id="title">FORM architecture: host guidance and optional offline discovery</title><desc id="desc">The brief and skill references guide the host agent. Optional local search combines bundled catalog and vocabulary with concept, BM25, and lexical ranking, returning bounded candidates to the agent.</desc>
+<rect width="1600" height="760" rx="20" fill="#102d27"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#f1a47d" stroke-width="1.5"/></marker></defs>
+<text x="64" y="78" fill="#c2d0c5" font-size="23" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">HOW FORM FITS INTO YOUR WORKFLOW</text>
+<path d="M64 112H1536" stroke="#496158"/>
+<text x="64" y="174" fill="#f1a47d" font-size="19" font-family="Arial, Helvetica, sans-serif" letter-spacing="1">HOST AGENT / DESIGN AND IMPLEMENTATION</text>
+<rect x="64" y="200" width="360" height="100" rx="10" fill="#1c3a32" stroke="#496158"/>
+<text x="88" y="240" fill="#f6f0dd" font-size="27" font-family="Arial, Helvetica, sans-serif" >Your brief</text>
+<text x="88" y="274" fill="#c2d0c5" font-size="21" font-family="Arial, Helvetica, sans-serif" >Audience, content, constraints</text>
+<rect x="522" y="200" width="510" height="100" rx="10" fill="#1c3a32" stroke="#496158"/>
+<text x="546" y="240" fill="#f6f0dd" font-size="27" font-family="Arial, Helvetica, sans-serif" >SKILL.md + relevant references</text>
+<text x="546" y="274" fill="#c2d0c5" font-size="21" font-family="Arial, Helvetica, sans-serif" >Direction, craft, and review methods</text>
+<rect x="1130" y="200" width="406" height="100" rx="10" fill="#1c3a32" stroke="#496158"/>
+<text x="1154" y="240" fill="#f6f0dd" font-size="27" font-family="Arial, Helvetica, sans-serif" >Your coding agent</text>
+<text x="1154" y="274" fill="#c2d0c5" font-size="21" font-family="Arial, Helvetica, sans-serif" >Builds and inspects the result</text>
+<path d="M424 250H502" stroke="#f1a47d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1032 250H1110" stroke="#f1a47d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="64" y="382" fill="#f1a47d" font-size="19" font-family="Arial, Helvetica, sans-serif" letter-spacing="1">OPTIONAL OFFLINE DISCOVERY / NODE.JS BUILT-INS</text>
+<rect x="64" y="410" width="360" height="100" rx="10" fill="#1c3a32" stroke="#496158"/>
+<text x="88" y="450" fill="#f6f0dd" font-size="27" font-family="Arial, Helvetica, sans-serif" >Bundled JSON</text>
+<text x="88" y="484" fill="#c2d0c5" font-size="21" font-family="Arial, Helvetica, sans-serif" >Catalog, taxonomy, lexicon</text>
+<rect x="522" y="410" width="510" height="100" rx="10" fill="#1c3a32" stroke="#496158"/>
+<text x="546" y="450" fill="#f6f0dd" font-size="27" font-family="Arial, Helvetica, sans-serif" >Search and ranking</text>
+<text x="546" y="484" fill="#c2d0c5" font-size="21" font-family="Arial, Helvetica, sans-serif" >Concepts + BM25 + lexical matching</text>
+<rect x="1130" y="410" width="406" height="100" rx="10" fill="#1c3a32" stroke="#496158"/>
+<text x="1154" y="450" fill="#f6f0dd" font-size="27" font-family="Arial, Helvetica, sans-serif" >Bounded JSON results</text>
+<text x="1154" y="484" fill="#c2d0c5" font-size="21" font-family="Arial, Helvetica, sans-serif" >Credit, rights, links, evidence</text>
+<path d="M424 460H502" stroke="#f1a47d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1032 460H1110" stroke="#f1a47d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M777 300V390" stroke="#f1a47d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1333 410V320" stroke="#f1a47d" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="802" y="359" fill="#c2d0c5" font-size="18" font-family="monospace" >query</text>
+<text x="1360" y="359" fill="#c2d0c5" font-size="18" font-family="monospace" >candidates</text>
+<path d="M64 566H1536" stroke="#496158"/>
+<text x="64" y="625" fill="#f6f0dd" font-size="29" font-family="Georgia, serif" >The host supplies the model and execution tools.</text>
+<text x="64" y="669" fill="#c2d0c5" font-size="24" font-family="Arial, Helvetica, sans-serif" >Search is local. Opening original references and public handoffs requires internet access.</text>
+<text x="64" y="717" fill="#a4bbac" font-size="18" font-family="monospace" >MODULES: scripts/search.mjs / scripts/lib/index.mjs / scripts/lib/search.mjs</text>
+</svg>
