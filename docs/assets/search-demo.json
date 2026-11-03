@@ -1,0 +1,221 @@
+{
+  "query": "retro texture but not glass",
+  "snapshot": "2026-11-02",
+  "understood": true,
+  "recognized": [
+    "retro",
+    "texture",
+    "not glass"
+  ],
+  "filters": {},
+  "unknown": [],
+  "totalMatches": 11,
+  "results": [
+    {
+      "id": "ordered-dither",
+      "title": "Dithered color field",
+      "summary": "Trade smooth colors for a small palette and carefully patterned pixels, creating a tactile retro surface.",
+      "creator": "Maxime Heckel",
+      "collection": "individual",
+      "terms": [
+        "ordered dithering",
+        "Bayer matrix",
+        "color quantization",
+        "palette reduction"
+      ],
+      "facets": {
+        "intent": [
+          "background",
+          "decoration"
+        ],
+        "behavior": [
+          "still",
+          "ambient-loop"
+        ],
+        "trigger": [
+          "none",
+          "time"
+        ],
+        "feel": [
+          "retro",
+          "technical",
+          "precise"
+        ],
+        "material": [
+          "pixel"
+        ],
+        "technique": [
+          "shader",
+          "dither",
+          "r3f",
+          "webgl"
+        ],
+        "spatial": [
+          "flat"
+        ],
+        "complexity": [
+          "detail"
+        ]
+      },
+      "original": "https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/",
+      "handoff": "https://aiden-form-references.aidenguan.chatgpt.site/reference/ordered-dither.html",
+      "rights": {
+        "reuse": "licensed-source",
+        "license": "MIT"
+      },
+      "evidence": {
+        "metadataOnly": false,
+        "fidelity": {
+          "mode": "original-still",
+          "limitation": "A still preserves the captured appearance. Motion and interactive states require the original or a runnable preview."
+        }
+      },
+      "group": "closest",
+      "matched": [
+        "retro",
+        "texture"
+      ],
+      "score": 0.8218
+    },
+    {
+      "id": "crt-ps1-retro-pass",
+      "title": "Old CRT console look",
+      "summary": "A 3D scene rendered like a 1990s console on a tube TV: low color depth with Bayer dither, wobbly affine textures, curved screen edges, vignette, color bleed and rolling scanlines.",
+      "creator": "three.js authors",
+      "collection": "individual",
+      "terms": [
+        "CRT shader",
+        "scanlines",
+        "barrel distortion",
+        "color bleeding",
+        "phosphor look",
+        "PS1 aesthetic",
+        "posterization",
+        "crt"
+      ],
+      "facets": {
+        "intent": [
+          "hero",
+          "media",
+          "background"
+        ],
+        "behavior": [
+          "ambient-loop",
+          "distortion"
+        ],
+        "trigger": [
+          "none",
+          "time"
+        ],
+        "feel": [
+          "retro",
+          "technical",
+          "toy-like"
+        ],
+        "material": [
+          "crt",
+          "pixel"
+        ],
+        "technique": [
+          "webgpu",
+          "threejs",
+          "shader",
+          "dither"
+        ],
+        "spatial": [
+          "3d"
+        ],
+        "complexity": [
+          "page-system"
+        ]
+      },
+      "original": "https://threejs.org/examples/webgpu_postprocessing_retro.html",
+      "handoff": "https://aiden-form-references.aidenguan.chatgpt.site/reference/crt-ps1-retro-pass.html",
+      "rights": {
+        "reuse": "licensed-code",
+        "license": "MIT"
+      },
+      "evidence": {
+        "metadataOnly": false,
+        "fidelity": {
+          "mode": "original-still",
+          "limitation": "A still preserves the captured appearance. Motion and interactive states require the original or a runnable preview."
+        }
+      },
+      "group": "closest",
+      "matched": [
+        "retro"
+      ],
+      "score": 0.6489
+    },
+    {
+      "id": "halftone-shader",
+      "title": "Halftone image treatment",
+      "summary": "Turn an image or moving scene into a field of dots whose size follows its light and dark areas.",
+      "creator": "Maxime Heckel",
+      "collection": "individual",
+      "terms": [
+        "halftone",
+        "AM screening",
+        "dot-size modulation",
+        "CMYK halftone"
+      ],
+      "facets": {
+        "intent": [
+          "background",
+          "media",
+          "decoration"
+        ],
+        "behavior": [
+          "still",
+          "ambient-loop"
+        ],
+        "trigger": [
+          "none",
+          "time"
+        ],
+        "feel": [
+          "retro",
+          "editorial",
+          "technical"
+        ],
+        "material": [
+          "ink",
+          "paper"
+        ],
+        "technique": [
+          "shader",
+          "halftone",
+          "r3f",
+          "webgl"
+        ],
+        "spatial": [
+          "flat"
+        ],
+        "complexity": [
+          "detail"
+        ]
+      },
+      "original": "https://blog.maximeheckel.com/posts/shades-of-halftone/",
+      "handoff": "https://aiden-form-references.aidenguan.chatgpt.site/reference/halftone-shader.html",
+      "rights": {
+        "reuse": "licensed-source",
+        "license": "MIT"
+      },
+      "evidence": {
+        "metadataOnly": false,
+        "fidelity": {
+          "mode": "original-still",
+          "limitation": "A still preserves the captured appearance. Motion and interactive states require the original or a runnable preview."
+        }
+      },
+      "group": "closest",
+      "matched": [
+        "retro",
+        "ink"
+      ],
+      "score": 0.6458
+    }
+  ],
+  "notice": "Catalog matches are candidates. Inspect originals; rights and behavior are not freshly verified."
+}

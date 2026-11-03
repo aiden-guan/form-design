@@ -5,3 +5,6 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Rebuild locally; downloadable artifacts are published in GitHub Releases.
+/releases/
