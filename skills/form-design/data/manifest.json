@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "skillVersion": "1.0.0",
+  "snapshot": "2026-11-02",
+  "count": 13351,
+  "publicHandoffBase": "https://aiden-form-references.aidenguan.chatgpt.site/",
+  "catalogSha256": "99c64b654dfc91d16e1e443d9599fbf3a43b2e431eed2808452cadcef1d7742b",
+  "collections": {
+    "ascii-rest": 240,
+    "individual": 133,
+    "svelte-animations": 103,
+    "60fps": 2209,
+    "bencho": 313,
+    "best-designs-on-x": 9715,
+    "clanker-ui": 1,
+    "design-spells": 35,
+    "figma-footers": 4,
+    "figma-backgrounds": 1,
+    "mkdir": 34,
+    "motion-examples": 289,
+    "react-bits": 218,
+    "reel-notebook": 56
+  },
+  "policy": "Public external-reference metadata only. No creator media, private projects, attachments, source bundles, or local paths. Imported metadata is not an individual visual audit.",
+  "inputs": {
+    "fieldguide/dist/browser-catalog.json": "afb8dfe6cf72f8736bc362c29df22cdf22bc146511870c959b603f5280165beb",
+    "fieldguide/dist/taxonomy.json": "f7a25108565e4f25af10506f6564c3fe095c1f02b6403baeb0c29359d276c411",
+    "fieldguide/dist/lexicon.json": "2b634ccf32c83ed8c423dc4cb5f3ca135a491a6f189fde68da3297a44da120f5",
+    "fieldguide/web/lib/index.js": "9c56a861502bda35bcb12605c738845be9ff957bfb1e3b2608a6b739aa0d3ba0",
+    "fieldguide/web/lib/search.js": "4487fbececf45f346d3797caca20fe693e6e220a3997b3b3cda5aa8b536a34e0",
+    "fieldguide/web/lib/legacy-search.js": "3875a22cd09f8d78ebfe9d533e6f39e6dbd5d71a861e01490f26ba2173c8eb26"
+  }
+}

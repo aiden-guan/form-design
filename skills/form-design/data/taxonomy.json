@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 3,
+  "note": "Facets are multi-valued. A record may hold any number of values in each dimension. Values marked extension extend the base vocabulary requested for FORM; they are first-class and searchable.",
+  "dimensions": [
+    {
+      "id": "intent",
+      "label": "Used for",
+      "question": "What job does it do on a page?",
+      "values": {
+        "hero": "The first composition a visitor sees; sets the tone of the page.",
+        "background": "A surface or atmosphere that sits behind content.",
+        "navigation": "Moves people between places, sections or views.",
+        "selection": "Choosing one or more options, values or modes.",
+        "cta": "A call to action that asks for one decisive click.",
+        "menu": "A set of commands or links revealed on demand.",
+        "card": "A bounded object that represents one item.",
+        "gallery": "Browsing a set of images, projects or objects.",
+        "media": "Presenting images, video, audio or camera feeds.",
+        "input": "Entering or adjusting a value.",
+        "loading": "Covering a wait, from milliseconds to minutes.",
+        "state-change": "Communicating that something switched: theme, mode, status.",
+        "storytelling": "Sequencing content so it reads as a narrative.",
+        "diagram": "Explaining a system, relationship or process visually.",
+        "footer": "The closing section of a page.",
+        "decoration": "Ornament that carries mood, not information.",
+        "onboarding": "Teaching a first-time visitor where to go.",
+        "feedback": "Confirming, rewarding or warning after an action.",
+        "typography": "Type as the primary visual material. (extension)",
+        "cursor": "The pointer itself becomes part of the design. (extension)",
+        "tooltip": "Small contextual labels anchored to something. (extension)",
+        "feature-section": "A section that explains what a product does. (extension)",
+        "pricing": "Plans, prices and comparisons. (extension)",
+        "product-showcase": "Presenting a physical or digital product as an object. (extension)",
+        "data-viz": "Charts, meters, heatmaps and live numbers. (extension)",
+        "empty-state": "What a view shows when there is nothing in it yet. (extension)",
+        "character": "Mascots, companions and characters with states. (extension)",
+        "unspecified": "Not established from published metadata; inspect the original reference."
+      }
+    },
+    {
+      "id": "behavior",
+      "label": "Behavior",
+      "question": "How does it move or respond?",
+      "values": {
+        "still": "Does not move; the quality is in composition, texture or type.",
+        "ambient-loop": "Moves continuously on its own, usually slowly.",
+        "hover": "Responds when the pointer rests over it.",
+        "pointer-follow": "Tracks the pointer position continuously.",
+        "scroll-driven": "Progress is tied to scroll position.",
+        "drag": "Follows a held pointer or finger.",
+        "swipe": "A directional fling with a threshold.",
+        "hold": "Requires a sustained press before it acts.",
+        "physics": "Mass, velocity, friction or collision govern motion.",
+        "spring": "Overshoots and settles like a spring rather than a timed curve.",
+        "morph": "One shape continuously becomes another.",
+        "shared-element": "The same object travels between two states or views.",
+        "reveal": "Content is uncovered progressively.",
+        "wipe": "A hard edge sweeps across to swap content.",
+        "parallax": "Layers move at different rates to imply depth.",
+        "orbit": "Elements travel on circular or elliptical paths.",
+        "simulation": "A running system: particles, fluids, flocks, cellular rules.",
+        "state-transition": "Animates between discrete states of a component.",
+        "stagger": "A sequence of elements moves with small offsets in time. (extension)",
+        "distortion": "Geometry, text or image is warped, displaced or rippled. (extension)",
+        "zoom": "Scale changes to move between overview and detail. (extension)",
+        "rotate": "Turning, spinning or dialing around an axis. (extension)",
+        "unspecified": "Not established from published metadata; inspect the original reference."
+      }
+    },
+    {
+      "id": "trigger",
+      "label": "Trigger",
+      "question": "What sets it off?",
+      "values": {
+        "none": "Nothing; it is static.",
+        "load": "Plays when the page or component appears.",
+        "time": "Runs on a clock, loop or idle timer.",
+        "hover": "Pointer enters or rests on it.",
+        "pointer-move": "Pointer movement anywhere in its field.",
+        "click": "A tap, click or key activation.",
+        "drag": "A press-and-move gesture.",
+        "hold": "A sustained press.",
+        "swipe": "A fast directional gesture.",
+        "scroll": "Scroll position or scroll velocity.",
+        "keyboard": "Specific keys or shortcuts.",
+        "app-state": "Data or application state changes.",
+        "audio": "Sound input or playback.",
+        "camera": "Live camera or pose input.",
+        "unspecified": "Not established from published metadata; inspect the original reference."
+      }
+    },
+    {
+      "id": "feel",
+      "label": "Feel",
+      "question": "What does it feel like?",
+      "values": {
+        "tactile": "You want to touch it; it implies a physical surface.",
+        "mechanical": "Clicks, detents, gears and hinges; precise moving parts.",
+        "soft": "Gentle edges, low contrast, unhurried motion.",
+        "playful": "Invites play; rewards poking at it.",
+        "cinematic": "Framed like film: camera moves, light, drama.",
+        "technical": "Measured, instrument-like, engineering-adjacent.",
+        "editorial": "Like a well-set magazine or book.",
+        "organic": "Natural, irregular, grown rather than built.",
+        "retro": "Recalls older media and machines.",
+        "futuristic": "Points forward; speculative interfaces.",
+        "quiet": "Restrained; asks for little attention.",
+        "dense": "Lots of information per square inch, on purpose.",
+        "luxury": "Expensive restraint; material and spacing carry value.",
+        "toy-like": "Small, bouncy, collectible objects.",
+        "industrial": "Utilitarian, heavy, functional materials.",
+        "dreamlike": "Hazy, surreal, slightly unreal.",
+        "precise": "Exact alignment and timing; nothing is approximate.",
+        "chaotic": "Energetic, layered, deliberately unruly.",
+        "unspecified": "Not established from published metadata; inspect the original reference."
+      }
+    },
+    {
+      "id": "material",
+      "label": "Material",
+      "question": "What does it look like it is made of?",
+      "values": {
+        "paper": "Sheets, folds, print stock.",
+        "ink": "Printed marks, screens, misregistration.",
+        "glass": "Transparency, blur, refraction.",
+        "metal": "Brushed or machined surfaces.",
+        "chrome": "Mirror-like reflections.",
+        "liquid": "Fluids, drips, ripples, goo.",
+        "fabric": "Cloth that drapes and folds.",
+        "plastic": "Inflated, molded or toy-like surfaces.",
+        "light": "Glow, beams, caustics, shadow.",
+        "pixel": "Visible pixel grids and low resolution.",
+        "crt": "Scanlines, phosphor, curvature.",
+        "film": "Grain, gate weave, light leaks.",
+        "clay": "Soft modeled matte forms.",
+        "nature": "Plants, landscapes, water, sky."
+      }
+    },
+    {
+      "id": "technique",
+      "label": "Technique",
+      "question": "How is it usually built?",
+      "values": {
+        "css": "CSS transitions, animations, transforms.",
+        "svg": "Vector paths, masks, filters.",
+        "canvas": "2D canvas drawing.",
+        "webgl": "GPU rendering with WebGL.",
+        "webgpu": "GPU rendering with WebGPU.",
+        "threejs": "Three.js scenes.",
+        "r3f": "React Three Fiber.",
+        "shader": "Custom vertex or fragment shaders.",
+        "rive": "Rive state machines.",
+        "lottie": "Lottie / Bodymovin animation.",
+        "video": "Pre-rendered video.",
+        "gif": "Animated GIF.",
+        "dom": "Ordinary DOM elements and layout.",
+        "blend-mode": "Mix-blend-mode or compositing tricks.",
+        "clip-path": "Clip-path shapes and insets.",
+        "mask": "CSS or SVG masks.",
+        "particles": "Many small moving points.",
+        "noise": "Procedural noise fields.",
+        "dither": "Ordered or error-diffusion dithering.",
+        "halftone": "Dot screens whose size follows tone.",
+        "ascii": "Character grids as an image.",
+        "view-transitions": "The View Transitions API. (extension)",
+        "flip": "First-Last-Invert-Play layout animation. (extension)",
+        "motion": "Motion (Framer Motion) for React. (extension)",
+        "gsap": "GSAP and its plugins. (extension)",
+        "css-3d": "CSS 3D transforms and preserve-3d. (extension)",
+        "physics-engine": "A physics engine such as Rapier, Matter or Cannon. (extension)",
+        "native": "Native mobile animation APIs (React Native, SwiftUI). (extension)"
+      }
+    },
+    {
+      "id": "spatial",
+      "label": "Spatial model",
+      "question": "What space does it imply?",
+      "values": {
+        "flat": "A single plane.",
+        "layered": "Stacked planes with overlap.",
+        "depth": "Recession and atmospheric distance.",
+        "parallax": "Layers separated by motion rate.",
+        "2.5d": "Flat objects arranged in 3D space.",
+        "3d": "True three-dimensional geometry.",
+        "infinite-canvas": "A pannable, zoomable plane without edges.",
+        "world": "A place you move through.",
+        "camera": "An implied camera frames or moves through the scene."
+      }
+    },
+    {
+      "id": "complexity",
+      "label": "Scale",
+      "question": "How big a piece of work is it?",
+      "values": {
+        "detail": "A single visual detail or treatment.",
+        "microinteraction": "One small interactive moment.",
+        "component": "A reusable UI component.",
+        "section": "A full page section.",
+        "page-transition": "Movement between pages or views.",
+        "page-system": "A system that shapes an entire page or site.",
+        "experience": "An immersive, game-like or world-like site."
+      }
+    }
+  ],
+  "lenses": [
+    {
+      "id": "everything",
+      "label": "Everything"
+    },
+    {
+      "id": "motion",
+      "label": "Motion",
+      "any": {
+        "behavior": [
+          "ambient-loop",
+          "scroll-driven",
+          "spring",
+          "morph",
+          "shared-element",
+          "reveal",
+          "wipe",
+          "parallax",
+          "orbit",
+          "simulation",
+          "state-transition",
+          "stagger",
+          "distortion",
+          "physics"
+        ],
+        "complexity": [
+          "page-transition"
+        ]
+      }
+    },
+    {
+      "id": "interaction",
+      "label": "Interaction",
+      "any": {
+        "trigger": [
+          "hover",
+          "pointer-move",
+          "click",
+          "drag",
+          "hold",
+          "swipe",
+          "keyboard",
+          "camera"
+        ]
+      }
+    },
+    {
+      "id": "art",
+      "label": "Art",
+      "any": {
+        "intent": [
+          "background",
+          "decoration"
+        ],
+        "technique": [
+          "shader",
+          "dither",
+          "halftone",
+          "ascii",
+          "noise",
+          "particles"
+        ],
+        "material": [
+          "ink",
+          "film",
+          "crt",
+          "pixel",
+          "nature",
+          "chrome",
+          "clay",
+          "light"
+        ]
+      }
+    },
+    {
+      "id": "layout",
+      "label": "Layout",
+      "any": {
+        "intent": [
+          "hero",
+          "feature-section",
+          "pricing",
+          "gallery",
+          "footer",
+          "storytelling",
+          "product-showcase"
+        ],
+        "complexity": [
+          "section",
+          "page-system"
+        ]
+      }
+    },
+    {
+      "id": "type",
+      "label": "Type",
+      "any": {
+        "intent": [
+          "typography"
+        ]
+      }
+    },
+    {
+      "id": "navigation",
+      "label": "Navigation",
+      "any": {
+        "intent": [
+          "navigation",
+          "menu",
+          "cursor"
+        ],
+        "complexity": [
+          "page-transition"
+        ]
+      }
+    },
+    {
+      "id": "details",
+      "label": "Details",
+      "any": {
+        "complexity": [
+          "detail",
+          "microinteraction"
+        ]
+      }
+    }
+  ],
+  "roles": {
+    "note": "Roles order a combined direction brief. Each record names the role it most naturally plays on a page.",
+    "order": [
+      "background",
+      "hero",
+      "typography",
+      "section",
+      "navigation",
+      "cursor",
+      "interaction",
+      "motion",
+      "feedback",
+      "loading",
+      "gallery",
+      "detail",
+      "footer"
+    ]
+  }
+}

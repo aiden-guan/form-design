@@ -1,0 +1,4 @@
+interface:
+  display_name: "FORM Design"
+  short_description: "Distinctive visual design, from direction to detail"
+  default_prompt: "Use $form-design to design and build a distinctive interface for my project, with a clear visual direction and a careful visual review."
