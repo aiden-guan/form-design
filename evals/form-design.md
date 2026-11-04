@@ -2,6 +2,8 @@
 
 These are reusable evaluation inputs, not claimed test results. Run them in isolated projects with an agent that has only the packaged skill and the stated input artifacts. Assess the produced artifacts and observed behavior, rather than checking that the answer repeats skill terminology. Record model, host, tools, date, time spent, screenshots, and remaining gaps.
 
+The v1.1 suite adds [machine-readable scenarios](scenarios.json) for all three skills, a [synthetic author-run rehearsal](rehearsal.md), and a [research/comparison protocol](../docs/research/2026-11-03-design-quality.md). The rehearsal and browser tests have narrower claims than an independent model-quality evaluation.
+
 | Scenario | Input | Observable success |
 | --- | --- | --- |
 | Open creative website | A ceramics studio brief with real name, audience, class data, three permitted photographs, existing frontend | Makes a justified direction, implements a runnable page with real content, maintains a clear class/booking path, and visually reviews wide/narrow output. |

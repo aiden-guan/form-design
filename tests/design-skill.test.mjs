@@ -94,9 +94,9 @@ test('contrast calculation handles known ratios, thresholds, and invalid inputs'
   assert.throws(()=>contrast('red','#fff'));
 });
 
-test('all local Markdown links inside the skill resolve',()=>{
+test('all local Markdown links inside the independent skills resolve',()=>{
   const walk=folder=>fs.readdirSync(folder,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(folder,entry.name)):[path.join(folder,entry.name)]);
-  for(const file of walk(skill).filter(file=>file.endsWith('.md'))){
+  for(const file of walk(path.join(root,'skills')).filter(file=>file.endsWith('.md'))){
     const text=fs.readFileSync(file,'utf8');
     for(const match of text.matchAll(/\]\(([^)]+)\)/g)){
       if(/^(?:https?:|#)/.test(match[1]))continue;

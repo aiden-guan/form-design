@@ -1,0 +1,4 @@
+interface:
+  display_name: "FORM Explore"
+  short_description: "Compare directions, fonts, and colors with real content"
+  default_prompt: "Use $form-explore to create comparable visual alternatives for this project and help me choose or combine their typography, color, and composition."

@@ -1,0 +1,409 @@
+{
+  "wide": {
+    "title": "Release queue",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "documentWidth": 1280,
+    "buttons": [
+      {
+        "label": "All",
+        "pressed": "true"
+      },
+      {
+        "label": "Ready",
+        "pressed": "false"
+      },
+      {
+        "label": "Review",
+        "pressed": "false"
+      }
+    ],
+    "visibleRows": [
+      "Reference searchscripts/search.mjsv1.1.0Ready",
+      "Browser inventoryscripts/inspect-page.mjsv1.1.0Review",
+      "Contrast checkscripts/contrast.mjsv1.1.0Ready"
+    ],
+    "count": "3 packages shown",
+    "region": [
+      {
+        "clientWidth": 950,
+        "scrollWidth": 950,
+        "scrollLeft": 0
+      }
+    ],
+    "interactiveElements": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ready",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Review",
+        "tabindex": null
+      },
+      {
+        "tag": "DIV",
+        "text": "PackageSourceVersionStatusReference searchscripts/search.mjsv1.1.0ReadyBrowser inventoryscripts/insp",
+        "tabindex": "0"
+      }
+    ]
+  },
+  "filters": [
+    {
+      "selected": "Ready",
+      "title": "Release queue",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "documentWidth": 1280,
+      "buttons": [
+        {
+          "label": "All",
+          "pressed": "false"
+        },
+        {
+          "label": "Ready",
+          "pressed": "true"
+        },
+        {
+          "label": "Review",
+          "pressed": "false"
+        }
+      ],
+      "visibleRows": [
+        "Reference searchscripts/search.mjsv1.1.0Ready",
+        "Contrast checkscripts/contrast.mjsv1.1.0Ready"
+      ],
+      "count": "2 packages shown",
+      "region": [
+        {
+          "clientWidth": 950,
+          "scrollWidth": 950,
+          "scrollLeft": 0
+        }
+      ],
+      "interactiveElements": [
+        {
+          "tag": "BUTTON",
+          "text": "All",
+          "tabindex": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Ready",
+          "tabindex": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Review",
+          "tabindex": null
+        },
+        {
+          "tag": "DIV",
+          "text": "PackageSourceVersionStatusReference searchscripts/search.mjsv1.1.0ReadyBrowser inventoryscripts/insp",
+          "tabindex": "0"
+        }
+      ]
+    },
+    {
+      "selected": "Review",
+      "title": "Release queue",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "documentWidth": 1280,
+      "buttons": [
+        {
+          "label": "All",
+          "pressed": "false"
+        },
+        {
+          "label": "Ready",
+          "pressed": "false"
+        },
+        {
+          "label": "Review",
+          "pressed": "true"
+        }
+      ],
+      "visibleRows": [
+        "Browser inventoryscripts/inspect-page.mjsv1.1.0Review"
+      ],
+      "count": "1 package shown",
+      "region": [
+        {
+          "clientWidth": 950,
+          "scrollWidth": 950,
+          "scrollLeft": 0
+        }
+      ],
+      "interactiveElements": [
+        {
+          "tag": "BUTTON",
+          "text": "All",
+          "tabindex": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Ready",
+          "tabindex": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Review",
+          "tabindex": null
+        },
+        {
+          "tag": "DIV",
+          "text": "PackageSourceVersionStatusReference searchscripts/search.mjsv1.1.0ReadyBrowser inventoryscripts/insp",
+          "tabindex": "0"
+        }
+      ]
+    },
+    {
+      "selected": "All",
+      "title": "Release queue",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "documentWidth": 1280,
+      "buttons": [
+        {
+          "label": "All",
+          "pressed": "true"
+        },
+        {
+          "label": "Ready",
+          "pressed": "false"
+        },
+        {
+          "label": "Review",
+          "pressed": "false"
+        }
+      ],
+      "visibleRows": [
+        "Reference searchscripts/search.mjsv1.1.0Ready",
+        "Browser inventoryscripts/inspect-page.mjsv1.1.0Review",
+        "Contrast checkscripts/contrast.mjsv1.1.0Ready"
+      ],
+      "count": "3 packages shown",
+      "region": [
+        {
+          "clientWidth": 950,
+          "scrollWidth": 950,
+          "scrollLeft": 0
+        }
+      ],
+      "interactiveElements": [
+        {
+          "tag": "BUTTON",
+          "text": "All",
+          "tabindex": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Ready",
+          "tabindex": null
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Review",
+          "tabindex": null
+        },
+        {
+          "tag": "DIV",
+          "text": "PackageSourceVersionStatusReference searchscripts/search.mjsv1.1.0ReadyBrowser inventoryscripts/insp",
+          "tabindex": "0"
+        }
+      ]
+    }
+  ],
+  "firstTab": {
+    "tag": "BUTTON",
+    "text": "Ready"
+  },
+  "narrow": {
+    "title": "Release queue",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "documentWidth": 390,
+    "buttons": [
+      {
+        "label": "All",
+        "pressed": "true"
+      },
+      {
+        "label": "Ready",
+        "pressed": "false"
+      },
+      {
+        "label": "Review",
+        "pressed": "false"
+      }
+    ],
+    "visibleRows": [
+      "Reference searchscripts/search.mjsv1.1.0Ready",
+      "Browser inventoryscripts/inspect-page.mjsv1.1.0Review",
+      "Contrast checkscripts/contrast.mjsv1.1.0Ready"
+    ],
+    "count": "3 packages shown",
+    "region": [
+      {
+        "clientWidth": 300,
+        "scrollWidth": 640,
+        "scrollLeft": 0
+      }
+    ],
+    "interactiveElements": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ready",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Review",
+        "tabindex": null
+      },
+      {
+        "tag": "DIV",
+        "text": "PackageSourceVersionStatusReference searchscripts/search.mjsv1.1.0ReadyBrowser inventoryscripts/insp",
+        "tabindex": "0"
+      }
+    ]
+  },
+  "narrowKeyboardScroll": 40,
+  "reflow": {
+    "title": "Release queue",
+    "viewport": {
+      "width": 640,
+      "height": 450
+    },
+    "documentWidth": 640,
+    "buttons": [
+      {
+        "label": "All",
+        "pressed": "true"
+      },
+      {
+        "label": "Ready",
+        "pressed": "false"
+      },
+      {
+        "label": "Review",
+        "pressed": "false"
+      }
+    ],
+    "visibleRows": [
+      "Reference searchscripts/search.mjsv1.1.0Ready",
+      "Browser inventoryscripts/inspect-page.mjsv1.1.0Review",
+      "Contrast checkscripts/contrast.mjsv1.1.0Ready"
+    ],
+    "count": "3 packages shown",
+    "region": [
+      {
+        "clientWidth": 550,
+        "scrollWidth": 640,
+        "scrollLeft": 90
+      }
+    ],
+    "interactiveElements": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ready",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Review",
+        "tabindex": null
+      },
+      {
+        "tag": "DIV",
+        "text": "PackageSourceVersionStatusReference searchscripts/search.mjsv1.1.0ReadyBrowser inventoryscripts/insp",
+        "tabindex": "0"
+      }
+    ]
+  },
+  "textSpacing": {
+    "title": "Release queue",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "documentWidth": 1280,
+    "buttons": [
+      {
+        "label": "All",
+        "pressed": "true"
+      },
+      {
+        "label": "Ready",
+        "pressed": "false"
+      },
+      {
+        "label": "Review",
+        "pressed": "false"
+      }
+    ],
+    "visibleRows": [
+      "Reference searchscripts/search.mjsv1.1.0Ready",
+      "Browser inventoryscripts/inspect-page.mjsv1.1.0Review",
+      "Contrast checkscripts/contrast.mjsv1.1.0Ready"
+    ],
+    "count": "3 packages shown",
+    "region": [
+      {
+        "clientWidth": 950,
+        "scrollWidth": 950,
+        "scrollLeft": 0
+      }
+    ],
+    "interactiveElements": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Ready",
+        "tabindex": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "Review",
+        "tabindex": null
+      },
+      {
+        "tag": "DIV",
+        "text": "PackageSourceVersionStatusReference searchscripts/search.mjsv1.1.0ReadyBrowser inventoryscripts/insp",
+        "tabindex": "0"
+      }
+    ]
+  },
+  "consoleErrors": []
+}

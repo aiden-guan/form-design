@@ -1,0 +1,17 @@
+{
+  "environment": "Local Chromium, 1440x1100",
+  "checks": {
+    "twoTypeOptions": true,
+    "twoPaletteOptions": true,
+    "palettePreservesContent": true,
+    "palettePreservesGeometry": true,
+    "palettePreservesHeadingFont": true,
+    "paletteActuallyChangesSurface": true,
+    "typePreservesContent": true,
+    "typePreservesChosenPalette": true,
+    "typeChangesHeadingFont": true,
+    "allSuppliedFactsRemain": true,
+    "explicitlyUnapproved": true
+  },
+  "limits": "Focused intent checks; no beauty score, host comparison, or complete accessibility audit."
+}

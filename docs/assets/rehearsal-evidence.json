@@ -1,0 +1,1215 @@
+{
+  "kind": "Synthetic fixtures; author-run rehearsal, not a blinded model comparison",
+  "captures": [
+    {
+      "fixture": "workshop.html",
+      "mode": "before",
+      "viewport": {
+        "width": 1200,
+        "height": 960
+      },
+      "image": "rehearsal-before.png",
+      "observations": {
+        "schemaVersion": 1,
+        "scope": "main",
+        "scan": {
+          "visited": 41,
+          "visible": 39,
+          "textElements": 28,
+          "maxNodes": 1200,
+          "limitReached": false,
+          "viewportOnly": true,
+          "viewport": {
+            "width": 1200,
+            "height": 960
+          }
+        },
+        "typography": {
+          "families": [
+            {
+              "family": "Arial, sans-serif",
+              "elements": 18,
+              "characters": 546
+            },
+            {
+              "family": "monospace",
+              "elements": 9,
+              "characters": 153
+            },
+            {
+              "family": "Georgia, serif",
+              "elements": 1,
+              "characters": 9
+            }
+          ]
+        },
+        "candidates": {
+          "pillShape": {
+            "count": 4,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+                "tag": "span",
+                "role": null,
+                "text": "Hands-on",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(100, 97, 115)",
+                "rect": {
+                  "x": 77,
+                  "y": 237,
+                  "width": 77,
+                  "height": 25
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+                "tag": "span",
+                "role": null,
+                "text": "Creative",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(100, 97, 115)",
+                "rect": {
+                  "x": 159,
+                  "y": 237,
+                  "width": 77,
+                  "height": 25
+                }
+              }
+            ]
+          },
+          "italicText": {
+            "count": 1,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1) > em:nth-of-type(1)",
+                "tag": "em",
+                "role": null,
+                "text": "two-color",
+                "codeContext": false,
+                "fontFamily": "Georgia, serif",
+                "fontSize": "68px",
+                "fontStyle": "italic",
+                "letterSpacing": "-4.42px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 288,
+                  "y": 284,
+                  "width": 256,
+                  "height": 77
+                }
+              }
+            ]
+          },
+          "negativeTracking": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "68px",
+                "fontStyle": "normal",
+                "letterSpacing": "-4.42px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 77,
+                  "y": 288,
+                  "width": 621,
+                  "height": 69
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1) > em:nth-of-type(1)",
+                "tag": "em",
+                "role": null,
+                "text": "two-color",
+                "codeContext": false,
+                "fontFamily": "Georgia, serif",
+                "fontSize": "68px",
+                "fontStyle": "italic",
+                "letterSpacing": "-4.42px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 288,
+                  "y": 284,
+                  "width": 256,
+                  "height": 77
+                }
+              }
+            ]
+          },
+          "nestedBoundaries": {
+            "count": 13,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)",
+                "tag": "div",
+                "role": null,
+                "text": "src / workshops / upcoming / print-workshop",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "12px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(98, 97, 115)",
+                "rect": {
+                  "x": 77,
+                  "y": 125,
+                  "width": 1046,
+                  "height": 31
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2)",
+                "tag": "p",
+                "role": null,
+                "text": "CREATIVE WORKSHOP / A CREATIVE EXPERIENCE",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 77,
+                  "y": 199,
+                  "width": 621,
+                  "height": 26
+                }
+              }
+            ]
+          },
+          "gradientSurface": {
+            "count": 1,
+            "samples": [
+              {
+                "selector": "#reserve",
+                "tag": "button",
+                "role": null,
+                "text": "Reserve a seat.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "16px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(255, 255, 255)",
+                "rect": {
+                  "x": 745,
+                  "y": 467,
+                  "width": 355,
+                  "height": 55
+                }
+              }
+            ]
+          },
+          "separator": {
+            "count": 0,
+            "samples": []
+          },
+          "knownMonoFamily": {
+            "count": 9,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)",
+                "tag": "div",
+                "role": null,
+                "text": "src / workshops / upcoming / print-workshop",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "12px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(98, 97, 115)",
+                "rect": {
+                  "x": 77,
+                  "y": 125,
+                  "width": 1046,
+                  "height": 31
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2)",
+                "tag": "p",
+                "role": null,
+                "text": "CREATIVE WORKSHOP / A CREATIVE EXPERIENCE",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 77,
+                  "y": 199,
+                  "width": 621,
+                  "height": 26
+                }
+              }
+            ]
+          },
+          "smallUppercaseText": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2)",
+                "tag": "p",
+                "role": null,
+                "text": "CREATIVE WORKSHOP / A CREATIVE EXPERIENCE",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 77,
+                  "y": 199,
+                  "width": 621,
+                  "height": 26
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(2) > p:nth-of-type(1)",
+                "tag": "p",
+                "role": null,
+                "text": "WORKSHOP DETAILS",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 745,
+                  "y": 222,
+                  "width": 355,
+                  "height": 26
+                }
+              }
+            ]
+          },
+          "terminalPeriod": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "68px",
+                "fontStyle": "normal",
+                "letterSpacing": "-4.42px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 77,
+                  "y": 288,
+                  "width": 621,
+                  "height": 69
+                }
+              },
+              {
+                "selector": "#reserve",
+                "tag": "button",
+                "role": null,
+                "text": "Reserve a seat.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "16px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(255, 255, 255)",
+                "rect": {
+                  "x": 745,
+                  "y": 467,
+                  "width": 355,
+                  "height": 55
+                }
+              }
+            ]
+          },
+          "repeatedText": {
+            "count": 0,
+            "samples": []
+          }
+        },
+        "limits": [
+          "Counts are observations, not severity, taste, or AI-authorship judgments.",
+          "No screenshot analysis, pseudo-element, shadow-DOM, or nested-frame inspection, occlusion test, font-file verification, contrast audit, or full accessibility audit is performed.",
+          "Monospace detection uses family names. Context and manual review determine whether any candidate should change."
+        ]
+      }
+    },
+    {
+      "fixture": "workshop.html",
+      "mode": "after",
+      "viewport": {
+        "width": 1200,
+        "height": 960
+      },
+      "image": "rehearsal-after.png",
+      "observations": {
+        "schemaVersion": 1,
+        "scope": "main",
+        "scan": {
+          "visited": 41,
+          "visible": 28,
+          "textElements": 18,
+          "maxNodes": 1200,
+          "limitReached": false,
+          "viewportOnly": true,
+          "viewport": {
+            "width": 1200,
+            "height": 960
+          }
+        },
+        "typography": {
+          "families": [
+            {
+              "family": "Arial, sans-serif",
+              "elements": 18,
+              "characters": 483
+            }
+          ]
+        },
+        "candidates": {
+          "pillShape": {
+            "count": 0,
+            "samples": []
+          },
+          "italicText": {
+            "count": 0,
+            "samples": []
+          },
+          "negativeTracking": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "68px",
+                "fontStyle": "normal",
+                "letterSpacing": "-1.7px",
+                "color": "rgb(32, 43, 35)",
+                "rect": {
+                  "x": 76,
+                  "y": 172,
+                  "width": 590,
+                  "height": 144
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1) > em:nth-of-type(1)",
+                "tag": "em",
+                "role": null,
+                "text": "two-color",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "68px",
+                "fontStyle": "normal",
+                "letterSpacing": "-1.7px",
+                "color": "rgb(184, 61, 35)",
+                "rect": {
+                  "x": 310,
+                  "y": 170,
+                  "width": 291,
+                  "height": 76
+                }
+              }
+            ]
+          },
+          "nestedBoundaries": {
+            "count": 0,
+            "samples": []
+          },
+          "gradientSurface": {
+            "count": 0,
+            "samples": []
+          },
+          "separator": {
+            "count": 0,
+            "samples": []
+          },
+          "knownMonoFamily": {
+            "count": 0,
+            "samples": []
+          },
+          "smallUppercaseText": {
+            "count": 0,
+            "samples": []
+          },
+          "terminalPeriod": {
+            "count": 1,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "68px",
+                "fontStyle": "normal",
+                "letterSpacing": "-1.7px",
+                "color": "rgb(32, 43, 35)",
+                "rect": {
+                  "x": 76,
+                  "y": 172,
+                  "width": 590,
+                  "height": 144
+                }
+              }
+            ]
+          },
+          "repeatedText": {
+            "count": 0,
+            "samples": []
+          }
+        },
+        "limits": [
+          "Counts are observations, not severity, taste, or AI-authorship judgments.",
+          "No screenshot analysis, pseudo-element, shadow-DOM, or nested-frame inspection, occlusion test, font-file verification, contrast audit, or full accessibility audit is performed.",
+          "Monospace detection uses family names. Context and manual review determine whether any candidate should change."
+        ]
+      }
+    },
+    {
+      "fixture": "workshop.html",
+      "mode": "before",
+      "viewport": {
+        "width": 390,
+        "height": 960
+      },
+      "image": "rehearsal-before-mobile.png",
+      "observations": {
+        "schemaVersion": 1,
+        "scope": "main",
+        "scan": {
+          "visited": 41,
+          "visible": 26,
+          "textElements": 19,
+          "maxNodes": 1200,
+          "limitReached": false,
+          "viewportOnly": true,
+          "viewport": {
+            "width": 390,
+            "height": 960
+          }
+        },
+        "typography": {
+          "families": [
+            {
+              "family": "Arial, sans-serif",
+              "elements": 12,
+              "characters": 364
+            },
+            {
+              "family": "monospace",
+              "elements": 6,
+              "characters": 125
+            },
+            {
+              "family": "Georgia, serif",
+              "elements": 1,
+              "characters": 9
+            }
+          ]
+        },
+        "candidates": {
+          "pillShape": {
+            "count": 4,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+                "tag": "span",
+                "role": null,
+                "text": "Hands-on",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(100, 97, 115)",
+                "rect": {
+                  "x": 37,
+                  "y": 221,
+                  "width": 77,
+                  "height": 25
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+                "tag": "span",
+                "role": null,
+                "text": "Creative",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(100, 97, 115)",
+                "rect": {
+                  "x": 119,
+                  "y": 221,
+                  "width": 77,
+                  "height": 25
+                }
+              }
+            ]
+          },
+          "italicText": {
+            "count": 1,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1) > em:nth-of-type(1)",
+                "tag": "em",
+                "role": null,
+                "text": "two-color",
+                "codeContext": false,
+                "fontFamily": "Georgia, serif",
+                "fontSize": "38px",
+                "fontStyle": "italic",
+                "letterSpacing": "-2.47px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 155,
+                  "y": 269,
+                  "width": 143,
+                  "height": 43
+                }
+              }
+            ]
+          },
+          "negativeTracking": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "38px",
+                "fontStyle": "normal",
+                "letterSpacing": "-2.47px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 37,
+                  "y": 272,
+                  "width": 316,
+                  "height": 78
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1) > em:nth-of-type(1)",
+                "tag": "em",
+                "role": null,
+                "text": "two-color",
+                "codeContext": false,
+                "fontFamily": "Georgia, serif",
+                "fontSize": "38px",
+                "fontStyle": "italic",
+                "letterSpacing": "-2.47px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 155,
+                  "y": 269,
+                  "width": 143,
+                  "height": 43
+                }
+              }
+            ]
+          },
+          "nestedBoundaries": {
+            "count": 9,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)",
+                "tag": "div",
+                "role": null,
+                "text": "src / workshops / upcoming / print-workshop",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "12px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(98, 97, 115)",
+                "rect": {
+                  "x": 37,
+                  "y": 109,
+                  "width": 316,
+                  "height": 31
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2)",
+                "tag": "p",
+                "role": null,
+                "text": "CREATIVE WORKSHOP / A CREATIVE EXPERIENCE",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 37,
+                  "y": 183,
+                  "width": 316,
+                  "height": 26
+                }
+              }
+            ]
+          },
+          "gradientSurface": {
+            "count": 1,
+            "samples": [
+              {
+                "selector": "#reserve",
+                "tag": "button",
+                "role": null,
+                "text": "Reserve a seat.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "16px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(255, 255, 255)",
+                "rect": {
+                  "x": 60,
+                  "y": 827,
+                  "width": 270,
+                  "height": 55
+                }
+              }
+            ]
+          },
+          "separator": {
+            "count": 0,
+            "samples": []
+          },
+          "knownMonoFamily": {
+            "count": 6,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)",
+                "tag": "div",
+                "role": null,
+                "text": "src / workshops / upcoming / print-workshop",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "12px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(98, 97, 115)",
+                "rect": {
+                  "x": 37,
+                  "y": 109,
+                  "width": 316,
+                  "height": 31
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2)",
+                "tag": "p",
+                "role": null,
+                "text": "CREATIVE WORKSHOP / A CREATIVE EXPERIENCE",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 37,
+                  "y": 183,
+                  "width": 316,
+                  "height": 26
+                }
+              }
+            ]
+          },
+          "smallUppercaseText": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > p:nth-of-type(2)",
+                "tag": "p",
+                "role": null,
+                "text": "CREATIVE WORKSHOP / A CREATIVE EXPERIENCE",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 37,
+                  "y": 183,
+                  "width": 316,
+                  "height": 26
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(2) > p:nth-of-type(1)",
+                "tag": "p",
+                "role": null,
+                "text": "WORKSHOP DETAILS",
+                "codeContext": false,
+                "fontFamily": "monospace",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "1.1px",
+                "color": "rgb(107, 104, 121)",
+                "rect": {
+                  "x": 60,
+                  "y": 582,
+                  "width": 270,
+                  "height": 26
+                }
+              }
+            ]
+          },
+          "terminalPeriod": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "38px",
+                "fontStyle": "normal",
+                "letterSpacing": "-2.47px",
+                "color": "rgb(36, 35, 49)",
+                "rect": {
+                  "x": 37,
+                  "y": 272,
+                  "width": 316,
+                  "height": 78
+                }
+              },
+              {
+                "selector": "#reserve",
+                "tag": "button",
+                "role": null,
+                "text": "Reserve a seat.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "16px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(255, 255, 255)",
+                "rect": {
+                  "x": 60,
+                  "y": 827,
+                  "width": 270,
+                  "height": 55
+                }
+              }
+            ]
+          },
+          "repeatedText": {
+            "count": 0,
+            "samples": []
+          }
+        },
+        "limits": [
+          "Counts are observations, not severity, taste, or AI-authorship judgments.",
+          "No screenshot analysis, pseudo-element, shadow-DOM, or nested-frame inspection, occlusion test, font-file verification, contrast audit, or full accessibility audit is performed.",
+          "Monospace detection uses family names. Context and manual review determine whether any candidate should change."
+        ]
+      }
+    },
+    {
+      "fixture": "workshop.html",
+      "mode": "after",
+      "viewport": {
+        "width": 390,
+        "height": 960
+      },
+      "image": "rehearsal-after-mobile.png",
+      "observations": {
+        "schemaVersion": 1,
+        "scope": "main",
+        "scan": {
+          "visited": 41,
+          "visible": 28,
+          "textElements": 18,
+          "maxNodes": 1200,
+          "limitReached": false,
+          "viewportOnly": true,
+          "viewport": {
+            "width": 390,
+            "height": 960
+          }
+        },
+        "typography": {
+          "families": [
+            {
+              "family": "Arial, sans-serif",
+              "elements": 18,
+              "characters": 483
+            }
+          ]
+        },
+        "candidates": {
+          "pillShape": {
+            "count": 0,
+            "samples": []
+          },
+          "italicText": {
+            "count": 0,
+            "samples": []
+          },
+          "negativeTracking": {
+            "count": 2,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "48px",
+                "fontStyle": "normal",
+                "letterSpacing": "-1.2px",
+                "color": "rgb(32, 43, 35)",
+                "rect": {
+                  "x": 24,
+                  "y": 157,
+                  "width": 342,
+                  "height": 102
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1) > em:nth-of-type(1)",
+                "tag": "em",
+                "role": null,
+                "text": "two-color",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "48px",
+                "fontStyle": "normal",
+                "letterSpacing": "-1.2px",
+                "color": "rgb(184, 61, 35)",
+                "rect": {
+                  "x": 24,
+                  "y": 155,
+                  "width": 259,
+                  "height": 104
+                }
+              }
+            ]
+          },
+          "nestedBoundaries": {
+            "count": 0,
+            "samples": []
+          },
+          "gradientSurface": {
+            "count": 0,
+            "samples": []
+          },
+          "separator": {
+            "count": 0,
+            "samples": []
+          },
+          "knownMonoFamily": {
+            "count": 0,
+            "samples": []
+          },
+          "smallUppercaseText": {
+            "count": 0,
+            "samples": []
+          },
+          "terminalPeriod": {
+            "count": 1,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(2) > section:nth-of-type(1) > h1:nth-of-type(1)",
+                "tag": "h1",
+                "role": null,
+                "text": "Make a two-color print.",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "48px",
+                "fontStyle": "normal",
+                "letterSpacing": "-1.2px",
+                "color": "rgb(32, 43, 35)",
+                "rect": {
+                  "x": 24,
+                  "y": 157,
+                  "width": 342,
+                  "height": 102
+                }
+              }
+            ]
+          },
+          "repeatedText": {
+            "count": 0,
+            "samples": []
+          }
+        },
+        "limits": [
+          "Counts are observations, not severity, taste, or AI-authorship judgments.",
+          "No screenshot analysis, pseudo-element, shadow-DOM, or nested-frame inspection, occlusion test, font-file verification, contrast audit, or full accessibility audit is performed.",
+          "Monospace detection uses family names. Context and manual review determine whether any candidate should change."
+        ]
+      }
+    },
+    {
+      "fixture": "working-tool.html",
+      "mode": null,
+      "viewport": {
+        "width": 1200,
+        "height": 960
+      },
+      "image": "rehearsal-preserve.png",
+      "observations": {
+        "schemaVersion": 1,
+        "scope": "main",
+        "scan": {
+          "visited": 47,
+          "visible": 43,
+          "textElements": 23,
+          "maxNodes": 1200,
+          "limitReached": false,
+          "viewportOnly": true,
+          "viewport": {
+            "width": 1200,
+            "height": 960
+          }
+        },
+        "typography": {
+          "families": [
+            {
+              "family": "Arial, sans-serif",
+              "elements": 17,
+              "characters": 278
+            },
+            {
+              "family": "monospace",
+              "elements": 6,
+              "characters": 80
+            }
+          ]
+        },
+        "candidates": {
+          "pillShape": {
+            "count": 6,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > nav:nth-of-type(1) > button:nth-of-type(1)",
+                "tag": "button",
+                "role": null,
+                "text": "All",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "15px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(255, 255, 255)",
+                "rect": {
+                  "x": 125,
+                  "y": 212,
+                  "width": 49,
+                  "height": 41
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > nav:nth-of-type(1) > button:nth-of-type(2)",
+                "tag": "button",
+                "role": null,
+                "text": "Ready",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "15px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(34, 44, 56)",
+                "rect": {
+                  "x": 182,
+                  "y": 212,
+                  "width": 75,
+                  "height": 41
+                }
+              }
+            ]
+          },
+          "italicText": {
+            "count": 0,
+            "samples": []
+          },
+          "negativeTracking": {
+            "count": 0,
+            "samples": []
+          },
+          "nestedBoundaries": {
+            "count": 22,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > nav:nth-of-type(1) > button:nth-of-type(1)",
+                "tag": "button",
+                "role": null,
+                "text": "All",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "15px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(255, 255, 255)",
+                "rect": {
+                  "x": 125,
+                  "y": 212,
+                  "width": 49,
+                  "height": 41
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > nav:nth-of-type(1) > button:nth-of-type(2)",
+                "tag": "button",
+                "role": null,
+                "text": "Ready",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "15px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(34, 44, 56)",
+                "rect": {
+                  "x": 182,
+                  "y": 212,
+                  "width": 75,
+                  "height": 41
+                }
+              }
+            ]
+          },
+          "gradientSurface": {
+            "count": 0,
+            "samples": []
+          },
+          "separator": {
+            "count": 0,
+            "samples": []
+          },
+          "knownMonoFamily": {
+            "count": 6,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > table:nth-of-type(1) > tbody:nth-of-type(1) > tr:nth-of-type(1) > td:nth-of-type(2) > code:nth-of-type(1)",
+                "tag": "code",
+                "role": null,
+                "text": "scripts/search.mjs",
+                "codeContext": true,
+                "fontFamily": "monospace",
+                "fontSize": "13px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(34, 44, 56)",
+                "rect": {
+                  "x": 400,
+                  "y": 381,
+                  "width": 140,
+                  "height": 15
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > table:nth-of-type(1) > tbody:nth-of-type(1) > tr:nth-of-type(1) > td:nth-of-type(3) > code:nth-of-type(1)",
+                "tag": "code",
+                "role": null,
+                "text": "v1.1.0",
+                "codeContext": true,
+                "fontFamily": "monospace",
+                "fontSize": "13px",
+                "fontStyle": "normal",
+                "letterSpacing": "normal",
+                "color": "rgb(34, 44, 56)",
+                "rect": {
+                  "x": 785,
+                  "y": 381,
+                  "width": 47,
+                  "height": 15
+                }
+              }
+            ]
+          },
+          "smallUppercaseText": {
+            "count": 4,
+            "samples": [
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > table:nth-of-type(1) > thead:nth-of-type(1) > tr:nth-of-type(1) > th:nth-of-type(1)",
+                "tag": "th",
+                "role": null,
+                "text": "PACKAGE",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "0.44px",
+                "color": "rgb(83, 97, 113)",
+                "rect": {
+                  "x": 125,
+                  "y": 315,
+                  "width": 263,
+                  "height": 45
+                }
+              },
+              {
+                "selector": "html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > table:nth-of-type(1) > thead:nth-of-type(1) > tr:nth-of-type(1) > th:nth-of-type(2)",
+                "tag": "th",
+                "role": null,
+                "text": "SOURCE",
+                "codeContext": false,
+                "fontFamily": "Arial, sans-serif",
+                "fontSize": "11px",
+                "fontStyle": "normal",
+                "letterSpacing": "0.44px",
+                "color": "rgb(83, 97, 113)",
+                "rect": {
+                  "x": 388,
+                  "y": 315,
+                  "width": 386,
+                  "height": 45
+                }
+              }
+            ]
+          },
+          "terminalPeriod": {
+            "count": 0,
+            "samples": []
+          },
+          "repeatedText": {
+            "count": 0,
+            "samples": []
+          }
+        },
+        "limits": [
+          "Counts are observations, not severity, taste, or AI-authorship judgments.",
+          "No screenshot analysis, pseudo-element, shadow-DOM, or nested-frame inspection, occlusion test, font-file verification, contrast audit, or full accessibility audit is performed.",
+          "Monospace detection uses family names. Context and manual review determine whether any candidate should change."
+        ]
+      }
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 # FORM Design
 
-**A portable skill that helps coding agents design distinctive websites and apps—from art direction to implementation and review.**
+**Three portable skills for designing distinctive interfaces, repairing generic design, and choosing a visual direction with confidence.**
 
-[Quick start](#quick-start) · [Download ZIP](https://github.com/aiden-guan/form-design/releases/latest/download/form-design.zip) · [Read the skill](skills/form-design/SKILL.md) · [Research](skills/form-design/references/designer-principles.md) · [Changelog](CHANGELOG.md)
+[Quick start](#quick-start) · [Download suite](https://github.com/aiden-guan/form-design/releases/latest/download/form-design-suite.zip) · [Research](docs/research/2026-11-03-design-quality.md) · [Changelog](CHANGELOG.md)
 
 ```sh
-npx skills add aiden-guan/form-design --skill form-design
+npx skills add aiden-guan/form-design
 ```
 
 ![FORM Design: art direction, visual craft, and three real offline search results for “retro texture but not glass.”](docs/assets/hero.svg)
@@ -14,11 +14,19 @@ npx skills add aiden-guan/form-design --skill form-design
 
 FORM gives an agent a concrete way to choose a visual direction, build a coherent system, and review the result. It combines design guidance with offline discovery across **13,351 attributed public references**. Your existing brand, framework, and requested scope guide the work.
 
+| Skill | Use it for | Download |
+| --- | --- | --- |
+| [FORM Design](skills/form-design/SKILL.md) | Create and implement a coherent interface; use references, real content, and actual visual review. | [ZIP](https://github.com/aiden-guan/form-design/releases/latest/download/form-design.zip) |
+| [FORM Unslop](skills/form-unslop/SKILL.md) | Diagnose generic choices and repair their cause while preserving useful detail and approved style. | [ZIP](https://github.com/aiden-guan/form-design/releases/latest/download/form-unslop.zip) |
+| [FORM Explore](skills/form-explore/SKILL.md) | Compare directions, fonts, and semantic palettes; implement the user's chosen combination. | [ZIP](https://github.com/aiden-guan/form-design/releases/latest/download/form-explore.zip) |
+
+Each skill works independently. Only FORM Design includes the large reference index. The [complete suite ZIP](https://github.com/aiden-guan/form-design/releases/latest/download/form-design-suite.zip) includes all three and an installation guide.
+
 ## Quick start
 
 Use the command above with the [Skills CLI](https://github.com/vercel-labs/skills), then choose your agent. It installs into the current project by default; add `-g` for a personal installation. The current installer requires **Node.js 22.20+**. FORM's optional tools require **Node.js 18+**; its written guidance works without a shell.
 
-In Codex, mention `$form-design`. In Claude Code, use `/form-design`:
+In Codex, mention `$form-design`, `$form-unslop`, or `$form-explore`. In Claude Code, use the corresponding slash command:
 
 ```text
 Use $form-design to build a distinctive site for our ceramics studio.
@@ -28,31 +36,51 @@ as the primary task. Choose a direction and implement it.
 
 Give the agent real content, an audience, a primary task, and constraints. For a redesign, provide the existing code or an inspectable view. For a faithful match, supply the screenshot or reference.
 
+For a targeted install, append `--skill form-unslop` or another skill name. To repair an existing page, try “Use $form-unslop to improve this page's hierarchy and remove redundant framing; keep our chosen typeface and working filters.” To choose type/color, try “Use $form-explore to compare three fonts on this actual content while keeping the layout and palette stable.”
+
 ### Install from the ZIP
 
-[Download](https://github.com/aiden-guan/form-design/releases/latest/download/form-design.zip), extract, and copy the **entire `form-design` folder** to one of these locations:
+[Download the suite](https://github.com/aiden-guan/form-design/releases/latest/download/form-design-suite.zip), extract, and copy the desired **complete skill folders from `skills/`** into your host's skill directory. An individual ZIP contains its one named skill folder.
 
 | Agent | Personal | Project |
 | --- | --- | --- |
-| Codex | `~/.agents/skills/form-design/` | `.agents/skills/form-design/` |
-| Claude Code | `~/.claude/skills/form-design/` | `.claude/skills/form-design/` |
+| Codex | `~/.agents/skills/` | `.agents/skills/` |
+| Claude Code | `~/.claude/skills/` | `.claude/skills/` |
 | Other Agent Skills hosts | Use the host's skill import procedure | Preserve the full folder structure |
 
 Keep `SKILL.md`, `references/`, `scripts/`, and `data/` together. Review an existing installation before replacing it. Restart the host if it does not discover the skill. Installation guidance: [OpenAI](https://learn.chatgpt.com/docs/build-skills), [Claude Code](https://code.claude.com/docs/en/skills).
 
-## Four parts of the workflow
+## The design workflow
 
-| **01 / Choose a point of view** | **02 / Find the right reference** |
+| **Choose a point of view** | **Find the right reference** |
 | --- | --- |
 | Turn audience, content, and purpose into a specific composition, type system, and visual language. Explore different structures when the brief calls for options. | Search by role, material, feeling, or behavior. Read the creator credit, rights label, and evidence limits before inspecting the original. |
 | [Art direction](skills/form-design/references/art-direction.md) · [Practitioner research](skills/form-design/references/designer-principles.md) | [Reference search](skills/form-design/references/library.md) · [Live reference handoffs](https://aiden-form-references.aidenguan.chatgpt.site/) |
 
-| **03 / Build for the actual surface** | **04 / Inspect and correct** |
+| **Build for the actual surface** | **Inspect and correct** |
 | --- | --- |
 | Establish type, spacing, color roles, imagery, and relevant states in a representative slice. A work tool, portfolio, and mobile app need different priorities. | Review rendered output when tooling permits. Correct composition before details; check the actual task, narrow layouts, focus, contrast, and motion alternatives. |
 | [Visual craft](skills/form-design/references/visual-craft.md) · [Surfaces](skills/form-design/references/surfaces.md) · [Motion](skills/form-design/references/motion.md) | [Critique protocol](skills/form-design/references/critique.md) · [Five worked examples](skills/form-design/references/examples.md) |
 
 Research is organized into **13 practitioner lenses**, including Frank Chimero, Jen Simmons, Rauno Freiberg, Emil Kowalski, Sara Soueidan, and Maxime Heckel. Each has a primary source, an original summary, an application, and an inspection boundary. The named practitioners do not endorse FORM.
+
+## Unslop with context
+
+The [separate 19-signal checklist](skills/form-unslop/references/signals.md) adapts the supplied Charles Liu notes into **when to investigate → when to keep → what to change**. It covers pills, italic accents, arbitrary type/color choices, excess framing, redundant copy, and other generic-design tells. Dithering is intentionally excluded. The original reel was not independently retrieved; provenance is explicit.
+
+The workflow asks for a concrete location and consequence, then a decision to keep, change, verify, or leave outside scope. A useful status pill, approved Instrument Serif heading, or necessary table boundary can remain. Simplification must preserve the actual task.
+
+An optional [read-only browser inspector](skills/form-unslop/references/browser-inspection.md) collects computed-style observations, selectors, samples, and scan limits. It reports no taste score or AI-authorship probability. The [synthetic rehearsal and preservation counterexample](evals/rehearsal.md) show how its observations differ from a design judgment.
+
+## Choose the fonts and colors yourself
+
+FORM Explore keeps unrelated variables comparable: font choices on the same content and palette; color choices on the same type and geometry; full concepts with the same facts and required states. A user can combine the selected type from one option with another palette, then have the agent verify that combination.
+
+The optional [standalone comparison lab](skills/form-explore/assets/comparison-lab.html) works directly in a browser. It independently switches type systems and semantic palettes, shows text/action/selection/error roles, and exports proposal data. Replace its fictional specimen and example choices with the project's actual content and fonts. The lab is a local decision aid, not a whole-site template or evidence of user approval.
+
+The [research report](docs/research/2026-11-03-design-quality.md) records primary sources, the reviewed public Impeccable/Emil skill snapshots, resulting design decisions, and a protocol for future matched comparisons. Source review and authored examples do not establish superiority over either project.
+
+Two [independent forward tasks](evals/forward-tests-2026-11-03.md) exercise actual skill use: an Unslop critique that preserves useful detail while finding specific workflow concerns, and an Explore task that builds a working two-type × two-palette prototype. Requests, inputs, outputs, screenshots, and verification limits are retained.
 
 ## Try the offline tools
 
@@ -92,7 +120,7 @@ It returns a contrast ratio of approximately **15.04:1** and text-threshold flag
 
 ## Architecture
 
-The host agent performs design and implementation. FORM supplies instructions and optional deterministic utilities; it does not call a model API itself.
+The host agent performs design and implementation. FORM supplies instructions and optional deterministic utilities; it does not call a model API itself. The diagram shows the core design/reference path. Unslop additionally offers a browser-observation function, and Explore includes a standalone comparison lab; neither requires the reference index.
 
 ![Architecture: the brief and skill guide your coding agent; optional offline search uses bundled JSON and returns bounded candidates with attribution and evidence.](docs/assets/architecture.svg)
 
@@ -145,10 +173,12 @@ skills/form-design/
 ├── references/           Design methods, research, and worked examples
 ├── scripts/              Offline search, retrieval engine, and contrast tool
 └── data/                 Public metadata snapshot, vocabulary, and provenance
-scripts/                  Archive packaging, verification, presentation generation
-tests/                    Node's built-in test suite
-evals/                    Behavioral scenarios for future model evaluations
-docs/                     Architecture, presentation evidence, and release notes
+skills/form-unslop/       Contextual diagnostics, 19-signal list, browser inspector
+skills/form-explore/      Controlled comparisons and a standalone decision lab
+scripts/                  Suite packaging, verification, evidence generation
+tests/                    Dependency-free core tests and optional browser tests
+evals/                    Scenarios, synthetic fixtures, and rehearsal boundaries
+docs/                     Primary research, architecture, evidence, release notes
 ```
 
 | Responsibility | Implementation |
@@ -170,18 +200,27 @@ python3 scripts/verify-design-skill-archive.py
 python3 scripts/generate-presentation.py --check
 ```
 
-The **nine tests** cover catalog integrity, public metadata fields, retrieval, negation, filters, CLI arguments, contrast thresholds, and local reference links. Archive verification extracts the actual generated ZIP and runs both tools from a clean folder. Presentation verification checks the committed SVGs and JSON against current CLI output.
+The **nine dependency-free tests** cover catalog integrity, public metadata fields, retrieval, negation, filters, CLI arguments, contrast thresholds, and links across all skills. Archive verification checks source equality and safe extraction for all four ZIPs, then runs applicable tools from clean folders. Presentation verification checks the committed SVGs and JSON against current CLI output.
+
+With an existing Playwright installation, six additional real-browser checks cover read-only inspection, coverage bounds, hidden content, functional filters, reserve/undo at two widths, and independent type/palette selection with contrast-checked example roles:
+
+```sh
+node --test tests/inspector.browser.test.mjs
+node scripts/capture-rehearsal.mjs
+```
+
+Set `FORM_PLAYWRIGHT_MODULE` if that optional maintainer dependency is outside the checkout. The distributed skills do not bundle or require Playwright. Captured examples are labeled synthetic, author-run rehearsals; the tests do not judge beauty.
 
 `releases/` is generated locally and ignored by Git. Download published artifacts from [GitHub Releases](https://github.com/aiden-guan/form-design/releases); verify the ZIP with its accompanying `form-design.zip.sha256`. The reference snapshot's input hashes record provenance and are not dependencies on another checkout.
 
 ## Status and limits
 
-**v1.0.0 is published.** The source, ZIP download, and fresh Codex project installation were verified during publication. Tests and extraction checks establish tool and packaging behavior; model-generated design quality has not been benchmarked across hosts or models.
+**v1.1.0 adds the three-skill suite.** Tests and extraction checks establish the recorded tooling behavior; two fresh-context forward tasks provide limited qualitative evidence of skill use. Model-generated design quality has not been benchmarked across hosts or against Impeccable or Emil's skills.
 
 - The **2026-11-02** reference snapshot includes imported metadata. Every reference was not individually operated or visually audited, and links or licenses may change.
 - Creator media, fonts, code bundles, full essays, and private projects are excluded. Reference-only entries require original implementation or separate permission.
 - The host model, supplied assets, context, and available execution tools affect the result. A successful build alone is not visual or accessibility verification.
-- Future improvements can be evaluated using the [behavioral scenarios](evals/form-design.md). They are test inputs, not completed evaluation results.
+- Future improvements can be evaluated using the [scenario suite](evals/scenarios.json) and [comparison protocol](docs/research/2026-11-03-design-quality.md#how-to-establish-an-improvement-claim). They are inputs for evaluation, not completed rival comparisons.
 
 For a useful improvement report, include the prompt, relevant constraints, artifact, and observed problem. Keep changes tied to demonstrated behavior rather than accumulating universal style rules.
 

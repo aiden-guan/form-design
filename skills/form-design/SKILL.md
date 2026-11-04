@@ -3,7 +3,7 @@ name: form-design
 description: Design and build distinctive websites, apps, and interfaces with strong art direction, typography, composition, and purposeful motion. Use for new visual designs, creative frontend implementation, redesigns, design exploration, and visual critique. Supports reference matching when requested; preserve existing brand systems and task scope.
 license: See LICENSE.txt and NOTICE.md
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # FORM — design with a point of view
@@ -15,6 +15,8 @@ This skill works without an account, paid service, framework, MCP server, or net
 ## Start with the actual assignment
 
 Read the user's brief and inspect the existing project or supplied design before choosing an aesthetic. Establish the audience, primary task, surface, content, brand constraints, and requested deliverable. Infer low-risk missing details and state important assumptions briefly. Ask only when the answer would materially change the work.
+
+Distinguish facts, visual choices, and proposals. User-selected fonts/colors, approved references, existing components, and product behavior are evidence to carry forward. An unfamiliar style is not permission to replace it. If an existing design-context document exists, read its relevant parts and check them against the current artifact; do not create an onboarding ritual for a small task.
 
 Choose the smallest useful mode:
 
@@ -43,6 +45,8 @@ If the brief is open, consider two or three materially different directions and 
 
 Read [art-direction.md](references/art-direction.md) when choosing a visual concept or escaping a generic result. Read [designer-principles.md](references/designer-principles.md) to select a relevant lens from researched practitioners. These are decision tools, not styles to imitate or endorsements by their authors.
 
+Read [design-decisions.md](references/design-decisions.md) for reference decomposition, controlled font/color comparisons, and carrying the user's choices into implementation. If the user asks to choose from variants, make the alternatives inspectable with comparable content and states. If they ask you to choose and build, choose with a reason and continue.
+
 ## Use references as evidence
 
 When inspiration would improve a consequential visual decision, search for a specific role: composition, type, material, navigation, or behavior. Prefer a small set you can actually inspect over a long moodboard. For every chosen reference, identify what transfers, what should remain original, and what evidence is missing.
@@ -67,6 +71,8 @@ Define a compact set of reusable tokens in the project's existing conventions. G
 
 Compose the rest around the information, not a predetermined list of sections. A studio portfolio, operations app, store, and reading tool should not inherit the same layout. Avoid invented testimonials, fabricated statistics, or decorative product mockups that imply nonexistent functionality.
 
+Read [anti-generic.md](references/anti-generic.md) when the result feels templated or the user asks to remove AI-design tells. Diagnose the relationship causing the problem before deleting a familiar style. Changing a font or removing every border does not fix an interchangeable information structure. Dithering is not an anti-slop criterion in FORM.
+
 ## Design behavior as carefully as appearance
 
 Define visible hover, focus, pressed, selected, disabled, loading, empty, success, and error states where relevant. Preserve user input across recoverable failures. Make click targets, labels, and navigation work before adding decorative motion.
@@ -76,6 +82,8 @@ For each meaningful animation, identify its purpose, trigger, spatial relationsh
 ## Look at the result and improve it
 
 When a render or browser tool is available, inspect the actual output at a representative wide and narrow viewport and at the width where the composition changes. Compare the real primary task and relevant states. Correct the largest problems first: message and composition, then type and spacing, then imagery/material, then details and motion.
+
+Ask what in the composition depends on this project's actual subject. Then test the opposite failure: did simplification remove useful status, discoverability, density, personality, or a choice the user deliberately made? Keep justified detail. Judge against the brief and evidence, not the number of fashionable effects removed.
 
 For reference matching, compare equivalent viewport, crop, font loading, and state; separately test demonstrated behavior. Do not claim a one-to-one match from a single approximate screenshot.
 

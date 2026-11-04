@@ -24,8 +24,11 @@ node skills/form-design/scripts/search.mjs "retro texture but not glass" --limit
 | [architecture.svg](assets/architecture.svg) | 1600×760 static diagram of the host/skill and optional offline search paths; keeps the overview visible without GitHub's dynamic Mermaid renderer. |
 | [social-preview.svg](assets/social-preview.svg) | 1280×640 brand graphic using the snapshot's actual reference count. |
 | [social-preview.png](assets/social-preview.png) | Raster copy prepared for optional GitHub social-preview upload. |
+| [comparison-lab.png](assets/comparison-lab.png) | Actual 1200×960 capture of the packaged, fictional type/color comparison lab. Its controls vary independent proposal choices. |
 
 The generator uses Python's standard library and invokes Node for the actual search. It has no renderer or font-download dependency. SVG text uses system font fallbacks, so glyph metrics can differ slightly between viewers. `--check` checks SVGs and JSON; it does not re-render the PNG.
+
+The [author-run rehearsal](../evals/rehearsal.md) contains a labeled fictional before/after, a preservation counterexample, wide/narrow captures, and the actual bounded inspector observations. Regenerate those with `node scripts/capture-rehearsal.mjs` using an existing Playwright installation; set `FORM_PLAYWRIGHT_MODULE` if it is outside the checkout. Open the packaged comparison lab at a 1200×960 viewport with device scale factor 1 to reproduce its screenshot. No capture is evidence of a matched comparison with another skill.
 
 ## Optional social-preview capture
 

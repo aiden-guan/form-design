@@ -1,0 +1,178 @@
+{
+  "wideColumns": {
+    "All": {
+      "Package": {
+        "x": 165,
+        "width": 262.90625
+      },
+      "Source": {
+        "x": 427.90625,
+        "width": 385.53125
+      },
+      "Version": {
+        "x": 813.4375,
+        "width": 139.78125
+      },
+      "Status": {
+        "x": 953.21875,
+        "width": 161.78125
+      }
+    },
+    "Ready": {
+      "Package": {
+        "x": 165,
+        "width": 280.3125
+      },
+      "Source": {
+        "x": 445.3125,
+        "width": 354.375
+      },
+      "Version": {
+        "x": 799.6875,
+        "width": 150.765625
+      },
+      "Status": {
+        "x": 950.453125,
+        "width": 164.546875
+      }
+    },
+    "Review": {
+      "Package": {
+        "x": 165,
+        "width": 262.90625
+      },
+      "Source": {
+        "x": 427.90625,
+        "width": 385.53125
+      },
+      "Version": {
+        "x": 813.4375,
+        "width": 139.78125
+      },
+      "Status": {
+        "x": 953.21875,
+        "width": 161.78125
+      }
+    }
+  },
+  "keyboard": [
+    {
+      "key": "Tab",
+      "focus": "All",
+      "pressed": [
+        "All"
+      ],
+      "count": "3 packages shown",
+      "outline": "rgb(11, 99, 187) solid 3px"
+    },
+    {
+      "key": "Tab",
+      "focus": "Ready",
+      "pressed": [
+        "All"
+      ],
+      "count": "3 packages shown",
+      "outline": "rgb(11, 99, 187) solid 3px"
+    },
+    {
+      "key": "Enter",
+      "focus": "Ready",
+      "pressed": [
+        "Ready"
+      ],
+      "count": "2 packages shown",
+      "outline": "rgb(11, 99, 187) solid 3px"
+    },
+    {
+      "key": "Tab",
+      "focus": "Review",
+      "pressed": [
+        "Ready"
+      ],
+      "count": "2 packages shown",
+      "outline": "rgb(11, 99, 187) solid 3px"
+    },
+    {
+      "key": "Space",
+      "focus": "Review",
+      "pressed": [
+        "Review"
+      ],
+      "count": "1 package shown",
+      "outline": "rgb(11, 99, 187) solid 3px"
+    },
+    {
+      "key": "Tab",
+      "focus": "table-region",
+      "pressed": [
+        "Review"
+      ],
+      "count": "1 package shown",
+      "outline": "rgb(0, 95, 204) auto 1px"
+    }
+  ],
+  "narrowBounds": {
+    "region": {
+      "left": 45,
+      "right": 345,
+      "width": 300
+    },
+    "columns": [
+      {
+        "label": "Package",
+        "left": 45,
+        "right": 222.109375,
+        "width": 177.109375
+      },
+      {
+        "label": "Source",
+        "left": 222.109375,
+        "right": 481.828125,
+        "width": 259.71875
+      },
+      {
+        "label": "Version",
+        "left": 481.828125,
+        "right": 576,
+        "width": 94.171875
+      },
+      {
+        "label": "Status",
+        "left": 576,
+        "right": 685,
+        "width": 109
+      }
+    ]
+  },
+  "scrollWithKeyboard": 40,
+  "at320": {
+    "viewport": 320,
+    "documentWidth": 320,
+    "regionClient": 230,
+    "regionScroll": 640,
+    "filterRects": [
+      {
+        "label": "All",
+        "width": 48.671875,
+        "right": 93.671875
+      },
+      {
+        "label": "Ready",
+        "width": 75.359375,
+        "right": 177.03125
+      },
+      {
+        "label": "Review",
+        "width": 81.1875,
+        "right": 266.21875
+      }
+    ]
+  },
+  "contrast": {
+    "bodyOnWhite": 14.14,
+    "headerOnWhite": 6.33,
+    "activeFilter": 11.04,
+    "ready": 9.02,
+    "review": 7.35
+  }
+}

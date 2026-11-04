@@ -1,6 +1,16 @@
 # Architecture and engineering notes
 
-FORM has two distinct responsibilities: written design guidance for a host agent and deterministic offline tools. The agent supplies its own model, filesystem, browser, renderer, and permissions. This repository has no model client, hosted application, database, or provider credentials.
+FORM has three independent entrypoints: Design, Unslop, and Explore. They supply written methods and optional local tools/assets; the agent supplies its own model, filesystem, browser, renderer, and permissions. This repository has no model client, hosted application, database, or provider credentials.
+
+## Independent workflow boundaries
+
+| Skill | Resources | Runtime dependency |
+| --- | --- | --- |
+| Design | Main workflow, design references, public JSON index, search and contrast tools | Writing alone needs none; optional tools use Node.js 18+ |
+| Unslop | Contextual repair method, separate 19-signal list, browser-observation function | Writing alone needs none; optional inspector uses a permitted browser evaluation API |
+| Explore | Controlled comparisons, decision handoff, standalone type/color lab | Writing alone needs none; optional lab opens directly in a browser |
+
+They do not import each other's skill instructions or data. The source repository provides all three, but any individual ZIP remains useful on its own.
 
 ## Instruction path
 
@@ -55,12 +65,20 @@ flowchart LR
     Smoke --> Release
 ```
 
-[package-design-skill.py](../scripts/package-design-skill.py) accepts only the skill's declared top-level files and expected resource directories/extensions, rejects symlinked files and local paths, and fixes archive ordering, timestamps, and modes. It writes the ZIP, SHA-256 file, and a release manifest under ignored `releases/`.
+[package-design-skill.py](../scripts/package-design-skill.py) reads the version, date, and explicit skill list from [release-config.json](../scripts/release-config.json). It accepts only declared top-level files and expected resource directories/extensions, rejects symlinks and local paths, checks skill name/version consistency, and fixes archive ordering, timestamps, and modes. It writes three independent ZIPs and a complete suite ZIP, their SHA-256 files/manifests, and a release index under ignored `releases/`.
 
-[verify-design-skill-archive.py](../scripts/verify-design-skill-archive.py) checks the archive digest and size, rejects unsafe member paths/symlinks, compares every member with current source bytes, then extracts into a temporary folder containing spaces. It runs search, exact lookup, statistics, and contrast commands without installing npm dependencies.
+[verify-design-skill-archive.py](../scripts/verify-design-skill-archive.py) checks all four archive digests and sizes, rejects unsafe member paths/symlinks, compares every member with current source bytes, resolves local reference links, then extracts into temporary folders containing spaces. It runs applicable search, exact lookup, statistics, contrast, and module-import checks without installing npm dependencies. The suite's installation document is compared with its versioned source.
 
 Fixed ZIP metadata makes repeated builds in the same environment reproducible. Compression-library changes can affect archive bytes across environments; the published checksum identifies the actual release artifact. Neither archive integrity nor a successful smoke check establishes model-level design quality.
 
 ## Presentation assets
 
 [generate-presentation.py](../scripts/generate-presentation.py) runs the real CLI and creates a compact SVG demonstration plus its unedited JSON evidence. These files are outside the installed skill and do not change the release ZIP. [Presentation notes](presentation.md) describe reproduction and the optional social-preview capture.
+
+## Browser evidence and comparison assets
+
+Unslop's [inspect-page.mjs](../skills/form-unslop/scripts/inspect-page.mjs) exports a self-contained browser function. A bounded DOM walk reads computed properties and returns neutral candidate counts and samples. It performs no network request or DOM write. It does not judge appropriateness, detect model authorship, analyze screenshots, inspect pseudo-elements, or perform a full accessibility audit.
+
+Explore's [comparison-lab.html](../skills/form-explore/assets/comparison-lab.html) is a standalone, optional type/color specimen. Controls vary the two dimensions independently on fixed content and export proposal data. The default sample uses system family stacks and example semantic colors; an agent must adapt it to actual content/font files before drawing project conclusions.
+
+The optional browser tests exercise those tools against [synthetic fixtures](../evals/fixtures/). [capture-rehearsal.mjs](../scripts/capture-rehearsal.mjs) records real fixture captures and bounded observations. Neither author-run examples nor tool tests establish a general model-quality advantage; the [research report](research/2026-11-03-design-quality.md) defines the comparison controls needed for that claim.

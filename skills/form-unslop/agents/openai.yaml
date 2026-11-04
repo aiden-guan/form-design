@@ -1,0 +1,4 @@
+interface:
+  display_name: "FORM Unslop"
+  short_description: "Diagnose generic design and repair the actual cause"
+  default_prompt: "Use $form-unslop to improve this interface, preserving useful detail and my approved design choices while correcting the causes of its generic appearance."

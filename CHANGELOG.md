@@ -1,6 +1,41 @@
 # Changelog
 
-## Unreleased — 2026-11-02
+## [1.1.0](https://github.com/aiden-guan/form-design/releases/tag/v1.1.0) — 2026-11-03
+
+Expand FORM into three independent skills with contextual diagnostics, user-directed visual comparisons, and inspectable research/evaluation evidence.
+
+### Highlights
+
+| Area | Change | Result |
+| --- | --- | --- |
+| Design | Add reference decomposition, controlled font/color decisions, and explicit preservation checks. | The main skill carries user choices and project specificity into implementation. |
+| Unslop | Add a separate 19-signal checklist with investigation, legitimate-use, and repair guidance; deliberately exclude dithering. | Common treatments are evaluated by their actual role rather than banned by appearance. |
+| Explore | Add a comparison workflow and standalone type/color lab. | Users can inspect, mix, and export visual proposals on comparable content and states. |
+| Evidence | Add primary-source research, reviewed competitor file hashes, synthetic fixtures, and real-browser checks. | Source claims, tool observations, author judgments, and unperformed comparisons are distinguishable. |
+
+### Added
+
+- **FORM Unslop**: Package contextual repair guidance and an optional read-only browser inspector with bounded scan/sample output and explicit limits.
+- **FORM Explore**: Package controlled alternatives, decision handoff guidance, and a local comparison lab with independently selectable type/palette roles and proposal export.
+- **Research**: Record primary design/usability/accessibility sources and a direct review of public Impeccable/Emil skill files. No superiority claim is inferred from source review.
+- **Rehearsals**: Include a fictional workshop before/after and an approved dense-tool counterexample, with actual wide/narrow captures and local interactions.
+- **Forward tests**: Retain requests, raw inputs, outputs, measurements, and actual screenshots from two fresh-context skill tasks: critique of an approved tool and interactive type/color exploration.
+
+### Changed
+
+- **FORM Design**: Strengthen visual-authority handling, real-content comparisons, subject-specific decisions, and checks against destructive simplification.
+- **Release packaging**: Produce three individual skill ZIPs plus the complete suite, each with checksums/manifests, from one version/date/skill-list configuration.
+- **Verification**: Check source equality, safe extraction, local references, and applicable tool execution across all four archives.
+
+### Verification
+
+- **Core**: Nine dependency-free Node tests cover reference retrieval, filters, catalog/provenance fields, contrast, and links across skills.
+- **Browser**: Six real-Chromium tests cover inspection boundaries, read-only behavior, functional status filters, reserve/undo at 1200- and 390-pixel widths, and independent type/palette comparison with checked sample contrast pairs.
+- **Skills**: All three entrypoints pass the skill-creator validator. Archives are extracted into clean folders and checked against source.
+- **Skill use**: Reviewed both independent forward-task outcomes. Reran the generated Explore artifact's 64 browser assertions and checked content preservation, independent choices, stable palette-only geometry, and unapproved proposal status.
+- **Scope**: Author-created synthetic examples and tool tests are not a blinded model comparison. General superiority over another design skill remains untested.
+
+## Documentation update — 2026-11-02
 
 Improve the public repository's demonstration, architecture documentation, and release hygiene while preserving the v1.0.0 skill.
 

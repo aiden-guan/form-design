@@ -1,0 +1,713 @@
+{
+  "environment": "Local headless Chromium, file://, offline context",
+  "checks": [
+    "Local HTML opens with expected title",
+    "Actual headline is preserved",
+    "Actual description is preserved",
+    "sans/moss: error state is visible",
+    "sans/moss: email error is exposed to accessibility APIs",
+    "sans/moss: session can be deselected",
+    "sans/moss: valid local preview works",
+    "sans/moss: valid email clears error",
+    "sans/moss: full-width specimen has no horizontal overflow",
+    "sans/moss: tested text and control-role contrasts pass their thresholds",
+    "sans/moss: 390px reading width has no horizontal overflow",
+    "sans/cobalt: error state is visible",
+    "sans/cobalt: email error is exposed to accessibility APIs",
+    "sans/cobalt: session can be deselected",
+    "sans/cobalt: valid local preview works",
+    "sans/cobalt: valid email clears error",
+    "sans/cobalt: full-width specimen has no horizontal overflow",
+    "sans/cobalt: tested text and control-role contrasts pass their thresholds",
+    "sans/cobalt: 390px reading width has no horizontal overflow",
+    "serif/moss: error state is visible",
+    "serif/moss: email error is exposed to accessibility APIs",
+    "serif/moss: session can be deselected",
+    "serif/moss: valid local preview works",
+    "serif/moss: valid email clears error",
+    "serif/moss: full-width specimen has no horizontal overflow",
+    "serif/moss: tested text and control-role contrasts pass their thresholds",
+    "serif/moss: 390px reading width has no horizontal overflow",
+    "serif/cobalt: error state is visible",
+    "serif/cobalt: email error is exposed to accessibility APIs",
+    "serif/cobalt: session can be deselected",
+    "serif/cobalt: valid local preview works",
+    "serif/cobalt: valid email clears error",
+    "serif/cobalt: full-width specimen has no horizontal overflow",
+    "serif/cobalt: tested text and control-role contrasts pass their thresholds",
+    "serif/cobalt: 390px reading width has no horizontal overflow",
+    "Missing session prevents preview with a text error",
+    "Missing session focuses its control",
+    "Invalid email focuses the email field",
+    "Malformed email is rejected",
+    "Reset clears the email field",
+    "Reset clears status and errors",
+    "Typography controls are reachable by keyboard",
+    "Typography can be changed with Enter",
+    "Palette can be changed with Space",
+    "Workshop navigation preserves the current combination",
+    "A mixed combination survives reload through the URL hash",
+    "sans/moss: no page overflow at 320px",
+    "sans/cobalt: no page overflow at 320px",
+    "serif/moss: no page overflow at 320px",
+    "serif/cobalt: no page overflow at 320px",
+    "sans/moss: no page overflow at 375px",
+    "sans/cobalt: no page overflow at 375px",
+    "serif/moss: no page overflow at 375px",
+    "serif/cobalt: no page overflow at 375px",
+    "sans/moss: no page overflow at 390px",
+    "sans/cobalt: no page overflow at 390px",
+    "serif/moss: no page overflow at 390px",
+    "serif/cobalt: no page overflow at 390px",
+    "sans/moss: no page overflow at 768px",
+    "sans/cobalt: no page overflow at 768px",
+    "serif/moss: no page overflow at 768px",
+    "serif/cobalt: no page overflow at 768px",
+    "No JavaScript page errors",
+    "No HTTP or other non-file requests were made"
+  ],
+  "variants": [
+    {
+      "type": "sans",
+      "palette": "moss",
+      "headingFont": "-apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+      "bodyFont": "-apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+      "fontSize": "61.256px",
+      "headingHeight": 126.15625,
+      "overflow": [],
+      "systemFontChecks": {
+        "sans": true,
+        "serif": true
+      },
+      "contrast": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.47
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.57
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 13.84
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 9.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 11.81
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 7.48
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.53
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.44
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 8.97
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 8.08
+        }
+      ],
+      "narrow": {
+        "width": 390,
+        "overflow": []
+      }
+    },
+    {
+      "type": "sans",
+      "palette": "cobalt",
+      "headingFont": "-apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+      "bodyFont": "-apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+      "fontSize": "61.256px",
+      "headingHeight": 126.15625,
+      "overflow": [],
+      "systemFontChecks": {
+        "sans": true,
+        "serif": true
+      },
+      "contrast": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.71
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.51
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 14.11
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.12
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 7.42
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 10.59
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 6.18
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.76
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.45
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 7.42
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 6.69
+        }
+      ],
+      "narrow": {
+        "width": 390,
+        "overflow": []
+      }
+    },
+    {
+      "type": "serif",
+      "palette": "moss",
+      "headingFont": "Georgia, \"Times New Roman\", ui-serif, serif",
+      "bodyFont": "-apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+      "fontSize": "61.256px",
+      "headingHeight": 126.15625,
+      "overflow": [],
+      "systemFontChecks": {
+        "sans": true,
+        "serif": true
+      },
+      "contrast": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.47
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.57
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 13.84
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 9.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 11.81
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 7.48
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.53
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.44
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 8.97
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 8.08
+        }
+      ],
+      "narrow": {
+        "width": 390,
+        "overflow": []
+      }
+    },
+    {
+      "type": "serif",
+      "palette": "cobalt",
+      "headingFont": "Georgia, \"Times New Roman\", ui-serif, serif",
+      "bodyFont": "-apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+      "fontSize": "61.256px",
+      "headingHeight": 126.15625,
+      "overflow": [],
+      "systemFontChecks": {
+        "sans": true,
+        "serif": true
+      },
+      "contrast": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.71
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.51
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 14.11
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.12
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 7.42
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 10.59
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 6.18
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.76
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.45
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 7.42
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 6.69
+        }
+      ],
+      "narrow": {
+        "width": 390,
+        "overflow": []
+      }
+    }
+  ],
+  "contrast": [
+    {
+      "type": "sans",
+      "palette": "moss",
+      "pairs": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.47
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.57
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 13.84
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 9.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 11.81
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 7.48
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.53
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.44
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 8.97
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 8.08
+        }
+      ]
+    },
+    {
+      "type": "sans",
+      "palette": "cobalt",
+      "pairs": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.71
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.51
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 14.11
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.12
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 7.42
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 10.59
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 6.18
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.76
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.45
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 7.42
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 6.69
+        }
+      ]
+    },
+    {
+      "type": "serif",
+      "palette": "moss",
+      "pairs": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.47
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.57
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 13.84
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 9.19
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 11.81
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 7.48
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.53
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.44
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 8.97
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 8.08
+        }
+      ]
+    },
+    {
+      "type": "serif",
+      "palette": "cobalt",
+      "pairs": [
+        {
+          "fg": "text",
+          "bg": "canvas",
+          "ratio": 12.71
+        },
+        {
+          "fg": "muted",
+          "bg": "canvas",
+          "ratio": 5.51
+        },
+        {
+          "fg": "text",
+          "bg": "surface",
+          "ratio": 14.11
+        },
+        {
+          "fg": "muted",
+          "bg": "surface",
+          "ratio": 6.12
+        },
+        {
+          "fg": "on-action",
+          "bg": "action",
+          "ratio": 7.42
+        },
+        {
+          "fg": "on-action",
+          "bg": "action-hover",
+          "ratio": 10.59
+        },
+        {
+          "fg": "action",
+          "bg": "selected",
+          "ratio": 6.18
+        },
+        {
+          "fg": "text",
+          "bg": "selected",
+          "ratio": 11.76
+        },
+        {
+          "fg": "error",
+          "bg": "error-surface",
+          "ratio": 6.45
+        },
+        {
+          "fg": "focus",
+          "bg": "surface",
+          "ratio": 7.42
+        },
+        {
+          "fg": "focus",
+          "bg": "canvas",
+          "ratio": 6.69
+        }
+      ]
+    }
+  ],
+  "mobile": [
+    {
+      "width": 320,
+      "type": "sans",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "type": "sans",
+      "palette": "cobalt",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "type": "serif",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "type": "serif",
+      "palette": "cobalt",
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "type": "sans",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "type": "sans",
+      "palette": "cobalt",
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "type": "serif",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "type": "serif",
+      "palette": "cobalt",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "type": "sans",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "type": "sans",
+      "palette": "cobalt",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "type": "serif",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "type": "serif",
+      "palette": "cobalt",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "type": "sans",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "type": "sans",
+      "palette": "cobalt",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "type": "serif",
+      "palette": "moss",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "type": "serif",
+      "palette": "cobalt",
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "nonFileRequests": []
+}
