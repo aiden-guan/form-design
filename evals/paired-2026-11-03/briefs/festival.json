@@ -1,0 +1,68 @@
+{
+  "project": "Signal / independent sound festival",
+  "audience": "People discovering experimental live music; phone use while travelling to the venue.",
+  "request": "Build a distinctive, expressive festival programme website with a strong graphic identity. The central task is to explore the lineup and save a personal programme. Use bold composition and original graphic artwork where it helps; keep the schedule readable.",
+  "facts": {
+    "name": "Signal",
+    "tagline": "A day of sound, a little out of place.",
+    "date": "Saturday 21 November 2026",
+    "location": "The Waterworks, Bristol",
+    "hours": "14:00–23:00",
+    "ticket": "£28 day pass",
+    "intro": "Live electronics, close listening and the spaces in between. Three rooms, one day.",
+    "events": [
+      {
+        "id": "e1",
+        "time": "14:00",
+        "artist": "Mira Vale",
+        "set": "Tape loops / live",
+        "room": "Boiler Room"
+      },
+      {
+        "id": "e2",
+        "time": "15:30",
+        "artist": "Low Current",
+        "set": "Modular / live",
+        "room": "Turbine Hall"
+      },
+      {
+        "id": "e3",
+        "time": "17:00",
+        "artist": "Nia North",
+        "set": "Field recordings / listening",
+        "room": "Listening Room"
+      },
+      {
+        "id": "e4",
+        "time": "18:30",
+        "artist": "The Soft System",
+        "set": "Percussion / live",
+        "room": "Turbine Hall"
+      },
+      {
+        "id": "e5",
+        "time": "20:00",
+        "artist": "Aya & the Static",
+        "set": "Electronics / live",
+        "room": "Boiler Room"
+      },
+      {
+        "id": "e6",
+        "time": "21:30",
+        "artist": "Open Frequency",
+        "set": "Collective / live",
+        "room": "Turbine Hall"
+      }
+    ]
+  },
+  "required_behavior": [
+    "Filter by room, including an All reset.",
+    "Save and unsave any event. The saved count and a My programme view must reflect the actual saved selection, including a useful empty state.",
+    "The day pass control must reveal the known price/date/location and clearly explain that checkout is unavailable in this local demo. Do not invent a payment flow."
+  ],
+  "constraints": [
+    "Fictional local demo. No sponsors, testimonials, social counts or other invented proof.",
+    "No fixed palette or typeface; use available system font stacks.",
+    "No external images/fonts/network dependencies. Create original CSS or SVG artwork if useful."
+  ]
+}

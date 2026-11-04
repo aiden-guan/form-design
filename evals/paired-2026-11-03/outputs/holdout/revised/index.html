@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f2e9">
+<title>Kite — Everyday / 01</title>
+<style>
+:root{--canvas:#f4f2e9;--panel:#faf9f4;--ink:#272f27;--muted:#62685c;--line:#d4d7ca;--accent:#c6852a;--paint:#c6852a;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:25px}body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}button,input{font:inherit}button,a,label{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{color:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:5px}.skip{position:absolute;top:-80px;left:20px;z-index:10;background:var(--ink);color:white;padding:14px}.skip:focus{top:12px}.site-header{height:100px;margin:0 4.15%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:25px}.brand{display:flex;align-items:center;gap:18px}.wordmark{font-size:44px;font-weight:850;font-style:italic;letter-spacing:-3px;line-height:1}.brand-note{font-size:10px;line-height:1.5;letter-spacing:1.4px;text-transform:uppercase;border-left:1px solid var(--line);padding-left:18px}.nav{display:flex;align-items:center;gap:30px;font-size:13px}.nav a{padding:13px 0;position:relative}.nav a::after{content:"";position:absolute;bottom:7px;left:0;right:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .18s}.nav a:hover::after{transform:scaleX(1)}.nav .build-link{margin-left:20px;display:flex;align-items:center;gap:18px}.arrow{font-size:19px;font-weight:400}.product{padding:43px 4.15% 35px;display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:55px;max-width:1680px;margin:auto}.visual{min-width:0;position:relative}.eyebrow{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase}.eyebrow .rule{width:28px;height:1px;background:var(--ink)}h1{font-family:var(--serif);font-weight:400;font-size:clamp(56px,5.15vw,82px);line-height:1.015;letter-spacing:-3.5px;margin:24px 0 19px;max-width:760px}h1 span{display:block;font-style:italic}.description{font-size:15px;line-height:1.6;max-width:365px;margin:0;color:#525a4e}.bicycle-stage{position:relative;margin:0 -20px -9px -25px;isolation:isolate}.edition-number{position:absolute;right:3%;top:6%;font-size:clamp(115px,13.5vw,220px);font-family:var(--serif);letter-spacing:-15px;line-height:1;color:#e5e6d9;z-index:-1;user-select:none}.bicycle-stage svg{display:block;width:100%;height:auto;overflow:visible}.preview-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:flex-start;font-size:11px;line-height:1.55;color:var(--muted);border-top:1px solid var(--line);padding-top:15px}.preview-meta .view-label{display:flex;align-items:center;gap:7px;color:var(--ink);font-size:10px;text-transform:uppercase;letter-spacing:1px}.view-dot{width:5px;height:5px;display:inline-block;border-radius:50%;background:currentColor}.preview-meta p{flex:1 1 13em;margin:0 0 0 auto;text-align:right;max-width:250px}.configurator{background:var(--panel);border:1px solid var(--line);padding:27px 27px 22px;align-self:start;position:relative}.config-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:1.6px;color:var(--muted);margin:0 0 11px}.configurator h2{font-size:29px;font-weight:500;line-height:1.15;letter-spacing:-1px;margin:0 0 8px}.config-intro{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 26px}.configurator fieldset{margin:0;padding:0;border:0;min-width:0}.configurator fieldset+fieldset{margin-top:25px}.configurator legend{padding:0;margin:0 0 12px;width:100%;font-size:12px;line-height:1.5;font-weight:600;display:flex;justify-content:space-between;gap:12px}.step{font-size:10px;font-weight:400;color:var(--muted);margin-right:7px}.selected-name{font-weight:400;color:var(--muted)}.sizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,5.2em),1fr));gap:7px}.radio-input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.size-option{position:relative;display:grid;place-items:center;min-height:43px;border:1px solid var(--line);font-size:12px;cursor:pointer;transition:background .15s,border-color .15s}.size-option:hover{border-color:var(--ink)}.size-option:has(input:checked){background:var(--ink);border-color:var(--ink);color:var(--panel)}label:has(input:focus-visible){outline:3px solid var(--ink);outline-offset:4px}.colours{display:flex;gap:22px}.colour-option{position:relative;display:flex;flex-direction:column;align-items:center;gap:7px;cursor:pointer;min-width:49px;font-size:10px;color:var(--muted)}.swatch{height:37px;width:37px;background:var(--swatch);border-radius:50%;border:1px solid #272f2725;display:grid;place-items:center;position:relative;outline:1px solid transparent;outline-offset:4px;transition:outline-color .15s}.swatch svg{width:16px;height:16px;opacity:0;stroke:#fff;fill:none;stroke-width:2.3}.colour-option:has(input:checked){color:var(--ink)}.colour-option:has(input:checked) .swatch{outline-color:var(--ink)}.colour-option:has(input:checked) .swatch svg{opacity:1}.colour-option.chalk .swatch svg{stroke:var(--ink)}.colour-option:hover .swatch{outline-color:var(--muted)}.wheel-options{display:grid;gap:8px}.wheel-option{position:relative;display:flex;align-items:center;gap:10px;min-height:47px;border:1px solid var(--line);padding:10px 12px;cursor:pointer;font-size:12px}.wheel-option:has(input:checked){border-color:var(--ink);background:#edeFe5}.wheel-option:hover{border-color:var(--ink)}.radio-circle{width:13px;height:13px;flex-shrink:0;border:1px solid #878c7c;border-radius:50%;display:grid;place-items:center}.radio-circle::after{content:"";width:5px;height:5px;background:var(--ink);border-radius:50%;transform:scale(0)}.wheel-option:has(input:checked) .radio-circle{border-color:var(--ink)}.wheel-option:has(input:checked) .radio-circle::after{transform:scale(1)}.wheel-extra{margin-left:auto;font-size:11px;white-space:nowrap;color:var(--muted)}.quote-block{margin-top:26px;border-top:1px solid var(--line);padding-top:19px}.price-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:15px}.price-label{flex:1 1 8em;font-size:11px;line-height:1.6}.price-label span{display:block;color:var(--muted);font-size:10px}.total{margin-left:auto;white-space:nowrap;font-family:var(--serif);font-size:32px;line-height:1.1;letter-spacing:-.5px;font-variant-numeric:tabular-nums}.configuration-line{font-size:10px;line-height:1.6;color:var(--muted);margin:12px 0 16px;min-height:16px}.primary{min-height:48px;width:100%;border:1px solid var(--ink);background:var(--ink);color:var(--panel);display:flex;align-items:center;justify-content:space-between;padding:12px 17px;font-size:12px;font-weight:500;transition:background .15s}.primary:hover{background:#424c3b}.primary:active{background:#172017}.local-note{font-size:10px;color:var(--muted);text-align:center;line-height:1.6;margin:10px 0 0}.details{margin:2px 4.15% 0;border-top:1px solid var(--ink);padding:25px 0 30px;display:grid;grid-template-columns:1.25fr repeat(4,1fr);gap:30px;max-width:1600px}.details-heading{font-size:10px;line-height:1.6;text-transform:uppercase;letter-spacing:1.5px;margin:0}.detail-number{display:block;font-size:10px;letter-spacing:1px;color:var(--muted);margin-bottom:12px}.detail-item{font-size:13px;line-height:1.5;margin:0;max-width:155px}.footer{margin:0 4.15%;padding:20px 0;border-top:1px solid var(--line);font-size:10px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}.footer .footer-word{color:var(--ink);font-size:18px;font-weight:800;font-style:italic;letter-spacing:-1px}.footer p{margin:0;line-height:1.6}.footer p:last-child{text-align:right}.footer a{text-decoration:underline;text-underline-offset:3px}dialog{padding:0;border:1px solid var(--ink);background:var(--panel);color:var(--ink);width:min(480px,calc(100% - 32px));max-height:calc(100dvh - 40px);overflow:auto}dialog::backdrop{background:#1d291fd0;backdrop-filter:blur(4px)}.dialog-content{padding:28px}.dialog-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:33px}.dialog-top .wordmark{font-size:30px;letter-spacing:-2px}.close{display:flex;align-items:center;gap:10px;min-height:40px;border:0;background:none;padding:7px 0 7px 12px;font-size:12px}.close:hover{text-decoration:underline;text-underline-offset:4px}.close .cross{font-size:22px;font-weight:300;line-height:1}.dialog-content h2{font-family:var(--serif);font-weight:400;font-size:38px;letter-spacing:-1.3px;line-height:1.1;margin:0 0 12px}.dialog-kicker{font-size:10px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin:0 0 12px}.dialog-description{font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 24px}.summary-list{margin:0 0 22px;border-top:1px solid var(--line)}.summary-list div{display:flex;justify-content:space-between;gap:24px;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5}.summary-list dt{color:var(--muted)}.summary-list dd{margin:0;text-align:right;font-weight:500}.cost-list{margin:0;font-size:12px;line-height:1.8}.cost-list div{display:flex;justify-content:space-between;gap:15px}.cost-list dd{margin:0;font-variant-numeric:tabular-nums}.summary-total{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:18px 0 23px;font-size:13px}.summary-total strong{margin-left:auto;white-space:nowrap;font-family:var(--serif);font-size:35px;font-weight:400;letter-spacing:-1px}.notice{border-left:2px solid var(--ink);padding:0 0 0 13px;margin:0 0 24px;font-size:12px;line-height:1.65;color:#525a4e}.notice strong{display:block;font-weight:600;color:var(--ink)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:1680px){.details{margin-left:auto;margin-right:auto}}@media(max-width:1120px){.product{grid-template-columns:minmax(0,1fr) 350px;gap:28px;padding-top:35px}.configurator{padding:24px}h1{font-size:59px;letter-spacing:-2.7px}.bicycle-stage{margin:20px -12px 0 -20px}.preview-meta{font-size:10px}.details{gap:20px;grid-template-columns:1.05fr repeat(4,1fr)}.nav{gap:22px}}
+@media(max-width:850px){.site-header{height:82px}.brand-note{display:none}.nav>a:not(.build-link){display:none}.nav .build-link{margin-left:0;font-size:12px;gap:12px}.wordmark{font-size:38px}.product{grid-template-columns:minmax(0,1fr);padding-top:30px;gap:32px}.visual{max-width:720px;margin:auto;width:100%}h1{font-size:clamp(48px,8vw,68px);margin-top:20px;letter-spacing:-2.5px}.description{max-width:400px;font-size:14px}.bicycle-stage{margin:8px -4% -3px}.edition-number{font-size:170px;right:7%;top:5%}.configurator{width:100%;max-width:720px;justify-self:center;padding:27px}.config-intro{margin-bottom:25px}.configurator h2{font-size:30px}.configurator legend{font-size:13px}.sizes{gap:10px}.size-option{font-size:13px;min-height:46px}.colours{gap:26px}.colour-option{font-size:11px;gap:10px}.swatch{width:39px;height:39px}.wheel-option{font-size:13px;min-height:50px}.wheel-extra{font-size:12px}.configurator fieldset+fieldset{margin-top:26px}.configuration-line{font-size:11px}.local-note{font-size:11px}.primary{min-height:51px;font-size:13px}.details{margin-top:8px;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 25px;padding-top:23px}.details-heading{grid-column:1/-1}.detail-number{margin-bottom:6px}.detail-item{font-size:13px;max-width:180px}.footer{font-size:10px}.footer p:last-child{max-width:220px}}
+@media(max-width:440px){.site-header{margin:0 24px;height:78px}.product{padding:29px 24px 30px;gap:30px}.eyebrow{font-size:9px;letter-spacing:1.3px;gap:11px}.eyebrow .rule{width:22px}h1{font-size:46px;letter-spacing:-2px;line-height:1.035;margin:20px 0 17px}.description{font-size:13px;line-height:1.65;max-width:295px}.bicycle-stage{margin:12px -20px 0}.edition-number{font-size:120px;letter-spacing:-8px;top:3%;right:7%}.preview-meta{padding-top:12px;gap:18px}.preview-meta .view-label{font-size:8px;letter-spacing:.8px;white-space:nowrap}.preview-meta p{font-size:9px;max-width:155px}.configurator{padding:24px 21px 21px}.configurator h2{font-size:29px}.config-intro{font-size:12px;max-width:245px}.configurator fieldset+fieldset{margin-top:24px}.colour-option{min-width:48px}.colours{gap:20px}.wheel-option{padding:11px 10px;gap:8px}.wheel-extra{font-size:11px}.price-row{align-items:center}.total{font-size:33px}.price-label{font-size:12px}.price-label span{font-size:10px}.configuration-line{font-size:10px;margin-top:10px}.details{margin:0 24px;gap:23px 22px;padding-top:22px}.details-heading{font-size:9px}.footer{margin:0 24px;padding:20px 0 22px;align-items:flex-start}.footer p:last-child{max-width:205px}.dialog-content{padding:23px}.dialog-top{margin-bottom:26px}.dialog-content h2{font-size:35px}.summary-list div{font-size:12px}.notice{font-size:11px}.dialog-description{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a href="#configure" class="skip">Skip to configuration</a>
+<header class="site-header">
+  <a class="brand" href="#bicycle" aria-label="Kite, back to the bicycle"><span class="wordmark">kite.</span><span class="brand-note">Independent<br>steel bicycles</span></a>
+  <nav class="nav" aria-label="Main navigation"><a href="#bicycle">The Everyday</a><a href="#details">The details</a><a class="build-link" href="#configure">Make it yours <span class="arrow" aria-hidden="true">↗</span></a></nav>
+</header>
+<main>
+<section class="product" id="bicycle" aria-labelledby="product-title">
+  <div class="visual">
+    <div class="eyebrow"><span>Everyday / 01</span><span class="rule" aria-hidden="true"></span><span>Made to order</span></div>
+    <h1 id="product-title">Made for the <span>long way home.</span></h1>
+    <p class="description">A made-to-order steel bicycle for daily rides and unhurried weekends.</p>
+    <div class="bicycle-stage">
+      <span class="edition-number" aria-hidden="true">01</span>
+      <svg viewBox="0 0 1000 555" role="img" aria-labelledby="bike-title bike-description" id="bicycle-art">
+        <title id="bike-title">Kite Everyday / 01 in Ochre</title>
+        <desc id="bike-description">An original side-view illustration of a steel bicycle. The frame colour updates with your selection. Proportions and components are illustrative.</desc>
+        <defs>
+          <radialGradient id="tyre" cx=".4" cy=".2" r=".9"><stop stop-color="#4c4c43"/><stop offset=".6" stop-color="#252c27"/><stop offset="1" stop-color="#151d19"/></radialGradient>
+          <linearGradient id="metal" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#a8aaa0"/><stop offset=".3" stop-color="#eeeee6"/><stop offset=".6" stop-color="#a3a69c"/><stop offset="1" stop-color="#4d564c"/></linearGradient>
+          <linearGradient id="frame-paint" x1="0" x2=".35" y1="0" y2="1"><stop stop-color="#ffffff" stop-opacity=".3"/><stop offset=".2" style="stop-color:var(--paint)"/><stop offset="1" style="stop-color:var(--paint)"/></linearGradient>
+          <path id="frame-tubes" d="M260 372 L443 190 L480 372 Z M443 190 L695 182 L711 238 L480 372 M443 190 L480 372"/>
+          <path id="fork-tube" d="M711 238 L736 323 Q743 352 758 372"/>
+          <g id="wheel">
+            <circle r="148" fill="none" stroke="url(#tyre)" stroke-width="19"/>
+            <circle r="142" fill="none" stroke="#c5b190" stroke-width="4.5"/>
+            <circle r="137.5" fill="none" stroke="#454d44" stroke-width="5"/>
+            <circle r="134.5" fill="none" stroke="url(#metal)" stroke-width="2.5"/>
+            <g class="spokes" stroke="#858e80" stroke-width=".8" opacity=".8"></g>
+            <circle r="10" fill="#717b6e" stroke="#d9dcd0" stroke-width="2"/>
+            <circle r="4" fill="#29372b"/>
+          </g>
+        </defs>
+        <ellipse cx="510" cy="530" rx="390" ry="9" fill="#35422c" opacity=".08"/>
+        <path d="M67 530 H934" fill="none" stroke="#b8beac" stroke-width="1"/>
+        <use href="#wheel" transform="translate(260 372)"/>
+        <use href="#wheel" transform="translate(758 372)"/>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M440 184 L427 124" stroke="#535d50" stroke-width="12"/><path d="M440 184 L427 124" stroke="url(#metal)" stroke-width="8"/>
+          <path d="M703 185 L688 139 L715 124" stroke="#3c473c" stroke-width="10"/><path d="M702 181 L690 140 L716 125" stroke="url(#metal)" stroke-width="5"/>
+          <path d="M695 182 L712 238" stroke="#555642" stroke-width="19"/>
+          <use href="#frame-tubes" stroke="#615432" stroke-width="15"/>
+          <use href="#frame-tubes" style="stroke:var(--paint)" stroke-width="12"/>
+          <use href="#frame-tubes" stroke="#ffffff" stroke-opacity=".15" stroke-width="2" transform="translate(0 -3)"/>
+          <use href="#fork-tube" stroke="#5a5135" stroke-width="14"/><use href="#fork-tube" style="stroke:var(--paint)" stroke-width="10"/>
+          <path d="M709 239 L735 323 Q743 351 758 372" stroke="#ffffff" stroke-opacity=".18" stroke-width="2"/>
+          <path d="M704 182 L707 192 M718 234 L710 237" stroke="#373c2f" stroke-width="3"/>
+          <path d="M442 187 L453 184" stroke="#585c49" stroke-width="4"/>
+          <path d="M480 372 L260 372" stroke="#303c31" stroke-opacity=".3" stroke-width="3"/>
+        </g>
+        <g>
+          <path d="M389 119 Q397 111 418 113 L464 116 Q474 118 468 124 L425 132 Q404 132 390 125 Z" fill="#2b332c"/>
+          <path d="M397 117 Q419 117 458 120" stroke="#6c7363" stroke-width="1.5" fill="none"/>
+          <path d="M414 131 L437 131" stroke="#666d5d" stroke-width="3"/>
+          <path d="M714 124 L757 123 Q786 122 793 142 Q798 164 775 173 L760 176" stroke="#29332c" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M750 123 Q782 121 789 141" stroke="#67715f" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M776 130 L784 153" stroke="#151f19" stroke-width="7" stroke-linecap="round"/>
+          <path d="M779 151 Q752 206 718 207 Q688 202 686 232" stroke="#434f40" stroke-width="1.6" fill="none"/>
+          <path d="M765 128 Q722 140 714 177" stroke="#434f40" stroke-width="1.5" fill="none"/>
+          <path d="M714 242 L747 337" stroke="#3c4b38" stroke-width="1.2" fill="none"/>
+        </g>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M260 356 L478 329 A43 43 0 1 1 478 415 L260 388 A16 16 0 0 1 260 356" stroke="#727963" stroke-width="4"/>
+          <path d="M260 356 L478 329 A43 43 0 1 1 478 415 L260 388 A16 16 0 0 1 260 356" stroke="#ced0b7" stroke-width="1.3" stroke-dasharray="2 4"/>
+          <circle cx="480" cy="372" r="43" stroke="#3b4639" stroke-width="3"/>
+          <circle cx="480" cy="372" r="31" stroke="#949b89" stroke-width="3"/>
+          <path d="M480 372 L498 343 M480 372 L448 361 M480 372 L467 401 M480 372 L507 389" stroke="#5d6b58" stroke-width="7"/>
+          <circle cx="480" cy="372" r="11" fill="url(#metal)" stroke="#4a5945" stroke-width="2"/>
+          <path d="M480 372 L521 418" stroke="#29372b" stroke-width="10"/><path d="M480 372 L521 418" stroke="#c0c4b1" stroke-width="5"/>
+          <path d="M506 420 L545 420" stroke="#29372b" stroke-width="12"/><path d="M507 418 L541 418" stroke="#717d68" stroke-width="2"/>
+          <path d="M480 372 L447 331" stroke="#4d5a46" stroke-width="5"/><path d="M432 329 L466 329" stroke="#35422f" stroke-width="8"/>
+          <circle cx="260" cy="372" r="17" stroke="#a8af9a" stroke-width="3"/>
+          <path d="M260 380 L270 404 L283 407" stroke="#45533e" stroke-width="6"/>
+          <circle cx="283" cy="407" r="7" fill="#6a7761" stroke="#37462f" stroke-width="2"/>
+        </g>
+        <g fill="#f8efda" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2"><text transform="translate(568 311) rotate(-30)">KITE</text></g>
+        <g fill="#36432f"><circle cx="459" cy="259" r="2.4"/><circle cx="466" cy="289" r="2.4"/><circle cx="562" cy="322" r="2"/><circle cx="588" cy="307" r="2"/></g>
+        <g stroke="#88967e" stroke-width="2"><path d="M754 237 L754 247"/><path d="M256 237 L256 247"/></g>
+      </svg>
+    </div>
+    <div class="preview-meta"><span class="view-label"><span class="view-dot" aria-hidden="true"></span>Colour preview <span aria-hidden="true">/</span> <span id="preview-colour">Ochre</span></span><p>Original illustration.<br>Proportions and components are illustrative.</p></div>
+  </div>
+  <form class="configurator" id="configure" aria-labelledby="config-title">
+    <p class="config-eyebrow">Your Everyday / 01</p>
+    <h2 id="config-title">Make it yours.</h2>
+    <p class="config-intro">A starting point, open to change.<br>Choose the details that feel like you.</p>
+    <fieldset><legend><span><span class="step">01</span>Frame size</span><span class="selected-name" id="size-name">Medium</span></legend><div class="sizes">
+      <label class="size-option"><input class="radio-input" type="radio" name="size" value="Small">Small</label>
+      <label class="size-option"><input class="radio-input" type="radio" name="size" value="Medium" checked>Medium</label>
+      <label class="size-option"><input class="radio-input" type="radio" name="size" value="Large">Large</label>
+    </div></fieldset>
+    <fieldset><legend><span><span class="step">02</span>Frame colour</span><span class="selected-name" id="colour-name">Ochre</span></legend><div class="colours">
+      <label class="colour-option" style="--swatch:#c6852a"><input class="radio-input" type="radio" name="colour" value="Ochre" data-hex="#c6852a" checked><span class="swatch"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg></span><span>Ochre</span></label>
+      <label class="colour-option" style="--swatch:#315c49"><input class="radio-input" type="radio" name="colour" value="Forest" data-hex="#315c49"><span class="swatch"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg></span><span>Forest</span></label>
+      <label class="colour-option chalk" style="--swatch:#e4dfd3"><input class="radio-input" type="radio" name="colour" value="Chalk" data-hex="#e4dfd3"><span class="swatch"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7"/></svg></span><span>Chalk</span></label>
+    </div></fieldset>
+    <fieldset><legend><span><span class="step">03</span>Wheel option</span></legend><div class="wheel-options">
+      <label class="wheel-option"><input class="radio-input" type="radio" name="wheels" value="City wheels" data-extra="0" checked><span class="radio-circle" aria-hidden="true"></span><span>City wheels</span><span class="wheel-extra">Included</span></label>
+      <label class="wheel-option"><input class="radio-input" type="radio" name="wheels" value="All-road wheels" data-extra="120"><span class="radio-circle" aria-hidden="true"></span><span>All-road wheels</span><span class="wheel-extra">+ £120</span></label>
+    </div></fieldset>
+    <div class="quote-block">
+      <div class="price-row"><div class="price-label">Your configuration<span>GBP · local estimate</span></div><output class="total" id="total" aria-live="polite">£1,650</output></div>
+      <p class="configuration-line" id="configuration-line">Medium · Ochre · City wheels</p>
+      <button class="primary" type="submit" id="review-quote">Review your quote <span class="arrow" aria-hidden="true">↗</span></button>
+      <p class="local-note">Editable proposal. No order or payment is created.</p>
+    </div>
+  </form>
+</section>
+<section class="details" id="details" aria-labelledby="details-heading">
+  <h2 class="details-heading" id="details-heading">Considered<br>from the frame up.</h2>
+  <p class="detail-item"><span class="detail-number">01 / MATERIAL</span>Steel frame<br>and fork</p>
+  <p class="detail-item"><span class="detail-number">02 / EVERYDAY</span>Two bottle<br>mounts</p>
+  <p class="detail-item"><span class="detail-number">03 / POSSIBILITIES</span>Mudguard and<br>rack eyelets</p>
+  <p class="detail-item"><span class="detail-number">04 / PROCESS</span>Built to order<br>in small batches</p>
+</section>
+</main>
+<footer class="footer"><p><span class="footer-word">kite.</span><br>For the long way home.</p><p>Fictional bicycle builder · Offline demonstration<br>Your choices stay in this page.</p></footer>
+<dialog id="quote-dialog" aria-labelledby="quote-title" aria-describedby="quote-description">
+  <div class="dialog-content">
+    <div class="dialog-top"><span class="wordmark" aria-hidden="true">kite.</span><button class="close" type="button" id="close-quote" autofocus>Close <span class="cross" aria-hidden="true">×</span></button></div>
+    <p class="dialog-kicker">Everyday / 01 · Local quote</p>
+    <h2 id="quote-title">Your long way home.</h2>
+    <p class="dialog-description" id="quote-description">An editable proposal for your Everyday / 01.</p>
+    <dl class="summary-list"><div><dt>Frame size</dt><dd id="summary-size">Medium</dd></div><div><dt>Frame colour</dt><dd id="summary-colour">Ochre</dd></div><div><dt>Wheel option</dt><dd id="summary-wheels">City wheels</dd></div></dl>
+    <dl class="cost-list"><div><dt>Everyday / 01</dt><dd>£1,650</dd></div><div><dt id="summary-extra-label">City wheels</dt><dd id="summary-extra">Included</dd></div></dl>
+    <div class="summary-total"><span>Configuration total <span style="color:var(--muted);font-size:10px">GBP</span></span><strong id="summary-total">£1,650</strong></div>
+    <p class="notice"><strong>This quote stays right here.</strong>This is a fictional, offline demonstration. No order or payment is created, and nothing is sent to a builder.</p>
+    <button class="primary" type="button" id="keep-editing">Keep making it yours <span aria-hidden="true">↗</span></button>
+  </div>
+</dialog>
+<script>
+'use strict';
+const form=document.getElementById('configure');
+const dialog=document.getElementById('quote-dialog');
+const money=new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP',maximumFractionDigits:0});
+const value=(name)=>form.querySelector('input[name="'+name+'"]:checked');
+const setText=(id,text)=>document.getElementById(id).textContent=text;
+function currentConfiguration(){return {size:value('size').value,colour:value('colour').value,hex:value('colour').dataset.hex,wheels:value('wheels').value,extra:Number(value('wheels').dataset.extra)};}
+function update(){const c=currentConfiguration();document.documentElement.style.setProperty('--paint',c.hex);setText('size-name',c.size);setText('colour-name',c.colour);setText('preview-colour',c.colour);setText('bike-title','Kite Everyday / 01 in '+c.colour);setText('total',money.format(1650+c.extra));setText('configuration-line',c.size+' · '+c.colour+' · '+c.wheels);}
+form.addEventListener('change',update);
+form.addEventListener('submit',event=>{event.preventDefault();const c=currentConfiguration();setText('summary-size',c.size);setText('summary-colour',c.colour);setText('summary-wheels',c.wheels);setText('summary-extra-label',c.wheels);setText('summary-extra',c.extra?'+ '+money.format(c.extra):'Included');setText('summary-total',money.format(1650+c.extra));dialog.showModal();});
+document.getElementById('close-quote').addEventListener('click',()=>dialog.close());
+document.getElementById('keep-editing').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('keydown',event=>{if(event.key!=='Tab')return;const first=document.getElementById('close-quote');const last=document.getElementById('keep-editing');if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}});
+dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}});
+const spokeGroup=document.querySelector('.spokes');
+for(let i=0;i<32;i++){const angle=i*Math.PI/16;const start=angle+(i%2?0.47:-0.47);const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',Math.cos(start)*9);line.setAttribute('y1',Math.sin(start)*9);line.setAttribute('x2',Math.cos(angle)*134);line.setAttribute('y2',Math.sin(angle)*134);spokeGroup.appendChild(line);}
+update();
+</script>
+</body>
+</html>

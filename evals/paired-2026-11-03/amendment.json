@@ -1,0 +1,13 @@
+{
+  "reason": "Owner identified decorative indicator lights, repeated arrow glyphs, exaggerated italics and remaining unslop-list violations. Normal task-flow success did not satisfy visual acceptance.",
+  "priorPhase": "Rejected stylistically by owner; retained as development evidence. Do not present normal-size functional passes or AI preference as proof of successful unslop.",
+  "finalComparison": "v1.1.0 versus final revision after owner correction; three development cases and the originally reserved fourth brief",
+  "generationConditions": "Two fresh-context final implementations (festival, operations); one maintainer rebuild (reading); one continued-context final implementation (bicycle). Original factual briefs and offline/system-font conditions retained. No equal-effort or causal comparison claim.",
+  "acceptance": [
+    "All brief facts and required interactions remain.",
+    "No decorative status lights, ordinary-action arrow glyphs/icons, or italic accents.",
+    "Review all original 19 signals across real wide/narrow views, relevant states, artwork and pseudo-elements; record concrete exceptions.",
+    "Visual review remains separate from computed-style candidates and task tests."
+  ],
+  "reviewPlan": "Cross-review of different artifacts by agents using the updated Unslop skill, plus maintainer review. No fresh/blinded preference benchmark claim. All 19 signals and the two owner additions require recorded observations and concrete exceptions."
+}

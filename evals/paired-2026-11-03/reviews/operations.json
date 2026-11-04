@@ -1,0 +1,538 @@
+{
+  "artifact": "Dispatch / equipment lending desk",
+  "scope": "Audit only; no target edits",
+  "context": "Continued-context cross-review, not a fresh-context or blinded benchmark",
+  "target": "outputs/operations/final-draft/index.html",
+  "brief": "reviews/evidence/operations/audit/brief.json",
+  "skill": "skills/form-unslop/SKILL.md",
+  "review_basis": [
+    "Provided operations brief",
+    "Target index.html source",
+    "Actual Playwright Chromium output at 1440×1000 and 390×844",
+    "Updated FORM Unslop signals and repair guidance"
+  ],
+  "checked_at": "2026-11-04T05:21:25.218Z",
+  "source_integrity": {
+    "sha256": "10b3ae24afcad89ac599428412d70b17e1e5af428e3795bbfb27b98fc2fb2b49",
+    "matches_recorded_hash": true,
+    "target_edited": false
+  },
+  "reading_path_assessment": {
+    "observation": "The page identifies the desk, shows Loans and the active count, then puts search and status filtering immediately above a comparison table. Selected-loan facts and the local return action occupy the supporting desktop pane. Phone rows preserve each required fact and expose Open.",
+    "decision": "Preserve the navy/blue/system-sans identity and useful density. No structural redesign or removal of operational facts is indicated by the reviewed views."
+  },
+  "signals": [
+    {
+      "id": "U01",
+      "signal": "Tags and pills",
+      "location": ".status-tabs, .state, .demo-label",
+      "observation": "Filters are plain text tabs with active underline and derived counts. Loan states and Offline demo are plain text, not pills.",
+      "decision": "keep",
+      "reason": "Each label communicates an actual filter, loan state or demo scope. Retain this status recognition.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png",
+        "desktop-filtered.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U02",
+      "signal": "Excessive italics",
+      "location": "All rendered UI and inline SVG",
+      "observation": "No italic text was observed; computed inventory found no italic elements.",
+      "decision": "keep",
+      "reason": "Upright text supports rapid scanning without ornamental emphasis.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png",
+        "browser-evidence.json#extras.italicElements"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U03",
+      "signal": "Instrument Serif",
+      "location": "Body, controls and detail panel",
+      "observation": "The approved system sans stack is used. No Instrument Serif or external font is present.",
+      "decision": "keep",
+      "reason": "Preserve the supplied sans identity.",
+      "evidence": [
+        "desktop.png",
+        "browser-evidence.json#desktopInventory.typography"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U04",
+      "signal": "Negative kerning",
+      "location": "Headings, wordmark, controls and records",
+      "observation": "No negative tracking was observed or found in computed styles. Long borrower names wrap at enlarged text without letter collisions.",
+      "decision": "keep",
+      "reason": "Natural tracking preserves legibility.",
+      "evidence": [
+        "desktop-text-200.png",
+        "mobile-text-200.png",
+        "browser-evidence.json#extras.negativeTracking"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U05",
+      "signal": "Over-the-top detailed UI",
+      "location": "Loans workspace, counts and detail panel",
+      "observation": "The surface consists of the actual six-loan comparison, search, status filters, selected-loan facts, local return and undo. Counts are derived from the records and changed correctly.",
+      "decision": "keep",
+      "reason": "This is necessary desk workflow density, not decorative analytics or simulated controls.",
+      "evidence": [
+        "desktop.png",
+        "desktop-returned.png",
+        "mobile-returned.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U06",
+      "signal": "Overusing dividers",
+      "location": ".table, .loan-row, .detail-top, .return-section, .page-foot",
+      "observation": "Rules separate records, table labels, loan facts from the return action, and the footer. The filter underline identifies selection.",
+      "decision": "keep",
+      "reason": "The boundaries support comparison and distinguish an action region; they are not repeated ornamental framing around prose.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png",
+        "mobile-detail.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U07",
+      "signal": "Color shades and opacities",
+      "location": ":root, :focus-visible, loan states and selected rows",
+      "observation": "The navy, blue and cool off-white identity is preserved. Status colors have text equivalents; primary/secondary text has coherent roles. The amber focus outline measures 2.00:1 against white and 1.83:1 against the canvas.",
+      "decision": "change",
+      "reason": "Keep the brand and semantic state colors; strengthen only the focus-indicator contrast rather than globally changing opacity.",
+      "evidence": [
+        "keyboard-focus.png",
+        "browser-evidence.json#contrast"
+      ],
+      "related_unresolved_issues": [
+        "CR-01"
+      ]
+    },
+    {
+      "id": "U08",
+      "signal": "Containers with borders",
+      "location": ".search input, .table, .detail-panel, .dialog and buttons",
+      "observation": "Borders identify input/action affordances and the two meaningful workspace regions: loan comparison and selected-loan actions. Mobile keeps one record list rather than a set of unrelated promo cards.",
+      "decision": "keep",
+      "reason": "Removing these boundaries would weaken selection, field recognition and dense record scanning.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png",
+        "mobile-detail.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U09",
+      "signal": "Overly detailed diagrams",
+      "location": "Inline equipment, search, brand and confirmation SVGs",
+      "observation": "There are no diagrams. Small line icons depict equipment categories, search, close, a local device and return confirmation. No technical labels, fabricated relationships or SVG typography are used.",
+      "decision": "keep",
+      "reason": "These lightweight icons support the actual equipment desk subject and do not substitute a fake technical diagram for content.",
+      "evidence": [
+        "desktop.png",
+        "mobile-detail.png",
+        "desktop-empty.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U10",
+      "signal": "Verbose or redundant text",
+      "location": ".environment, .return-section, .local-note, .page-foot, .keyboard-tip",
+      "observation": "Local/demo limitations repeat near consequential actions and global scope, with distinct purposes. The desktop keyboard hint inaccurately promises Escape will close the permanent detail pane.",
+      "decision": "change",
+      "reason": "Retain the honest local-return qualifiers and equipment-return instruction. Make only the Escape instruction match the current layout.",
+      "evidence": [
+        "desktop-detail.png",
+        "mobile-detail.png",
+        "browser-evidence.json#desktopEscape"
+      ],
+      "related_unresolved_issues": [
+        "CR-02"
+      ]
+    },
+    {
+      "id": "U11",
+      "signal": "Code breadcrumbs",
+      "location": ".loan-id, .small-id and keyboard tips",
+      "observation": "L-1042 through L-1047 are real supplied loan identifiers used for search and record recognition. There are no decorative file paths, build strings or fake code.",
+      "decision": "keep",
+      "reason": "Loan identifiers are required operational facts, not implementation decoration.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png",
+        "mobile-detail.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U12",
+      "signal": "Section numbering",
+      "location": "Loan identifiers and page structure",
+      "observation": "No ornamental section sequence is present. Numeric loan identifiers and count values refer to actual records.",
+      "decision": "keep",
+      "reason": "Preserve IDs and counts; they are needed for the workflow.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U13",
+      "signal": "Eyebrows",
+      "location": ".brand-description, detail definition terms and state labels",
+      "observation": "Equipment lending desk describes the product. Borrower, Due and Status label actual fields. There are no repeated pre-heading eyebrow labels.",
+      "decision": "keep",
+      "reason": "These terms orient staff and keep facts scannable.",
+      "evidence": [
+        "desktop.png",
+        "mobile-detail.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U14",
+      "signal": "ASCII images",
+      "location": "Entire page and SVG content",
+      "observation": "No ASCII/terminal scenery is present.",
+      "decision": "keep",
+      "reason": "The interface stays within the actual loan-desk vocabulary and imagery.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U15",
+      "signal": "Squiggles",
+      "location": "Inline SVGs and pseudo-elements",
+      "observation": "No ornamental doodles, hand-drawn underlines or loose marks were observed. SVG strokes depict actual equipment/commands. The selected-row pseudo-element is a straight blue selection bar.",
+      "decision": "keep",
+      "reason": "These strokes communicate equipment type or real selection, rather than decorative emphasis.",
+      "evidence": [
+        "desktop.png",
+        "mobile-detail.png",
+        "browser-evidence.json#extras.pseudoElements"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U16",
+      "signal": "Excessive mono fonts",
+      "location": "Body and kbd elements",
+      "observation": "Body, records and controls use the approved system sans. Monospace appears only in the two keyboard keycaps.",
+      "decision": "keep",
+      "reason": "Keycap typography distinguishes actual shortcut keys; it does not turn body copy into a technical costume.",
+      "evidence": [
+        "desktop.png",
+        "browser-evidence.json#desktopInventory.typography"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U17",
+      "signal": "ALL CAPS subtitles",
+      "location": "Headings, status controls, loan IDs and equipment names",
+      "observation": "Supporting labels use sentence/title case, not repeated uppercase subtitles. RF, IV and record IDs occur in supplied factual names.",
+      "decision": "keep",
+      "reason": "Preserve actual model abbreviations and identifiers.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U18",
+      "signal": "Gradient backgrounds",
+      "location": "All surfaces, pseudo-elements and inline SVGs",
+      "observation": "No gradients were observed or found in computed backgrounds. The modal uses a flat translucent navy backdrop.",
+      "decision": "keep",
+      "reason": "Flat branded surfaces keep dense information clear; the backdrop identifies the modal layer.",
+      "evidence": [
+        "desktop.png",
+        "mobile-detail.png",
+        "browser-evidence.json#extras.gradients"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "U19",
+      "signal": "Periods in UI",
+      "location": "Buttons, headings, field labels, notifications and instructions",
+      "observation": "Short actions and labels have no ornamental terminal periods. Periods occur in complete instructions and state notifications.",
+      "decision": "keep",
+      "reason": "Sentence punctuation preserves the meaning of truthful guidance and recovery feedback.",
+      "evidence": [
+        "desktop.png",
+        "desktop-returned.png",
+        "mobile-empty.png"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "A01",
+      "signal": "Decorative indicator lights",
+      "location": "States, demo label, brand, icons and pseudo-elements",
+      "observation": "No decorative colored status dots were observed. States are written in words. Camera lenses/magnifiers are recognizable icon geometry; the selected-row bar marks an actual selected record.",
+      "decision": "keep",
+      "reason": "No liveness or availability is implied by an ornamental light. Retain actual selection and state feedback.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png",
+        "browser-evidence.json#extras.pseudoElements"
+      ],
+      "related_unresolved_issues": []
+    },
+    {
+      "id": "A02",
+      "signal": "Ordinary-action arrows",
+      "location": "Open actions, Undo SVG, native status select and other SVGs",
+      "observation": "Open, reset, close and return actions have no appended arrows. The Undo button has a conventional reverse-arrow icon; the native select has its disclosure affordance.",
+      "decision": "keep",
+      "reason": "The Undo arrow refers to the actual required reversal command, and the select arrow exposes a genuine choice list. These are directional/disclosure roles, not outward arrows added to ordinary Open actions.",
+      "evidence": [
+        "desktop.png",
+        "mobile-full.png",
+        "desktop-returned.png"
+      ],
+      "related_unresolved_issues": []
+    }
+  ],
+  "justified_exceptions": [
+    {
+      "treatment": "Row dividers, table/detail boundaries, field/button outlines",
+      "reason": "They support comparison, separate the selected record/action region, and identify actual controls."
+    },
+    {
+      "treatment": "Derived counts and real loan identifiers",
+      "reason": "Counts are calculated from the supplied six records; IDs are required for desk lookup, not decorative section numbers or code breadcrumbs."
+    },
+    {
+      "treatment": "Local/demo qualifiers near action and global scope",
+      "reason": "They explain the consequence of a return and prevent a fictional device-local change from appearing live."
+    },
+    {
+      "treatment": "Monospace keycaps",
+      "reason": "Only actual keyboard shortcut keys use monospace. Body and record typography preserve approved sans."
+    },
+    {
+      "treatment": "Undo reversal icon and native select disclosure",
+      "reason": "They have genuine reversal/disclosure roles. Ordinary Open actions have no appended arrow."
+    },
+    {
+      "treatment": "Selected-row blue pseudo-element and confirmation checks",
+      "reason": "They describe actual selection or the outcome of an executed return, without suggesting liveness through ornamental dots."
+    },
+    {
+      "treatment": "Small equipment SVGs",
+      "reason": "They depict relevant equipment categories and aid record recognition. They are not invented diagrams or proof."
+    }
+  ],
+  "unresolved_issues": [
+    {
+      "id": "CR-01",
+      "severity": "medium",
+      "location": ":focus-visible rule; visible loan-search focus outline",
+      "observation": "The 3px amber outline (#e9ad30) is visibly present but measures 2.00:1 against the white input surface and 1.83:1 against the cool off-white canvas.",
+      "consequence": "The sole focus treatment has a weak contrast difference from adjacent light surfaces, reducing keyboard-focus clarity.",
+      "recommended_correction": "Use an approved navy/blue focus ring, or a two-colour ring with a contrasting edge. Keep a visible focus indicator and recheck it against white, canvas, selected blue and button surfaces. The approved blue measures 6.48:1 on white.",
+      "evidence": [
+        "keyboard-focus.png",
+        "browser-evidence.json#focusStyle",
+        "browser-evidence.json#contrast"
+      ],
+      "status": "unresolved; audit only"
+    },
+    {
+      "id": "CR-02",
+      "severity": "low",
+      "location": ".page-foot .keyboard-tip at 1440px; permanent #desktop-detail",
+      "observation": "The footer says Esc to close details, but after opening L-1043 and pressing Escape the desktop detail pane stayed visible and unchanged. Escape correctly closed the compact dialog in the phone flow.",
+      "consequence": "The desktop advertises an unavailable dismissal command.",
+      "recommended_correction": "Show the Escape hint only where details use a dialog, or label it specifically as a dialog shortcut. Preserve the persistent desktop details pane unless a real dismiss interaction is intentionally introduced.",
+      "evidence": [
+        "desktop-detail.png",
+        "browser-evidence.json#desktopEscape"
+      ],
+      "status": "unresolved; audit only"
+    },
+    {
+      "id": "CR-03",
+      "severity": "low",
+      "location": ".skip fixed top:-60px at doubled text",
+      "observation": "The unfocused skip link grows to 64.59px high but remains positioned at -60px. Its bottom 4.59px appears as a white strip at the top of the header in both enlarged captures.",
+      "consequence": "A hidden utility control leaks into the rendered header after text enlargement.",
+      "recommended_correction": "Hide the link using its own content height, such as a translateY(-100%) plus offset, and restore it on focus. Preserve the working skip action.",
+      "evidence": [
+        "desktop-text-200.png",
+        "mobile-text-200.png",
+        "additional-evidence.json#skip"
+      ],
+      "status": "unresolved; audit only"
+    }
+  ],
+  "actual_checks": [
+    {
+      "name": "Required facts and initial counts",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Rendered text assertions against all six supplied records",
+      "result": "passed",
+      "observed": "Every ID, person, equipment name, due day/time and initial state was present. Initial totals were 6 active, 2 overdue, 2 due today, 2 on loan, 0 returned.",
+      "evidence": [
+        "desktop.png",
+        "desktop-full.png"
+      ]
+    },
+    {
+      "name": "Search and combined status filtering",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Search Amara, recorder and L-1047; combine Amara with Overdue; reset",
+      "result": "passed",
+      "observed": "Each field found its correct record. Incompatible query/filter showed No matching loans and a reset that cleared query and status. Overdue alone showed two loans.",
+      "evidence": [
+        "desktop-filtered.png",
+        "desktop-empty.png"
+      ]
+    },
+    {
+      "name": "Desktop local return, persistence and undo",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Open and return L-1043; reload; Undo last return. Sequentially return L-1042 then L-1045 and undo once.",
+      "result": "passed",
+      "observed": "State and relevant counts updated. The L-1043 return persisted in isolated browser storage and undo restored Overdue. With sequential returns, undo restored only L-1045 while L-1042 remained returned. Test storage was reset in the isolated context.",
+      "evidence": [
+        "desktop-detail.png",
+        "desktop-returned.png"
+      ]
+    },
+    {
+      "name": "Narrow fact discovery and mobile actions",
+      "viewport": [
+        390,
+        844
+      ],
+      "method": "Touch context; assert all six records; filter On loan + Alexandria; open L-1044; return and Undo this return",
+      "result": "passed",
+      "observed": "All facts remained in stacked records, including the longest name and equipment. Local return and undo changed state and counts correctly.",
+      "evidence": [
+        "mobile-full.png",
+        "mobile-long-loan.png",
+        "mobile-detail.png",
+        "mobile-returned.png"
+      ]
+    },
+    {
+      "name": "Dialog close, Escape, focus return and empty reset",
+      "viewport": [
+        390,
+        844
+      ],
+      "method": "Escape and visible X close on L-1044; wait for close event; incompatible search; reset",
+      "result": "passed",
+      "observed": "Both dismissal methods worked and focus returned to the L-1044 Open button after the close event. Reset restored all six records. An immediate pre-close-event assertion was not treated as a focus defect.",
+      "evidence": [
+        "mobile-empty.png",
+        "browser-evidence.json#mobileFocusReturn"
+      ]
+    },
+    {
+      "name": "Keyboard search shortcut and focus appearance",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "Press / and inspect focused loan-search outline",
+      "result": "passed with contrast finding CR-01",
+      "observed": "Search received focus. The ring uses #e9ad30 at 3px with a 3px offset.",
+      "evidence": [
+        "keyboard-focus.png",
+        "browser-evidence.json#focusStyle"
+      ]
+    },
+    {
+      "name": "Enlarged text and long coupled content",
+      "viewports": [
+        [
+          1440,
+          1000
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "method": "Snapshot computed font sizes, double all HTML text sizes in the browser, inspect full-page rows and the already-open L-1044 detail dialog",
+      "result": "required facts readable; minor skip-link finding CR-03",
+      "observed": "Names, equipment, due values, state labels and Open actions remained discoverable. The long detail used vertical scrolling: 1127px content within an 812px-tall dialog, with equal 328px client/scroll widths. The 26px return label grew within a 99px-high button and remained reachable at the bottom. No painted-glyph collision was identified in the reviewed required data.",
+      "evidence": [
+        "desktop-text-200.png",
+        "mobile-text-200.png",
+        "mobile-detail-text-200.png",
+        "mobile-detail-text-200-bottom.png",
+        "browser-evidence.json#enlargedDialog",
+        "additional-evidence.json#action"
+      ]
+    },
+    {
+      "name": "All checklist signals, SVGs and pseudo-elements",
+      "method": "Source inspection, actual captures, bounded computed-style inspector and manual SVG/pseudo review",
+      "result": "completed",
+      "observed": "All original 19 signals plus indicator lights and ordinary-action arrows reviewed. Pseudo-elements are the actual selected-row bar and mobile due punctuation. No italic, negative-tracking or gradient elements were found. Inspector scans stayed below their node cap.",
+      "evidence": [
+        "browser-evidence.json#extras",
+        "additional-evidence.json#punctuation"
+      ]
+    },
+    {
+      "name": "Reduced motion, contrast samples and offline behavior",
+      "method": "Emulate reduced motion, calculate opaque color-pair ratios, monitor requests and page errors in the recorded run",
+      "result": "completed",
+      "observed": "Button transition duration becomes 0s with reduced motion. Muted text measured 5.46:1 on white and 5.00:1 on canvas. Recorded run had zero external requests and zero uncaught JavaScript errors.",
+      "evidence": [
+        "browser-evidence.json#contrast",
+        "browser-evidence.json#externalRequests",
+        "browser-evidence.json#errors",
+        "additional-evidence.json#reducedMotion"
+      ]
+    }
+  ],
+  "evidence_directory": "<evaluation-workspace>/operations-cross-review-assets",
+  "evidence_data": [
+    "browser-evidence.json",
+    "additional-evidence.json"
+  ],
+  "limits": [
+    "Chromium headless and its touch emulation were used; physical devices and other browser engines were not tested.",
+    "Doubled-font stress is not actual browser zoom or a complete accessibility audit.",
+    "Contrast measurements cover specified opaque pairs, not every state or a full conformance assessment.",
+    "Blocked storage, assistive-technology reading order and live backend behavior were not tested. The supplied app is explicitly a local offline demo.",
+    "Computed-style candidate observations were interpreted alongside real renders; counts were not converted to a taste score.",
+    "This is continued-context cross-review. No handoffs, earlier versions, other case artifacts or evaluation documents were read."
+  ],
+  "publicationNote": "Substantive observations retained; local paths normalized. Audit findings concern the preserved pre-repair snapshot; repair verification concerns the corrected example."
+}

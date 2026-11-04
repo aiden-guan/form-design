@@ -1,0 +1,398 @@
+{
+  "review_type": "Independent cross-review; not a blinded or fresh-context benchmark",
+  "mode": "Audit only; artifact source was not edited",
+  "artifact": "outputs/reading/final-draft/index.html",
+  "artifact_sha256": "ddbfe1e4c6b4949ea44da2f948d95dfb001f329dd8e33828422341bbee3f77d2",
+  "brief": "reviews/evidence/reading/audit/brief.json",
+  "skill": "skills/form-unslop",
+  "reviewed_resources": [
+    "SKILL.md",
+    "references/signals.md",
+    "references/repair-method.md",
+    "references/browser-inspection.md",
+    "scripts/inspect-page.mjs"
+  ],
+  "input_boundary": "Read the supplied HTML, original reading brief, indicated skill resources and actual browser observations. No artifact handoffs, author conclusions, prior evaluation notes or other case artifacts were read.",
+  "summary": "The normal desktop and mobile views support the supplied reading task. No unsupported instance of the 19 checklist signals or the two additional ornamental defaults was found in the inspected UI or SVG artwork. One responsive typography issue remains in mobile details under enlarged text.",
+  "remaining_issues": [
+    {
+      "id": "R1",
+      "severity": "moderate",
+      "kind": "responsive typography",
+      "decision": "change",
+      "location": [
+        "@media(max-width:520px) .detail",
+        "@media(max-width:520px) .detail h2",
+        "#detail-title for b2 and b4"
+      ],
+      "condition": "390×844, HTML text and inputs at 200% of their computed font sizes; SVG covers remain unchanged",
+      "observation": "The detail grid keeps a 100px cover and 18px gap, leaving about 194px for the enlarged title. A Map of Small Distances breaks Distances into Distance / s; Ways of Making and Remaking a Home breaks Remaking into Remakin / g. The long title also pushes the reading-state choices below the initial modal viewport.",
+      "consequence": "Important identifying text becomes harder to read, and moving a long-title book requires extra modal scrolling. overflow-wrap:anywhere prevents horizontal overflow but does not resolve the cramped relationship.",
+      "correction": "At this narrow content width or enlarged text setting, let the title and author span the full detail width and stack or relocate the cover. Preserve the full text and native scrolling; recheck b2 and b4 at the same condition without reducing the enlarged type.",
+      "evidence": [
+        "mobile-enlarged-detail-b2.png",
+        "mobile-enlarged-detail-b4.png",
+        "mobile-enlarged-detail-b4-controls.png"
+      ],
+      "functional_boundary": "The dialog scrolls and the state action remained reachable and successful for all four enlarged details; Escape and sensible focus return also passed. This is an arrangement/readability issue, not a lost control or horizontal overflow.",
+      "signal_relationship": "No negative tracking is present. This finding concerns the coupled cover/title layout rather than a forbidden font or ornamental signal."
+    }
+  ],
+  "signal_review": [
+    {
+      "id": "U01",
+      "signal": "Tags & pills",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".filters .filter",
+        ".book-info .state",
+        ".state-choices .state-choice"
+      ],
+      "observation_and_reason": "The filters and state choices are unboxed text controls with real selected state; shelf state is a plain label. Counts were verified after every state change. Keep the useful status and selection meaning."
+    },
+    {
+      "id": "U02",
+      "signal": "Excessive italics",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "header",
+        ".book-title",
+        ".detail h2",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "No decorative italic headline or cover accents appear. The SVG titles and authors use upright Georgia."
+    },
+    {
+      "id": "U03",
+      "signal": "Instrument Serif",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "html",
+        ".brand",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "Instrument Serif is not used. System sans-serif carries the interface; Georgia is confined to the wordmark and actual book-cover typography. No font replacement is indicated."
+    },
+    {
+      "id": "U04",
+      "signal": "Negative kerning",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".brand",
+        ".book-title",
+        ".detail h2",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "No negative letter spacing is authored or visible. The enlarged-title issue is caused by a narrow fixed grid relationship, not tracking; it is reported separately as R1."
+    },
+    {
+      "id": "U05",
+      "signal": "Over-the-top detailed UI",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "main",
+        "#detail"
+      ],
+      "observation_and_reason": "The UI contains the actual search, filters, books, facts and state controls requested by the brief. There are no fake analytics, reviews, ratings or inactive demonstration controls."
+    },
+    {
+      "id": "U06",
+      "signal": "Overusing dividers",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".filter[aria-pressed=true]",
+        ".state-choice[aria-pressed=true]"
+      ],
+      "observation_and_reason": "There are no repeated section rules. The short underline beneath a selected filter or state communicates actual selection, and remains worth keeping."
+    },
+    {
+      "id": "U07",
+      "signal": "Color shades & opacities",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "html",
+        "header p",
+        ".author",
+        ".state",
+        "dialog::backdrop",
+        ".cover svg"
+      ],
+      "observation_and_reason": "Body, secondary text and action colors have distinct roles. Sample interface contrasts are strong. The translucent backdrop communicates modality; the cover palettes belong to the individual artwork rather than a ladder of faded UI labels."
+    },
+    {
+      "id": "U08",
+      "signal": "Containers with borders",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".search input",
+        "button:focus-visible",
+        "input:focus-visible"
+      ],
+      "observation_and_reason": "The search-field border identifies an input, and focus outlines identify keyboard position. Books are not enclosed in repeated bordered cards. Preserve these working boundaries."
+    },
+    {
+      "id": "U09",
+      "signal": "Overly detailed diagrams",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "#book-b2 .cover svg",
+        "#detail-cover svg"
+      ],
+      "observation_and_reason": "The b2 cover uses a small, simple street-grid illustration tied to A Map of Small Distances. It is artwork, not a fake system diagram or a replacement for product evidence."
+    },
+    {
+      "id": "U10",
+      "signal": "Verbose, redundant text",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "header p",
+        ".search label",
+        "#empty",
+        "footer",
+        "#detail .note",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "The compact tagline, search label, recovery copy and fictional-data notices have distinct jobs. Title/author repetition in printed cover artwork plus HTML labels preserves both cover identity and readable accessible book labels; it is not repeated interface framing."
+    },
+    {
+      "id": "U11",
+      "signal": "Code breadcrumbs",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "main",
+        "#detail",
+        ".cover svg"
+      ],
+      "observation_and_reason": "No file paths, version strings or code-themed text decorate the customer flow."
+    },
+    {
+      "id": "U12",
+      "signal": "Section numbering",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "main",
+        "#detail",
+        ".cover svg"
+      ],
+      "observation_and_reason": "No ornamental sequence numbers occur. Book counts and page totals are factual values."
+    },
+    {
+      "id": "U13",
+      "signal": "Eyebrows",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".search label",
+        ".state-field legend",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "Find a book labels the search input, and Reading state labels its choice group. These are useful form orientation, not repeated introductory scaffolding. The Essays text in b1 artwork states the supplied genre."
+    },
+    {
+      "id": "U14",
+      "signal": "ASCII images",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".cover svg",
+        "main"
+      ],
+      "observation_and_reason": "No ASCII or terminal-style imagery occurs."
+    },
+    {
+      "id": "U15",
+      "signal": "Squiggles",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "#book-b2 .cover svg",
+        "#book-b3 .cover svg",
+        "#book-b4 .cover svg"
+      ],
+      "observation_and_reason": "The map, botanical form and doorway are simple cover illustrations tied to their book subjects. The botanical curves depict a plant; they are not unassigned doodles, emphasis marks or loose ornamental squiggles."
+    },
+    {
+      "id": "U16",
+      "signal": "Excessive mono fonts",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "html",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "No monospace typography is used. UI reading remains in the system sans-serif stack."
+    },
+    {
+      "id": "U17",
+      "signal": "ALL CAPS subtitles",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "header",
+        ".search label",
+        ".filter",
+        ".book-info",
+        "#detail",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "Supporting labels, titles and SVG cover text use ordinary title or sentence case. No repeated small uppercase scaffold appears."
+    },
+    {
+      "id": "U18",
+      "signal": "Gradient backgrounds",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "html",
+        "dialog",
+        ".cover svg"
+      ],
+      "observation_and_reason": "Surfaces and covers use solid fills. There are no ambient gradients or haze behind text."
+    },
+    {
+      "id": "U19",
+      "signal": "Periods in UI",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".filter",
+        "#close",
+        "#reset",
+        "#feedback",
+        "footer",
+        "#detail-description",
+        ".cover svg text"
+      ],
+      "observation_and_reason": "Short action and filter labels have no ornamental periods. Sentence punctuation in notes and feedback, and the initials N. K. Adeyemi in HTML and SVG, preserve necessary language."
+    },
+    {
+      "id": "A01",
+      "signal": "Additional default: indicator lights",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        "header",
+        ".filter",
+        ".state",
+        "#detail",
+        ".cover svg"
+      ],
+      "observation_and_reason": "There are no decorative round status, demo, availability or brand lights. Actual reading state is expressed in words and selected controls."
+    },
+    {
+      "id": "A02",
+      "signal": "Additional default: arrow glyphs and icons",
+      "unsupported_instance_observed": false,
+      "decision": "keep",
+      "locations_checked": [
+        ".book",
+        ".filter",
+        "#close",
+        "#reset",
+        ".cover svg"
+      ],
+      "observation_and_reason": "No ordinary action, row, cover or caption carries an appended arrow or chevron. The SVG map and doorway contain no arrow motif."
+    }
+  ],
+  "significant_exceptions_kept": [
+    {
+      "treatment": "Selected-state underlines and real reading-state text",
+      "reason": "They communicate the active filter or actual book state; removing them would weaken the central task."
+    },
+    {
+      "treatment": "Search border and visible focus outlines",
+      "reason": "These are actual input and keyboard affordances, not fragmented content containers."
+    },
+    {
+      "treatment": "Upright serif cover type, street grid, botanical shape and doorway",
+      "reason": "The brief explicitly asks for original typographic covers or simple SVG artwork. These motifs identify the supplied fictional books and do not add generic arrows, lights, italics or unassigned marks."
+    },
+    {
+      "treatment": "Fictional-data and local-storage notices",
+      "reason": "They preserve truthful demo boundaries in the shelf and detail contexts."
+    }
+  ],
+  "actual_checks": {
+    "browser": "Headless Chromium via the supplied local Playwright installation; file:// loading",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "rendered_states": [
+      "Initial shelf at both sizes",
+      "All four book details at both sizes",
+      "Combined Reading filter plus author search with no results",
+      "Empty-state reset",
+      "All four details and shelf with enlarged HTML text",
+      "Enlarged long-title detail after reaching the reading-state controls"
+    ],
+    "operated_flows": [
+      "All, Want to read, Reading and Finished filters with actual counts",
+      "Title search quiet; author searches MORI and whitespace-padded tomas",
+      "Clear search and combined filter/search empty state",
+      "Show all books reset clears both query and filter",
+      "Open every book and verify title, author, kind, page count and supplied note",
+      "Change every book through Want to read, Reading and Finished, verifying shelf state and filter counts",
+      "Escape and visible Close for every normal-size detail",
+      "Initial Close focus and return to the current book",
+      "Move a book out of the active Reading filter and verify fallback focus to that filter",
+      "Reach and operate Reading in each enlarged detail, then Escape and book focus return"
+    ],
+    "assertions_passed": 130,
+    "assertion_failures": [],
+    "page_errors": [],
+    "external_network_requests": [],
+    "enlarged_text_method": "200% computed font sizes applied to actual HTML text nodes and inputs, including dynamically populated detail text and recreated choices; SVG artwork remains proportionally intact. This is a text stress test, not a full browser zoom audit.",
+    "overflow_result": "No horizontal page overflow at either requested size, normal or enlarged; enlarged dialog clientWidth and scrollWidth were both 352px on mobile. Vertical dialog scrolling remains available.",
+    "representative_contrast_pairs": [
+      {
+        "foreground": "#242b2d",
+        "background": "#f8f7f2",
+        "ratio": "13.42:1"
+      },
+      {
+        "foreground": "#51595b",
+        "background": "#f8f7f2",
+        "ratio": "6.68:1"
+      },
+      {
+        "foreground": "#315b68",
+        "background": "#f8f7f2",
+        "ratio": "6.93:1"
+      },
+      {
+        "foreground": "#254b57",
+        "background": "#f8f7f2",
+        "ratio": "8.81:1"
+      }
+    ],
+    "contrast_boundary": "Opaque solid-color calculations only, not a complete accessibility or artwork contrast audit.",
+    "svg_review": "Viewed all four covers in shelf and detail contexts at desktop and mobile. Inspected SVG text and path content for italic accents, negative tracking, arrows, lights, generic decorative diagrams, gradients and unassigned marks."
+  },
+  "evidence_directory": "<evaluation-workspace>/reading-cross-review-evidence",
+  "limits": [
+    "Headless Chromium only; no physical device, other browser engine or screen-reader audit.",
+    "Text enlargement was a controlled CSS stress test rather than actual browser zoom.",
+    "No claim of complete accessibility or production verification.",
+    "No edits, external network use, delegation or publication were performed."
+  ],
+  "publicationNote": "Substantive observations retained; local paths normalized. Audit findings concern the preserved pre-repair snapshot; repair verification concerns the corrected example."
+}

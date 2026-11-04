@@ -3,12 +3,14 @@ name: form-explore
 description: Create and compare visual directions, typography, or color alternatives using the same real content and task states. Use when a user wants design options, help choosing fonts/colors, a reference-based direction, or a mix of selected variants. Produce inspectable alternatives and carry the user's selections into a coherent system.
 license: See LICENSE.txt and NOTICE.md
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # FORM Explore
 
 Make visual decisions easier by showing meaningful alternatives under comparable conditions. The output is a useful choice and its consequences, not a large moodboard or a collection of near-identical themes.
+
+Keep the comparison controls quiet. Begin without decorative status lights, arrow glyphs on ordinary actions, italic headline accents, pill labels, and repeated eyebrows. Let the actual candidate typography, composition, imagery, and semantic color roles carry the difference. Preserve an explicitly selected style; a comparison is not permission to add a shared layer of generic ornament to every option.
 
 This skill works independently of other FORM skills, paid services, or a particular framework. Use the host's available design, rendering, and prototyping tools. Image generation is optional; an image comp is a proposal, not evidence of a working interface.
 

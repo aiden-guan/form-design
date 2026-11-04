@@ -1,0 +1,130 @@
+{
+  "target": "outputs/festival/final/index.html",
+  "status": "verified",
+  "modifiedFiles": [
+    "outputs/festival/final/index.html"
+  ],
+  "scope": "Only the public evaluation festival HTML was modified. The original temporary draft, skill files, other cases, global tests and handoffs were not edited. No publication performed.",
+  "repairs": [
+    {
+      "id": "R01",
+      "change": "Shared content-sized schedule columns use CSS subgrid so enlarged time labels and header labels determine real track widths; artist/set/room text can reflow. No new DOM wrappers."
+    },
+    {
+      "id": "R02",
+      "change": "Header groups wrap within the viewport. The native day-pass dialog has an explicit viewport max width and a shrinkable title column beside a content-sized Close control. Price caption stays together."
+    },
+    {
+      "id": "R03",
+      "change": "Mobile wave artwork occupies the row after the actual wordmark height instead of a clamp-derived title offset. The original SVG is unchanged."
+    },
+    {
+      "id": "R04",
+      "change": "Dialog title is Day pass. The ornamental frequency caption is replaced by the actual filtered result count, including saved/room context."
+    }
+  ],
+  "beforeAfter": {
+    "900x1000_doubledText": {
+      "timeArtistOverlapRows": {
+        "before": 6,
+        "after": 0
+      },
+      "minimumTimeArtistGapPx": {
+        "before": -22.125,
+        "after": 18.0
+      },
+      "horizontalPageOverflowPx": {
+        "before": 16,
+        "after": 0
+      },
+      "headerDayPassRightPx": {
+        "before": 916.15625,
+        "after": 304.359375
+      }
+    },
+    "390x844_doubledText": {
+      "wordmarkArtworkBoxOverlapAreaPx2": {
+        "before": 21452.96875,
+        "after": 0
+      },
+      "artworkTopMinusWordmarkBottomPx": {
+        "before": -276.8125,
+        "after": 0.0
+      },
+      "dialogHorizontalOverflowPx": {
+        "before": 7,
+        "after": 0
+      },
+      "dialogCloseFullyContained": {
+        "before": false,
+        "after": true
+      },
+      "dialogTitle": {
+        "before": "One day. Three rooms.",
+        "after": "Day pass"
+      }
+    }
+  },
+  "actualVerification": {
+    "browser": "Playwright Chromium, local file URL, device scale factor 1",
+    "assertionsPassed": 87,
+    "assertionsFailed": 0,
+    "normalCoreFlowViewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "coreFlows": "At each normal viewport: all room filters and All reset; exact factual result captions; save and unsave each of six events; real saved count; reload persistence; My programme; empty programme recovery; combined saved/room empty state and reset; native day-pass facts, unavailable checkout, Close, Escape and restored focus.",
+    "doubledTextViewports": [
+      "1440x1000",
+      "900x1000",
+      "390x844"
+    ],
+    "doubledTextChecks": "Computed font sizes doubled from a snapshot in the transient browser DOM. Checked all six time/artist pairs, artist/set/room relationships, Save containment, header day-pass containment and page overflow. At 390px also checked wordmark/art clearance, dialog Close containment, horizontal overflow, reachable demo notice through vertical dialog scrolling, and Escape.",
+    "normalWidthsWithoutHorizontalOverflowPx": [
+      320,
+      390,
+      700,
+      701,
+      900,
+      1100,
+      1101,
+      1440
+    ],
+    "exactOriginalFactsPreserved": true,
+    "originalSvgUnchangedSha256": "035b0b468923fc5457746d9ec6babf11e828c3af08b477aa2df597d173fc41cd",
+    "uprightNaturalTypographyAndPlainFiltersPreserved": true,
+    "generatedDecorativePseudoContentAdded": false,
+    "runtimeErrors": [],
+    "externalNetworkRequests": [],
+    "manualRenderInspection": "Inspected actual normal desktop/mobile home, programme, empty and dialog captures, plus exact enlarged 900px header/schedule and 390px hero/dialog/notice captures."
+  },
+  "evidence": {
+    "directory": "<review-workspace>/festival-final-repair-BYFJGM",
+    "captures": [
+      "before-900-header.png",
+      "before-900-programme.png",
+      "before-390-hero.png",
+      "before-390-dialog.png",
+      "after-900-header.png",
+      "after-900-programme.png",
+      "after-390-hero.png",
+      "after-390-dialog.png",
+      "after-390-dialog-notice.png",
+      "normal-1440-home.png",
+      "normal-1440-programme.png",
+      "normal-1440-empty.png",
+      "normal-390-home.png",
+      "normal-390-programme.png",
+      "normal-390-dialog.png"
+    ],
+    "detailedChecks": "final-checks.json"
+  },
+  "limits": [
+    "Chromium only; other browsers, physical devices and screen readers were not exercised.",
+    "Doubled computed-font stress is not actual browser zoom or a full accessibility audit.",
+    "The shared-column layout uses CSS subgrid, supported in the tested browser; older engines without subgrid were not tested.",
+    "The enlarged dialog intentionally scrolls vertically; its demo notice was reached and inspected.",
+    "No live checkout, payment, publication or external integration was tested or added."
+  ],
+  "publicationNote": "Substantive observations retained; local paths normalized. Audit findings concern the preserved pre-repair snapshot; repair verification concerns the corrected example."
+}

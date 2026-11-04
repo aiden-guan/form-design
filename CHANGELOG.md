@@ -1,5 +1,37 @@
 # Changelog
 
+## [1.2.0](https://github.com/aiden-guan/form-design/releases/tag/v1.2.0) — 2026-11-03
+
+Apply the unslop criteria before implementation, correct the examples after owner rejection, and retain failures and repair evidence.
+
+### Highlights
+
+| Area | Change | Reason |
+| --- | --- | --- |
+| Repeat-use composition | Tie opening-view space to task frequency and consolidate repeated framing. | The previous version's app outputs spent space on overlapping context and instructional chrome. |
+| Text enlargement | Inspect adjacent text and control contents, then repeat the same affected check after correction. | The previous festival output had time/title collisions and escaped button labels under doubled text; page-width checks alone missed other control crowding. |
+| Evidence | Retain rejected drafts, four corrected examples, task/style checks and full-checklist cross-reviews. | Fresh drafts, guided corrections and measured behavior are identified separately. |
+
+### Changed
+
+- **FORM Design**: Strengthen first-view allocation, responsive intrinsic sizing, and reading-size critique in the entrypoint and relevant references. Preserve the existing brand, useful density, expressive identity, and optional-tool boundaries.
+- **Unslop defaults**: Explicitly exclude decorative lights, ordinary-action arrows (including labelled Undo actions), italic accents and related defaults. Review all 19 signals, artwork and pseudo-elements.
+- **Optional inspector**: Observe arrow glyphs, small round markers, inline SVG italics and bounded text-layout candidates without issuing a taste verdict.
+- **Explore**: Remove negative tracking and the unnecessary preview border from the lab; keep controls quiet. The reference catalog is unchanged.
+- **Repository presentation**: Link actual generated outputs and the limited paired-pilot evidence alongside the existing research and synthetic rehearsals.
+
+### Added
+
+- **Development record**: Preserve the initial plan and owner-rejected candidates, then document the changed acceptance criteria and guided corrections. Do not present the final examples as an equal-effort model benchmark.
+- **Offline gallery**: Open both saved versions at equivalent desktop/mobile sizes, with links to the actual-size pages and underlying reports.
+- **Evidence packaging**: Build a separate optional archive with saved code, original synthetic data/artwork, real captures, task checks, review records, and explicit methodological limits.
+
+### Verification
+
+- **Core and utilities**: Nine dependency-free tests, nine optional Chromium tests, and all three skill-entrypoint validators pass.
+- **Skill archives**: All four ZIPs pass digest, source-equality, safe-extraction, relative-link, and applicable extracted-tool checks.
+- **Evaluation scope**: See the [pilot results](evals/paired-2026-11-03/results.md) for recorded outcomes. Single-run pairs and same-family AI reviewers do not establish a general aesthetic ranking or superiority over another skill.
+
 ## [1.1.0](https://github.com/aiden-guan/form-design/releases/tag/v1.1.0) — 2026-11-03
 
 Expand FORM into three independent skills with contextual diagnostics, user-directed visual comparisons, and inspectable research/evaluation evidence.

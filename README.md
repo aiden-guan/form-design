@@ -8,9 +8,11 @@
 npx skills add aiden-guan/form-design
 ```
 
-![FORM Design: art direction, visual craft, and three real offline search results for “retro texture but not glass.”](docs/assets/hero.svg)
+| Reading shelf | Bicycle configuration |
+| --- | --- |
+| ![Corrected fictional reading app with upright covers and plain state labels](evals/paired-2026-11-03/outputs/reading/final/captures/wide.png) | ![Corrected fictional bicycle page with actual configuration controls](evals/paired-2026-11-03/outputs/holdout/final/captures/wide.png) |
 
-*The graphic condenses actual CLI output. [Inspect the captured JSON](docs/assets/search-demo.json) or [reproduce it](docs/presentation.md).*
+These are actual runnable examples, with original synthetic content. [Download the offline gallery](https://github.com/aiden-guan/form-design/releases/latest/download/form-design-evidence.zip) or read the [development results and limits](evals/paired-2026-11-03/results.md). Earlier drafts were rejected for violating the unslop criteria and are retained in the record. The corrected examples include reviewed repairs; they are not an unassisted model benchmark.
 
 FORM gives an agent a concrete way to choose a visual direction, build a coherent system, and review the result. It combines design guidance with offline discovery across **13,351 attributed public references**. Your existing brand, framework, and requested scope guide the work.
 
@@ -68,9 +70,9 @@ Research is organized into **13 practitioner lenses**, including Frank Chimero, 
 
 The [separate 19-signal checklist](skills/form-unslop/references/signals.md) adapts the supplied Charles Liu notes into **when to investigate → when to keep → what to change**. It covers pills, italic accents, arbitrary type/color choices, excess framing, redundant copy, and other generic-design tells. Dithering is intentionally excluded. The original reel was not independently retrieved; provenance is explicit.
 
-The workflow asks for a concrete location and consequence, then a decision to keep, change, verify, or leave outside scope. A useful status pill, approved Instrument Serif heading, or necessary table boundary can remain. Simplification must preserve the actual task.
+For new work, the checklist is a restraint applied before implementation and again before delivery. Decorative indicator lights, ordinary-action arrows, italic accents, negative tracking, pill labels, repeated eyebrows, and other unsupported defaults stay out. A genre or mood word does not justify adding them. Preserve real status in words, necessary controls, approved references, and useful information density.
 
-An optional [read-only browser inspector](skills/form-unslop/references/browser-inspection.md) collects computed-style observations, selectors, samples, and scan limits. It reports no taste score or AI-authorship probability. The [synthetic rehearsal and preservation counterexample](evals/rehearsal.md) show how its observations differ from a design judgment.
+An optional [read-only browser inspector](skills/form-unslop/references/browser-inspection.md) collects computed-style observations, selectors, samples, and scan limits, including direct arrow glyphs, small round markers and inline SVG italics. An opt-in text-bound mode helps locate overflowing controls and clipped text. These are review candidates, without a taste score or AI-authorship probability. SVG paths and image contents still need actual visual inspection.
 
 ## Choose the fonts and colors yourself
 
@@ -82,9 +84,15 @@ The [research report](docs/research/2026-11-03-design-quality.md) records primar
 
 Two [independent forward tasks](evals/forward-tests-2026-11-03.md) exercise actual skill use: an Unslop critique that preserves useful detail while finding specific workflow concerns, and an Explore task that builds a working two-type × two-palette prototype. Requests, inputs, outputs, screenshots, and verification limits are retained.
 
+The later [corrected-output record](evals/paired-2026-11-03/results.md) applies all 19 signals plus the owner-identified light/arrow defaults to four interfaces. It separates fresh drafts, guided corrections, checklist cross-reviews, task behavior and narrow style checks. Functional success alone did not pass visual acceptance.
+
 ## Try the offline tools
 
 Clone the repository to try the tools independently of an agent. No npm install, API key, account, server, or environment configuration is required for these utilities.
+
+![Actual offline search results for retro texture but not glass](docs/assets/hero.svg)
+
+*The graphic condenses actual CLI output. [Inspect the JSON](docs/assets/search-demo.json) or [reproduce it](docs/presentation.md).*
 
 ```sh
 git clone https://github.com/aiden-guan/form-design.git
@@ -202,7 +210,7 @@ python3 scripts/generate-presentation.py --check
 
 The **nine dependency-free tests** cover catalog integrity, public metadata fields, retrieval, negation, filters, CLI arguments, contrast thresholds, and links across all skills. Archive verification checks source equality and safe extraction for all four ZIPs, then runs applicable tools from clean folders. Presentation verification checks the committed SVGs and JSON against current CLI output.
 
-With an existing Playwright installation, six additional real-browser checks cover read-only inspection, coverage bounds, hidden content, functional filters, reserve/undo at two widths, and independent type/palette selection with contrast-checked example roles:
+With an existing Playwright installation, nine additional real-browser checks cover read-only inspection, coverage bounds, hidden content, functional filters, reserve/undo, type/palette comparison, text-bound observations, arrow/marker patterns and inline SVG italics:
 
 ```sh
 node --test tests/inspector.browser.test.mjs
@@ -211,11 +219,13 @@ node scripts/capture-rehearsal.mjs
 
 Set `FORM_PLAYWRIGHT_MODULE` if that optional maintainer dependency is outside the checkout. The distributed skills do not bundle or require Playwright. Captured examples are labeled synthetic, author-run rehearsals; the tests do not judge beauty.
 
+The corrected examples have separate [task checks](evals/paired-2026-11-03/check-tasks.mjs), [narrow style checks](evals/paired-2026-11-03/check-visual.mjs), actual captures, and full checklist reviews. The [results](evals/paired-2026-11-03/results.md) record their scope and remaining limits. The optional evidence ZIP opens through `gallery.html`; the skill suite remains a separate download.
+
 `releases/` is generated locally and ignored by Git. Download published artifacts from [GitHub Releases](https://github.com/aiden-guan/form-design/releases); verify the ZIP with its accompanying `form-design.zip.sha256`. The reference snapshot's input hashes record provenance and are not dependencies on another checkout.
 
 ## Status and limits
 
-**v1.1.0 adds the three-skill suite.** Tests and extraction checks establish the recorded tooling behavior; two fresh-context forward tasks provide limited qualitative evidence of skill use. Model-generated design quality has not been benchmarked across hosts or against Impeccable or Emil's skills.
+**v1.2.0 tightens defaults and adds corrected-output evidence.** The owner rejected the initial examples despite their working interactions. This release applies explicit visual acceptance criteria, retains rejected drafts, and records reviewed corrections. It establishes the reported artifact behavior and specific style checks; general superiority across hosts or over Impeccable/Emil remains untested.
 
 - The **2026-11-02** reference snapshot includes imported metadata. Every reference was not individually operated or visually audited, and links or licenses may change.
 - Creator media, fonts, code bundles, full essays, and private projects are excluded. Reference-only entries require original implementation or separate permission.

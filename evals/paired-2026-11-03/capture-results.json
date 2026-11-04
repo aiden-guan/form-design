@@ -1,0 +1,1153 @@
+{
+  "environment": "Local Chromium; file URLs; offline; DPR 1; reduced motion; new context per artifact",
+  "limits": "Saved-artifact layout observations and real captures. Doubled text is a stress observation, not browser zoom. No beauty score or complete accessibility audit.",
+  "artifacts": [
+    {
+      "case": "festival",
+      "condition": "current",
+      "sourceSha256": "cd1ddd88c6190ddf61bde532e28b30428b1b455389776e236819d7bc7ee34ddb",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1988,
+          "pageOverflow": false,
+          "title": "Signal — Independent sound, Bristol",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to programme"
+            },
+            {
+              "tag": "A",
+              "label": "Signal home"
+            },
+            {
+              "tag": "A",
+              "label": "The programme"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "My programme, 0 saved shows"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Day pass ↗"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All shows"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "My programme 0"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All rooms"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Boiler Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Turbine Hall"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Listening Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Mira Vale"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Low Current"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Nia North"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save The Soft System"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Aya & the Static"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Open Frequency"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Day pass info ↗"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 2201,
+          "pageOverflow": false,
+          "title": "Signal — Independent sound, Bristol",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to programme"
+            },
+            {
+              "tag": "A",
+              "label": "Signal home"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "My programme, 0 saved shows"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Day pass ↗"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All shows"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "My programme 0"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All rooms"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Boiler Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Turbine Hall"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Listening Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Mira Vale"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Low Current"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Nia North"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save The Soft System"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Aya & the Static"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Open Frequency"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Day pass info ↗"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 567,
+        "viewportWidth": 390,
+        "pageOverflow": true,
+        "buttonTextBoundsCandidates": [
+          "Day pass ↗",
+          "Day pass info ↗"
+        ],
+        "timeArtistOverlap": [
+          {
+            "time": "14:00",
+            "artist": "Mira Vale"
+          },
+          {
+            "time": "15:30",
+            "artist": "Low Current"
+          },
+          {
+            "time": "17:00",
+            "artist": "Nia North"
+          },
+          {
+            "time": "18:30",
+            "artist": "The Soft System"
+          },
+          {
+            "time": "20:00",
+            "artist": "Aya & the Static"
+          },
+          {
+            "time": "21:30",
+            "artist": "Open Frequency"
+          }
+        ]
+      },
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "sourceSha256": "bd0287275621f808172155141d114fab46e4272904a09a3b8ab9d38fced2a357",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1720,
+          "pageOverflow": false,
+          "title": "Signal — 21 November 2026, Bristol",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to programme"
+            },
+            {
+              "tag": "A",
+              "label": "Signal home"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Programme"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "My programme 0"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Day pass · £28"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Boiler Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Turbine Hall"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Listening Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Mira Vale"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Low Current"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Nia North"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save The Soft System"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Aya & the Static"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Open Frequency"
+            },
+            {
+              "tag": "A",
+              "label": "Back to programme"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 1990,
+          "pageOverflow": false,
+          "title": "Signal — 21 November 2026, Bristol",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to programme"
+            },
+            {
+              "tag": "A",
+              "label": "Signal home"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Programme"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "My programme 0"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Day pass · £28"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Boiler Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Turbine Hall"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Listening Room"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Mira Vale"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Low Current"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Nia North"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save The Soft System"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Aya & the Static"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Save Open Frequency"
+            },
+            {
+              "tag": "A",
+              "label": "Back to programme"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageOverflow": false,
+        "buttonTextBoundsCandidates": [],
+        "timeArtistOverlap": []
+      },
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "sourceSha256": "a97f3ba6a8a481cd79317233b31b4a68fd1b2dd9a87c30280bd819b8d1e01217",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1000,
+          "pageOverflow": false,
+          "title": "Dispatch — Loan desk",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to loan desk"
+            },
+            {
+              "tag": "INPUT",
+              "label": "Search borrower, equipment or loan ID"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Reset view"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All loans6"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Due today2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Overdue2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "On loan2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Returned0"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1042 for Amara Okafor"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1043 for Min-Jae Park"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1044 for Alexandria Montgomery-Wright"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1045 for Inez Silva"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1046 for Noor Rahman"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1047 for Theo Bell"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 1380,
+          "pageOverflow": false,
+          "title": "Dispatch — Loan desk",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to loan desk"
+            },
+            {
+              "tag": "INPUT",
+              "label": "Search borrower, equipment or loan ID"
+            },
+            {
+              "tag": "SELECT",
+              "label": "All loans (6)Due today (2)Overdue (2)On loan (2)Returned (0)"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Reset view"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1042 for Amara Okafor"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1043 for Min-Jae Park"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1044 for Alexandria Montgomery-Wright"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1045 for Inez Silva"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1046 for Noor Rahman"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "View loan L-1047 for Theo Bell"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageOverflow": false,
+        "buttonTextBoundsCandidates": [],
+        "timeArtistOverlap": []
+      },
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "sourceSha256": "e217cf26097a461d41041340afab7a7634b37a1f7ea1572a9cd528b47ec66965",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1000,
+          "pageOverflow": false,
+          "title": "Loans · Dispatch",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to loan search"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Undo last return"
+            },
+            {
+              "tag": "INPUT",
+              "label": "Search person, equipment or ID"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All loans 6"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Overdue 2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Due today 2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "On loan 2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Returned 0"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1042 for Amara Okafor"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1043 for Min-Jae Park"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1044 for Alexandria Montgomery-Wright"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1045 for Inez Silva"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1046 for Noor Rahman"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1047 for Theo Bell"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Mark returned locally"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 1363,
+          "pageOverflow": false,
+          "title": "Loans · Dispatch",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to loan search"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Undo last return"
+            },
+            {
+              "tag": "INPUT",
+              "label": "Search person, equipment or ID"
+            },
+            {
+              "tag": "SELECT",
+              "label": "Filter loans by status"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1042 for Amara Okafor"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1043 for Min-Jae Park"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1044 for Alexandria Montgomery-Wright"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1045 for Inez Silva"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1046 for Noor Rahman"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open loan L-1047 for Theo Bell"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageOverflow": false,
+        "buttonTextBoundsCandidates": [],
+        "timeArtistOverlap": []
+      },
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "sourceSha256": "b6f36c16fb54d0809292a7de2e0517f12859453bfd77bd7233169b24a6817d52",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1096,
+          "pageOverflow": false,
+          "title": "Margin — your reading shelf",
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "label": "Open The Shape of Quiet"
+            },
+            {
+              "tag": "INPUT",
+              "label": "Find a title or an author…"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All books4"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Want to read"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Reading1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Finished1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open The Shape of Quiet by Leah Mensah, Reading"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open A Map of Small Distances by Tomas Velez, Want to read"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Night Gardens by Hana Mori, Finished"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Ways of Making and Remaking a Home by N. K. Adeyemi, Want to read"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 1176,
+          "pageOverflow": false,
+          "title": "Margin — your reading shelf",
+          "controls": [
+            {
+              "tag": "INPUT",
+              "label": "Find a title or an author…"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All books4"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Want to read"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Reading1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Finished1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open The Shape of Quiet by Leah Mensah, Reading"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open A Map of Small Distances by Tomas Velez, Want to read"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Night Gardens by Hana Mori, Finished"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Ways of Making and Remaking a Home by N. K. Adeyemi, Want to read"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageOverflow": false,
+        "buttonTextBoundsCandidates": [
+          "Reading1",
+          "Finished1"
+        ],
+        "timeArtistOverlap": []
+      },
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "sourceSha256": "0e47ec9f9f54c4b4ca03efd61ef5d6e5a833c0211596330f90c6f9f344ea8428",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1000,
+          "pageOverflow": false,
+          "title": "Margin — your reading shelf",
+          "controls": [
+            {
+              "tag": "INPUT",
+              "label": "Title or author"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All4"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "To read2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Reading1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Finished1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open The Shape of Quiet by Leah Mensah, Reading"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open A Map of Small Distances by Tomas Velez, Want to read"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Night Gardens by Hana Mori, Finished"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Ways of Making and Remaking a Home by N. K. Adeyemi, Want to read"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 1135,
+          "pageOverflow": false,
+          "title": "Margin — your reading shelf",
+          "controls": [
+            {
+              "tag": "INPUT",
+              "label": "Title or author"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "All4"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "To read2"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Reading1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Finished1"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open The Shape of Quiet by Leah Mensah, Reading"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open A Map of Small Distances by Tomas Velez, Want to read"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Night Gardens by Hana Mori, Finished"
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Open Ways of Making and Remaking a Home by N. K. Adeyemi, Want to read"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageOverflow": false,
+        "buttonTextBoundsCandidates": [],
+        "timeArtistOverlap": []
+      },
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "sourceSha256": "a4551b189a637d211e192b8812abc2103ae1cd75984b62b9e00e5c48833ba6fc",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1211,
+          "pageOverflow": false,
+          "title": "Kite — Everyday / 01",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to the configurator"
+            },
+            {
+              "tag": "A",
+              "label": "Kite home"
+            },
+            {
+              "tag": "A",
+              "label": "The details"
+            },
+            {
+              "tag": "A",
+              "label": "Build yours"
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Review local quote"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 1744,
+          "pageOverflow": false,
+          "title": "Kite — Everyday / 01",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to the configurator"
+            },
+            {
+              "tag": "A",
+              "label": "Kite home"
+            },
+            {
+              "tag": "A",
+              "label": "The details"
+            },
+            {
+              "tag": "A",
+              "label": "Build yours"
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Review local quote"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 397,
+        "viewportWidth": 390,
+        "pageOverflow": true,
+        "buttonTextBoundsCandidates": [],
+        "timeArtistOverlap": []
+      },
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "sourceSha256": "220f7079dcf213349f3636b49fdc433385ebf98182fb5ff28e9b5139b39a741d",
+      "views": [
+        {
+          "label": "wide",
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "documentHeight": 1099,
+          "pageOverflow": false,
+          "title": "Kite — Everyday / 01",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to configuration"
+            },
+            {
+              "tag": "A",
+              "label": "Kite, the bicycle"
+            },
+            {
+              "tag": "A",
+              "label": "Bicycle"
+            },
+            {
+              "tag": "A",
+              "label": "Details"
+            },
+            {
+              "tag": "A",
+              "label": "Configure"
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Review quote"
+            },
+            {
+              "tag": "A",
+              "label": "Back to the bicycle"
+            }
+          ]
+        },
+        {
+          "label": "narrow",
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "documentHeight": 1526,
+          "pageOverflow": false,
+          "title": "Kite — Everyday / 01",
+          "controls": [
+            {
+              "tag": "A",
+              "label": "Skip to configuration"
+            },
+            {
+              "tag": "A",
+              "label": "Kite, the bicycle"
+            },
+            {
+              "tag": "A",
+              "label": "Configure"
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "INPUT",
+              "label": ""
+            },
+            {
+              "tag": "BUTTON",
+              "label": "Review quote"
+            },
+            {
+              "tag": "A",
+              "label": "Back to the bicycle"
+            }
+          ]
+        }
+      ],
+      "doubledText": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageOverflow": false,
+        "buttonTextBoundsCandidates": [],
+        "timeArtistOverlap": []
+      },
+      "errors": [],
+      "externalRequests": []
+    }
+  ]
+}

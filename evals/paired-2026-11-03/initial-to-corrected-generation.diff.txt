@@ -1,0 +1,56 @@
+--- before/SKILL.md
++++ after/SKILL.md
+@@ -13,0 +14,2 @@
++
++Before a substantial new visual design or redesign, read [anti-generic.md](references/anti-generic.md). Apply its restrained starting point during implementation and its full review before delivery. Do not wait until the draft already feels generic. Decorative status dots, repeated arrow glyphs, italic headline accents, pill labels, eyebrows, and ornamental microcopy are not finishing touches to add by default.
+@@ -76 +78 @@
+-Read [anti-generic.md](references/anti-generic.md) when the result feels templated or the user asks to remove AI-design tells. Diagnose the relationship causing the problem before deleting a familiar style. Changing a font or removing every border does not fix an interchangeable information structure. Dithering is not an anti-slop criterion in FORM.
++Use [anti-generic.md](references/anti-generic.md) to check the rendered design against all the supplied signals. Diagnose the composition as well as the decoration. Correct unjustified defaults before delivery; a genre description such as “warm bookshop” or “experimental festival” does not justify adding them. Dithering is not an anti-slop criterion in FORM.
+--- before/references/anti-generic.md
++++ after/references/anti-generic.md
+@@ -3 +3,31 @@
+-Use this for a generic first draft or an “unslop” request. The complete, separately installable diagnostic workflow lives in FORM Unslop; this reference keeps the main design skill useful on its own.
++Read this before substantial visual implementation and use it again on the actual output before delivery. The complete, separately installable diagnostic workflow lives in FORM Unslop; this reference keeps the main design skill useful on its own.
++
++## Begin without the tells
++
++Build the hierarchy with actual content, composition, natural type metrics, imagery, color roles, alignment, and useful space. Start without the following decorative defaults. Add an exception only when a user-selected reference/brand requires it or the actual task needs its meaning. An aesthetic adjective, a familiar genre, or “it adds polish” is insufficient justification.
++
++| Supplied signal | Starting point |
++| --- | --- |
++| Tags & pills | Plain labels and clear controls; shape is not needed to make every category look important. |
++| Excessive italics | Upright typography; no italic word or phrase added to enliven a headline or cover. |
++| Instrument Serif | Deliberately chosen real-content type roles; no automatic “tasteful” serif substitution. |
++| Negative kerning | Natural tracking; no compressed display-wordmark recipe. |
++| Over-detailed UI | The real task and honest evidence; no decorative mock controls or analytics. |
++| Overused dividers | Group through proximity and alignment; add a rule only for a relationship that needs it. |
++| Shades & opacities | A small semantic palette and legible text; no ladder of faded micro-labels. |
++| Bordered containers | Unboxed composition; keep necessary input/selection boundaries. |
++| Over-detailed diagrams | One useful question per diagram; do not replace a visual concept with a fake technical drawing. |
++| Redundant text | State each fact once; each remaining line adds information. |
++| Code breadcrumbs | The audience's task vocabulary; retain real technical identifiers in actual technical tools. |
++| Section numbering | Unnumbered sections unless sequence is meaningful. |
++| Eyebrows | Start with the useful heading; add a separate label only when it conveys distinct necessary context. |
++| ASCII images | Subject-specific evidence or artwork instead of a terminal costume. |
++| Squiggles | No loose ornamental marks, doodles, or hand-drawn emphasis. |
++| Excessive mono | Readable interface/body type; reserve mono for a genuine technical role. |
++| ALL CAPS subtitles | Sentence case supporting text. |
++| Gradient backgrounds | A deliberate flat surface; use a gradient only for a demonstrated material/data/reference need. |
++| Periods in short UI labels | Plain action/navigation labels; preserve supplied sentences and necessary punctuation. |
++
++Two additional defaults were exposed in FORM's own rejected outputs: **indicator lights** and **arrow glyphs**. Do not add colored dots beside labels to suggest activity, availability, or sophistication. Show genuine status in words. Do not append `↗`, `→`, chevrons, or arrow icons to ordinary buttons, links, list rows, or captions. Use clear action labels. A native disclosure control or a genuinely directional task can justify its conventional affordance; an ordinary “Open” action needs no arrow.
++
++These two additions come from direct owner feedback, not the Charles Liu attribution. The original 19-signal selection remains separate from the reference catalog, and dithering remains excluded.
+@@ -18 +48 @@
+-Keep an element when its job is clear. Change the composition when that is the actual problem. A font blacklist and a count of borders do not answer these questions.
++Preserve required meaning and explicit user choices. A useful status can remain as plain text without its ornamental dot or pill. A control can remain discoverable through its label, position, and state without an appended arrow. Change the composition when that is the actual problem.
+@@ -32 +62 @@
+-## Do not overcorrect
++## Review the result, including artwork
+@@ -34 +64,5 @@
+-Pills can encode status or filters. Monospace can make code meaningful. A border can identify an input. A dense screen may support skilled comparison. A serif can be exactly right for an established brand. Short uppercase labels, numbering, gradients, and punctuation can have real jobs. Dithering is deliberately outside this checklist; assess it only for a separately demonstrated problem such as legibility or rendering cost.
++Inspect the real wide/narrow screen and relevant states, including SVG text, cover artwork, pseudo-elements, and modal contents. Check every row above; record any exception and its concrete reason in the working notes. Remove unsupported additions. Passing interaction tests does not pass this visual review. Do not claim “unslopped,” “polished,” or improved from a count, a build, or a favorable review that overlooked the owner's criteria.
++
++## Preserve useful meaning
++
++Native controls, field boundaries, meaningful sequences, true technical identifiers, and explicitly approved brand choices can have necessary jobs. Keep them when the task requires them. Preserve useful density and personality through composition and subject matter rather than reintroducing the ornamental defaults. Dithering is deliberately outside this checklist; assess it only for a separately demonstrated problem such as legibility or rendering cost.

@@ -1,0 +1,61 @@
+{
+  "scope": "Actual detail views with computed fonts doubled; focused word-range/reflow checks, not browser zoom or a full accessibility audit.",
+  "results": [
+    {
+      "width": 320,
+      "id": "b1",
+      "title": "The Shape of Quiet",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 320,
+      "id": "b2",
+      "title": "A Map of Small Distances",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 320,
+      "id": "b3",
+      "title": "Night Gardens",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 320,
+      "id": "b4",
+      "title": "Ways of Making and Remaking a Home",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b1",
+      "title": "The Shape of Quiet",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b2",
+      "title": "A Map of Small Distances",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b3",
+      "title": "Night Gardens",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b4",
+      "title": "Ways of Making and Remaking a Home",
+      "brokenWords": [],
+      "dialogOverflow": false
+    }
+  ]
+}

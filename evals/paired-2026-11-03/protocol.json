@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-03",
+  "comparison": "Current v1.1.0 versus revision informed by failures; no competitor condition",
+  "cases": [
+    "festival",
+    "operations",
+    "reading"
+  ],
+  "conditions_held": [
+    "same brief and raw facts",
+    "same inherited host/model setting; exact underlying model revision not independently pinned",
+    "same tool access, offline assets, system fonts",
+    "one initial build and one self-review correction pass",
+    "fresh-context agents; no sibling artifacts or expected answers"
+  ],
+  "objective_checks": [
+    "required facts preserved",
+    "required actions and state consistency",
+    "empty/reset and close/undo paths",
+    "page overflow and reachability at 390 and 1440",
+    "keyboard controls and visible focus where relevant",
+    "no external requests or fabricated claims",
+    "content/function under doubled text where applicable; extra observations recorded separately from required-task pass/fail"
+  ],
+  "subjective_rubric": {
+    "task_clarity": "1: primary task unclear; 3: findable with competing emphasis; 5: immediate, coherent task path",
+    "composition": "1: collision or flat undifferentiated hierarchy; 3: orderly but formulaic; 5: deliberate focal point and balanced supporting rhythm",
+    "identity": "1: interchangeable stock treatment; 3: a coherent but familiar treatment; 5: subject-specific decisions shape composition and visual language",
+    "type_and_color": "1: visibly harmful or incoherent; 3: readable/coherent; 5: purposeful typographic relationships and controlled role palette",
+    "responsive_craft": "1: important content/actions lost; 3: usable stack with rough transitions; 5: priorities deliberately recomposed across widths"
+  },
+  "review_plan": "Two fresh-context AI reviewers receive neutral labels randomized independently per case, with candidate presentation order reversed between reviewers. They get briefs, screenshots and runnable paired artifacts only; no skill versions, change rationale, run order, functional-check results or self-reports. Record anchored scores, evidence, preference/tie and limits. Maintainer checks operate real actions separately. Scores are diagnostic judgments, not a validated beauty metric.",
+  "limits": [
+    "three single-run pairs; no population inference",
+    "reviewer is an AI agent, not a human user panel",
+    "revision development sees current outputs; holdout brief required to check transfer",
+    "tool tests and visual preferences remain separate"
+  ],
+  "holdout": "holdout: bicycle configurator; brief fixed before current output review, not used to choose revisions. Both versions evaluated after revision is frozen."
+}

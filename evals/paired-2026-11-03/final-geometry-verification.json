@@ -1,0 +1,137 @@
+{
+  "scope": "Exact post-repair states with computed-font doubling. Focused geometry/navigation checks, not browser zoom or a full accessibility audit.",
+  "festival": {
+    "enlarged900": {
+      "headerActionRight": 304.359375,
+      "rows": [
+        {
+          "artist": "Mira Vale",
+          "gap": 18,
+          "overlap": false
+        },
+        {
+          "artist": "Low Current",
+          "gap": 18,
+          "overlap": false
+        },
+        {
+          "artist": "Nia North",
+          "gap": 18,
+          "overlap": false
+        },
+        {
+          "artist": "The Soft System",
+          "gap": 18,
+          "overlap": false
+        },
+        {
+          "artist": "Aya & the Static",
+          "gap": 18,
+          "overlap": false
+        },
+        {
+          "artist": "Open Frequency",
+          "gap": 18,
+          "overlap": false
+        }
+      ]
+    },
+    "enlarged390": {
+      "artTop": 701.40625,
+      "titleBottom": 701.40625,
+      "intersects": false
+    },
+    "dialog": {
+      "clientWidth": 358,
+      "scrollWidth": 358,
+      "closeRight": 354,
+      "dialogRight": 374,
+      "title": "Day pass"
+    }
+  },
+  "operations": {
+    "views": [
+      {
+        "width": 1440,
+        "ring": "rgb(34, 85, 204)",
+        "undoArrows": 0,
+        "inaccurateHint": 0,
+        "hiddenSkipBottom": -8,
+        "focusedSkipTop": 8,
+        "target": "loan-search"
+      },
+      {
+        "width": 390,
+        "ring": "rgb(34, 85, 204)",
+        "undoArrows": 0,
+        "inaccurateHint": 0,
+        "hiddenSkipBottom": -8,
+        "focusedSkipTop": 8,
+        "target": "loan-search"
+      }
+    ]
+  },
+  "reading": [
+    {
+      "width": 320,
+      "id": "b1",
+      "title": "The Shape of Quiet",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 320,
+      "id": "b2",
+      "title": "A Map of Small Distances",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 320,
+      "id": "b3",
+      "title": "Night Gardens",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 320,
+      "id": "b4",
+      "title": "Ways of Making and Remaking a Home",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b1",
+      "title": "The Shape of Quiet",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b2",
+      "title": "A Map of Small Distances",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b3",
+      "title": "Night Gardens",
+      "brokenWords": [],
+      "dialogOverflow": false
+    },
+    {
+      "width": 390,
+      "id": "b4",
+      "title": "Ways of Making and Remaking a Home",
+      "brokenWords": [],
+      "dialogOverflow": false
+    }
+  ],
+  "sourceSha256": {
+    "festival": "bd0287275621f808172155141d114fab46e4272904a09a3b8ab9d38fced2a357",
+    "operations": "e217cf26097a461d41041340afab7a7634b37a1f7ea1572a9cd528b47ec66965",
+    "reading": "0e47ec9f9f54c4b4ca03efd61ef5d6e5a833c0211596330f90c6f9f344ea8428"
+  }
+}

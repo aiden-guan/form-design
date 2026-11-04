@@ -52,6 +52,8 @@ Treat a narrow layout as a fresh arrangement of the same priorities. Decide what
 
 Use content-driven breakpoints, flexible tracks, wrapping, and sensible min/max widths. Test long headings, large numbers, translated labels, missing imagery, and variable-height cards. Fix the underlying sizing constraint instead of hiding overflow on the page. Preserve image space to reduce layout shifts.
 
+Test coupled elements under text enlargement, not just the page's outer width. A time column can overlap an artist even when the container still fits; a price can crowd its action; a fixed-height button can leave its label outside the hit area. Inspect actual text boxes and operate the affected controls. Give labels wrapping room and controls content-driven minimum heights. Allow a compact row to become a grouped stack when its intrinsic widths no longer fit. Keep related facts together and preserve their reading order. A doubled-text stress render can expose these constraints, but distinguish it from actual browser zoom and a full accessibility evaluation.
+
 ## High-impact correction table
 
 | Observed problem | First move to try |

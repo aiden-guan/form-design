@@ -1,0 +1,508 @@
+{
+  "auditType": "cross-review",
+  "blinded": false,
+  "target": "outputs/festival/final-draft/index.html",
+  "brief": "reviews/evidence/festival/audit/brief.json",
+  "skill": "skills/form-unslop/SKILL.md",
+  "scope": {
+    "auditOnly": true,
+    "sourceEdits": false,
+    "networkUsed": false,
+    "delegationUsed": false,
+    "readInputs": [
+      "festival/brief.json",
+      "festival/final/index.html",
+      "festival/final/signal-waves.svg",
+      "FORM Unslop SKILL.md and relevant signal/repair references",
+      "browser output from this audit"
+    ],
+    "excludedInputsRead": false
+  },
+  "summary": {
+    "finding": "The default-size festival identity and schedule work coherently, with functioning filters, saving, useful recovery and an honest day-pass demo. Remaining material issues concern enlarged-text reflow. A small optional dialog-heading cleanup remains under U19.",
+    "mostImportant": "Fix the enlarged 900px time/artist overlap before cosmetic subtraction.",
+    "preservation": "The original wave artwork, plain room filters, actual saved count, bookmark action, schedule dividers, supplied copy, and demo limitations all have concrete roles and should remain."
+  },
+  "readingPath": {
+    "desktop": "Festival name and sound artwork establish the event; the adjacent information strip supplies date, hours and venue, followed by a chronological comparison schedule. Programme navigation can bring the schedule into view.",
+    "mobile": "The identity becomes a compact poster followed by date/venue and a stacked schedule. Times, artists, formats, rooms and Save remain visible in each event. Programme and My programme scroll to the schedule.",
+    "subjectSpecificity": "Original concentric waves and a static sound-bar brand mark connect the visual identity to experimental sound without pretending to visualize measured data. The six real supplied programme entries carry the main task."
+  },
+  "originalSignals": [
+    {
+      "id": "U01",
+      "signal": "Tags & pills",
+      "observation": "No decorative pill labels. Room filters and Programme/My programme are plain text buttons with selected underlines. The saved count reflects the actual selected events.",
+      "decision": "keep",
+      "reason": "Keep real selection and count feedback; these are working controls.",
+      "locations": [
+        ".filters",
+        ".nav",
+        "#saved-count"
+      ]
+    },
+    {
+      "id": "U02",
+      "signal": "Excessive italics",
+      "observation": "No italic accents in headings, schedule, dialog, footer, or the SVG artwork. Rendered type is upright.",
+      "decision": "keep",
+      "reason": "No unsupported treatment found.",
+      "locations": [
+        "index.html CSS",
+        "signal-waves.svg"
+      ]
+    },
+    {
+      "id": "U03",
+      "signal": "Instrument Serif",
+      "observation": "The page uses available Arial/Helvetica sans stacks and Arial Black for the display wordmark. No Instrument Serif or external fonts.",
+      "decision": "keep",
+      "reason": "The system font choices respect the brief and have distinct display/schedule roles.",
+      "locations": [
+        ":root",
+        ".hero h1"
+      ]
+    },
+    {
+      "id": "U04",
+      "signal": "Negative kerning",
+      "observation": "The hero explicitly uses normal letter spacing. No negative tracking in the source or SVG. Dense display weight is not itself a kerning violation.",
+      "decision": "keep",
+      "reason": "Preserve the bold wordmark. Its enlarged-text/artwork interference is a layout issue, reported separately.",
+      "locations": [
+        ".hero h1",
+        "signal-waves.svg"
+      ]
+    },
+    {
+      "id": "U05",
+      "signal": "Over-the-top detailed UI",
+      "observation": "The schedule consists of the six supplied events and functional Save controls. No fake analytics, sponsors, testimonials, social counts, or payment steps. The day-pass dialog states checkout is unavailable.",
+      "decision": "keep",
+      "reason": "Keep the actual times, artists, set descriptions, rooms, saved count, and local-demo boundary.",
+      "locations": [
+        "#events",
+        "#saved-count",
+        "#ticket-dialog"
+      ]
+    },
+    {
+      "id": "U06",
+      "signal": "Overusing dividers",
+      "observation": "Rules separate chronological event rows; underlines show active views and room filters. No rules between every text fragment or nested panel stack.",
+      "decision": "keep",
+      "reason": "These rules support comparison and selected state. Removing them would weaken schedule scanning.",
+      "locations": [
+        ".event",
+        ".filter[aria-pressed=true]",
+        ".nav button[aria-pressed=true]"
+      ]
+    },
+    {
+      "id": "U07",
+      "signal": "Color shades & opacities",
+      "observation": "A small flat paper/ink/red palette uses a quiet text color, row-rule color, demo-notice surface, and dark modal backdrop. Artwork is opaque. No arbitrary ladder of faded decorative labels.",
+      "decision": "keep",
+      "reason": "The distinctions have semantic roles. No shade/opacity correction established by this audit.",
+      "locations": [
+        ":root",
+        ".demo-notice",
+        ".ticket-dialog::backdrop",
+        ".wave-art"
+      ]
+    },
+    {
+      "id": "U08",
+      "signal": "Containers with borders",
+      "observation": "Event content is unboxed. Borders identify Save and Close buttons and the day-pass action. The dialog is a separate interaction surface rather than a decorative nested card system.",
+      "decision": "keep",
+      "reason": "Keep the boundaries of interactive controls and the modal.",
+      "locations": [
+        ".save",
+        ".close",
+        ".ticket-button",
+        ".ticket-dialog"
+      ]
+    },
+    {
+      "id": "U09",
+      "signal": "Overly detailed diagrams",
+      "observation": "The SVG contains concentric ellipses and straight interruptions, without labels, measurements, invented connections, or technical claims. It functions as a festival graphic, not a data diagram.",
+      "decision": "keep",
+      "reason": "Keep the sound-related original artwork. Avoid reclassifying its repeated geometry as fake technical detail.",
+      "locations": [
+        "signal-waves.svg",
+        ".wave-art"
+      ]
+    },
+    {
+      "id": "U10",
+      "signal": "Verbose, redundant text",
+      "observation": "The introduction, date/time, venue, schedule, saved-state guidance, and checkout limitation each supply useful information. The dialog heading repeats the one-day/three-room idea already in the introduction; its smaller copy improvement is grouped with U19.",
+      "decision": "keep",
+      "reason": "Preserve supplied copy and practical recovery/demo information. Consolidate the optional dialog headline if correcting R04.",
+      "locations": [
+        ".festival-info",
+        ".view-note",
+        ".empty",
+        ".programme-footnote",
+        ".dialog-top h2",
+        ".demo-notice"
+      ]
+    },
+    {
+      "id": "U11",
+      "signal": "Code breadcrumbs",
+      "observation": "No file paths, fake code, version strings, or implementation labels decorate the visitor interface. Browser-storage and local-demo wording explains behavior that visitors need to understand.",
+      "decision": "keep",
+      "reason": "Keep truthful storage and checkout limitations.",
+      "locations": [
+        ".programme-footnote",
+        ".demo-notice",
+        ".footer"
+      ]
+    },
+    {
+      "id": "U12",
+      "signal": "Section numbering",
+      "observation": "No decorative 01/02 section numbers. Times order the real schedule and the numeric saved count reflects selections.",
+      "decision": "keep",
+      "reason": "The numbers are functional content, not ceremonial numbering.",
+      "locations": [
+        ".time",
+        "#saved-count"
+      ]
+    },
+    {
+      "id": "U13",
+      "signal": "Eyebrows",
+      "observation": "No repeated label-heading scaffolding. The header descriptor identifies the festival type and Room labels the actual filter group.",
+      "decision": "keep",
+      "reason": "Keep distinct orientation and control labels; neither repeats its adjacent heading.",
+      "locations": [
+        ".descriptor",
+        ".filter-label"
+      ]
+    },
+    {
+      "id": "U14",
+      "signal": "ASCII images",
+      "observation": "No ASCII or terminal-like scenery. Original artwork is geometric SVG.",
+      "decision": "keep",
+      "reason": "No unsupported treatment found.",
+      "locations": [
+        "signal-waves.svg",
+        "index.html"
+      ]
+    },
+    {
+      "id": "U15",
+      "signal": "Squiggles",
+      "observation": "No doodled underlines, loose annotation marks, or squiggled arrows. The concentric wave artwork and four-bar brand mark visibly relate to sound and form the requested graphic identity.",
+      "decision": "keep",
+      "reason": "Keep the subject-specific motif. Correct its enlarged-text positioning under R03 rather than deleting expressive artwork.",
+      "locations": [
+        "signal-waves.svg",
+        ".brand-mark",
+        ".wave-art"
+      ]
+    },
+    {
+      "id": "U16",
+      "signal": "Excessive mono fonts",
+      "observation": "No monospace costume. Schedule times and the saved count use tabular numerals within the sans interface stack.",
+      "decision": "keep",
+      "reason": "Keep tabular figures for scanning; they do not require a font change.",
+      "locations": [
+        ".time",
+        ".count",
+        ":root"
+      ]
+    },
+    {
+      "id": "U17",
+      "signal": "ALL CAPS subtitles",
+      "observation": "Labels and supporting copy use sentence/title case; no repeated uppercase subtitle system. The SVG has no text.",
+      "decision": "keep",
+      "reason": "No unsupported treatment found.",
+      "locations": [
+        ".descriptor",
+        ".schedule-head",
+        ".filter-label",
+        "signal-waves.svg"
+      ]
+    },
+    {
+      "id": "U18",
+      "signal": "Gradient backgrounds",
+      "observation": "Hero, page, footer, dialog, and SVG use flat colors. No ambient gradients or haze.",
+      "decision": "keep",
+      "reason": "No unsupported treatment found.",
+      "locations": [
+        ".hero",
+        ":root",
+        ".footer",
+        ".ticket-dialog",
+        "signal-waves.svg"
+      ]
+    },
+    {
+      "id": "U19",
+      "signal": "Periods in UI",
+      "observation": "Buttons, filters, navigation, and main programme headings have no ornamental periods. The dialog title “One day. Three rooms.” is an added punctuated fragment that repeats the introduction; “Day pass” would identify the current task more directly. The supplied tagline and full-sentence empty/recovery/demo copy legitimately retain punctuation.",
+      "decision": "change",
+      "reason": "R04 is a small copy consistency recommendation, not a blanket punctuation ban. Preserve supplied facts and actual sentences.",
+      "locations": [
+        ".dialog-top h2",
+        ".empty h3",
+        ".tagline"
+      ]
+    }
+  ],
+  "additionalDefaults": [
+    {
+      "id": "A01",
+      "signal": "Decorative indicator lights",
+      "observation": "No tiny colored status/demo/availability dots in visible states, SVG artwork, or pseudo-elements. The monochrome four-bar brand mark is static sound imagery, with no live-status implication.",
+      "decision": "keep",
+      "reason": "Keep the brand mark; it is not an activity light.",
+      "locations": [
+        ".brand-mark",
+        "signal-waves.svg",
+        "computed ::before / ::after"
+      ]
+    },
+    {
+      "id": "A02",
+      "signal": "Arrows on ordinary actions",
+      "observation": "No arrow glyphs, chevrons, or drawn arrows on Programme, room filters, Save, day-pass, Close, recovery, footer, or artwork. The bookmark is a conventional Save symbol and not a directional arrow.",
+      "decision": "keep",
+      "reason": "Keep meaningful bookmark feedback and plain action labels.",
+      "locations": [
+        ".nav",
+        ".filter",
+        ".save svg",
+        ".ticket-button",
+        ".close",
+        ".text-button",
+        ".footer a",
+        "signal-waves.svg"
+      ]
+    }
+  ],
+  "unresolvedIssues": [
+    {
+      "id": "R01",
+      "priority": "medium",
+      "category": "enlarged-text schedule reflow",
+      "location": ".event / .time at the max-width:1100px layout",
+      "observation": "With computed font sizes doubled at 900×1000, all six time labels overlap the adjacent artist names. Time glyphs extend from x=36 to x=156.125 while artist glyphs start at x=134, producing 22.125px horizontal overlap. The default-size 900px view did not show this collision.",
+      "consequence": "Users enlarging text cannot reliably separate when a set begins from its artist. This is a task failure even though the events are present in the DOM.",
+      "recommendation": "Make the time track content-sized or reflow the time above the artist when enlarged content no longer fits. Use intrinsic widths or relative-unit breakpoints rather than retaining the fixed 80px time column. Recheck the same six rows at 900px with enlarged text.",
+      "preserve": [
+        "all six exact times",
+        "all artist names",
+        "set/room information",
+        "Save controls",
+        "chronological scan path"
+      ],
+      "evidence": [
+        "reviews/evidence/festival/audit/enlarged-900-programme.png"
+      ],
+      "confidence": "observed in render and text glyph bounds"
+    },
+    {
+      "id": "R02",
+      "priority": "medium",
+      "category": "enlarged-text controls and header reflow",
+      "location": ".site-header at 900px; .ticket-dialog .dialog-top at 390px",
+      "observation": "At doubled text, the 900px day-pass header button extends to x=916.156, 16.156px beyond the viewport. In the 390px day-pass modal, dialog clientWidth is 320px but scrollWidth is 327px, and the Close button extends beyond the dialog’s right edge. Normal-size desktop/mobile controls worked.",
+      "consequence": "The header action and modal Close boundary are clipped horizontally for enlarged-text users. The modal can scroll vertically as expected, but it should not require horizontal recovery to expose a control boundary.",
+      "recommendation": "Allow the header groups and dialog title/Close group to wrap based on content. Give the title a shrinkable track or put Close on its own row at constrained sizes. Preserve the native dialog and all ticket facts.",
+      "preserve": [
+        "Day pass · £28 control",
+        "Close and Escape behavior",
+        "price/date/hours/location",
+        "checkout-unavailable notice"
+      ],
+      "evidence": [
+        "reviews/evidence/festival/audit/enlarged-900-full-header.png",
+        "reviews/evidence/festival/audit/enlarged-390-day-pass.png"
+      ],
+      "confidence": "observed in render and element bounds"
+    },
+    {
+      "id": "R03",
+      "priority": "low",
+      "category": "enlarged-text graphic composition",
+      "location": ".hero h1 and .wave-art at 390px",
+      "observation": "At doubled text the wordmark wraps into “Sig” and “nal”, while the absolutely positioned wave art still starts from the original clamp-based title offset. Art begins at x=292.5, y=403.594 and intersects the right side of the enlarged wordmark, whose box runs x=20–370 and y=306–680.406. The black-on-black intersection merges part of the lettering with the pattern. The default mobile wordmark remains readable.",
+      "consequence": "The festival identity loses clarity specifically under enlarged text; deleting the graphic would unnecessarily remove the requested expressive identity.",
+      "recommendation": "Reserve a separate flow/grid area for the artwork, or reposition it using the actual text region so it cannot occupy enlarged wordmark glyphs. Keep the concentric sound motif.",
+      "preserve": [
+        "Signal name",
+        "original wave artwork",
+        "red/ink graphic identity",
+        "supplied tagline"
+      ],
+      "evidence": [
+        "reviews/evidence/festival/audit/enlarged-390-full-hero.png"
+      ],
+      "confidence": "observed in actual enlarged-text render"
+    },
+    {
+      "id": "R04",
+      "priority": "low",
+      "category": "U19 copy consistency / U10 repeated framing",
+      "location": ".dialog-top h2",
+      "observation": "The added title “One day. Three rooms.” repeats the introductory promise and uses punctuated fragments for a short task heading. It also occupies multiple lines in the mobile dialog.",
+      "consequence": "It adds framing where the visitor primarily needs day-pass information; this is a smaller consistency opportunity than the real enlargement failures.",
+      "recommendation": "Use “Day pass” as the dialog heading, retain £28 and all exact date/time/location facts, and preserve punctuation in the supplied tagline and complete explanatory sentences. Do not use the copy change as a substitute for fixing R02’s layout.",
+      "preserve": [
+        "all supplied festival facts",
+        "expressive hero copy",
+        "checkout limitation"
+      ],
+      "evidence": [
+        "reviews/evidence/festival/audit/desktop-day-pass.png",
+        "reviews/evidence/festival/audit/mobile-day-pass.png"
+      ],
+      "confidence": "editorial judgment based on task role, not a universal prohibition on periods"
+    }
+  ],
+  "actualChecks": {
+    "environment": "Playwright Chromium, headless, local file URL, device scale factor 1",
+    "normalViewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 900,
+        "height": 1000
+      },
+      {
+        "width": 701,
+        "height": 1000
+      },
+      {
+        "width": 700,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "normalAssertionsPassed": 39,
+    "normalAssertionsFailed": 0,
+    "functionalScenarios": [
+      {
+        "check": "Every supplied event fact is present",
+        "result": "pass; six exact times, artists, set descriptions and rooms"
+      },
+      {
+        "check": "Room filters and All reset",
+        "result": "pass; Boiler Room 2, Turbine Hall 3, Listening Room 1, All 6"
+      },
+      {
+        "check": "Save every event",
+        "result": "pass; all six selected states and actual count 6"
+      },
+      {
+        "check": "Reload local saving",
+        "result": "pass; all six saved choices restored"
+      },
+      {
+        "check": "My programme chronology",
+        "result": "pass; actual saved events in 14:00, 15:30, 17:00, 18:30, 20:00, 21:30 order"
+      },
+      {
+        "check": "Unsave every event in My programme",
+        "result": "pass; each disappears and final empty state offers Explore the programme"
+      },
+      {
+        "check": "Empty-state recovery",
+        "result": "pass; Explore restores all six; saved+room empty state offers Show all rooms without discarding saved selection"
+      },
+      {
+        "check": "Day-pass modal",
+        "result": "pass at default sizes; exact £28/date/hours/location and explicit no purchase or reservation"
+      },
+      {
+        "check": "Close and Escape",
+        "result": "pass; native modal closes, Escape restores ticket-control focus"
+      },
+      {
+        "check": "Mobile filter/save/unsave",
+        "result": "pass at 390×844; Turbine Hall returns 3, saving e4 yields only The Soft System in My programme, unsaving shows recovery"
+      },
+      {
+        "check": "Normal horizontal page overflow",
+        "result": "none at 1440, 900, 701, 700 or 390px"
+      },
+      {
+        "check": "Runtime and external requests",
+        "result": "no JavaScript errors; no external network requests observed"
+      }
+    ],
+    "enlargedText": {
+      "method": "Doubled each element’s computed font size in the transient browser DOM; no source edits. This is text-enlargement stress, not actual browser zoom or a full accessibility audit.",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 1000,
+          "pageOverflowPx": 0,
+          "timeArtistOverlap": false
+        },
+        {
+          "width": 900,
+          "height": 1000,
+          "pageOverflowPx": 16,
+          "timeArtistOverlap": true,
+          "affectedRows": 6,
+          "glyphOverlapPx": 22.125
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "pageOverflowPx": 0,
+          "timeArtistOverlap": false,
+          "heroArtworkInterference": true,
+          "dialogHorizontalOverflowPx": 7,
+          "dialogCloseContained": false
+        }
+      ]
+    },
+    "artworkAndPseudoElements": {
+      "svgRead": "<evaluation-workspace>/festival/final/signal-waves.svg",
+      "svgContent": "19 concentric ellipse strokes, a clipping frame, and straight color interruptions; no text, icons, dots, arrows, gradients, or external references.",
+      "computedBeforeAfterContent": "No non-empty ::before/::after generated content in inspected page/modal state. ::backdrop is the legitimate modal scrim."
+    },
+    "captures": {
+      "desktop-home": "reviews/evidence/festival/audit/desktop-home.png",
+      "desktop-programme": "reviews/evidence/festival/audit/desktop-programme.png",
+      "desktop-empty": "reviews/evidence/festival/audit/desktop-empty.png",
+      "desktop-day-pass": "reviews/evidence/festival/audit/desktop-day-pass.png",
+      "mobile-home": "reviews/evidence/festival/audit/mobile-home.png",
+      "mobile-programme": "reviews/evidence/festival/audit/mobile-programme.png",
+      "mobile-filter": "reviews/evidence/festival/audit/mobile-filter.png",
+      "mobile-saved": "reviews/evidence/festival/audit/mobile-saved.png",
+      "mobile-empty": "reviews/evidence/festival/audit/mobile-empty.png",
+      "mobile-day-pass": "reviews/evidence/festival/audit/mobile-day-pass.png",
+      "enlarged-900-programme": "reviews/evidence/festival/audit/enlarged-900-programme.png",
+      "enlarged-900-full-header": "reviews/evidence/festival/audit/enlarged-900-full-header.png",
+      "enlarged-390-full-hero": "reviews/evidence/festival/audit/enlarged-390-full-hero.png",
+      "enlarged-390-day-pass": "reviews/evidence/festival/audit/enlarged-390-day-pass.png"
+    }
+  },
+  "limits": [
+    "Audit-only: no repairs made.",
+    "No comparison with prior/current/revised cases, handoffs, or evaluation documents. This was an explicit cross-review, not a blinded benchmark.",
+    "Chromium only; no physical devices, screen-reader session, full WCAG audit, or actual browser zoom.",
+    "Storage success/reload was exercised; blocked-storage fallback was inspected in source but not force-tested.",
+    "Screenshots are local audit evidence in a temporary directory.",
+    "No numerical taste, AI-authorship or beauty score was assigned."
+  ],
+  "publicationNote": "Substantive observations retained; local paths normalized. Audit findings concern the preserved pre-repair snapshot; repair verification concerns the corrected example."
+}

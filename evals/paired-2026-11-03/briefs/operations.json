@@ -1,0 +1,63 @@
+{
+  "project": "Dispatch / equipment lending desk",
+  "audience": "Desk staff processing many equipment loans every day; accuracy and fast scanning matter.",
+  "request": "Build a polished working app for checking equipment loans and preparing returns. The existing approved brand uses system sans, navy #14263d, blue #2255cc, cool off-white #f3f5f8. Keep this identity and the useful information density. Focus on the actual desk workflow.",
+  "facts": {
+    "name": "Dispatch",
+    "description": "Equipment lending desk",
+    "loans": [
+      {
+        "id": "L-1042",
+        "person": "Amara Okafor",
+        "item": "Sony A7 IV kit",
+        "due": "Today, 16:00",
+        "state": "Due today"
+      },
+      {
+        "id": "L-1043",
+        "person": "Min-Jae Park",
+        "item": "Zoom H6 field recorder",
+        "due": "Yesterday, 17:00",
+        "state": "Overdue"
+      },
+      {
+        "id": "L-1044",
+        "person": "Alexandria Montgomery-Wright",
+        "item": "Manfrotto carbon-fibre tripod + fluid head",
+        "due": "Tomorrow, 12:00",
+        "state": "On loan"
+      },
+      {
+        "id": "L-1045",
+        "person": "Inez Silva",
+        "item": "Aputure 120d light kit",
+        "due": "Today, 18:00",
+        "state": "Due today"
+      },
+      {
+        "id": "L-1046",
+        "person": "Noor Rahman",
+        "item": "Sennheiser wireless lavalier pair",
+        "due": "Friday, 10:00",
+        "state": "On loan"
+      },
+      {
+        "id": "L-1047",
+        "person": "Theo Bell",
+        "item": "Canon RF 24–70mm lens",
+        "due": "Yesterday, 12:00",
+        "state": "Overdue"
+      }
+    ]
+  },
+  "required_behavior": [
+    "Search the actual loans by person, item or ID; combine this with a status filter and provide a clear reset/empty state.",
+    "Open a loan detail, mark it returned locally, and update relevant row state and counts. Allow undo of the latest return.",
+    "Loan ID, person, equipment, due time and state must remain discoverable on narrow screens."
+  ],
+  "constraints": [
+    "Fictional offline demo, not a live lending system. Clearly label local return behavior.",
+    "Preserve provided brand and every loan fact. No invented aggregate metrics.",
+    "Use system fonts; no dependencies or external network requests."
+  ]
+}

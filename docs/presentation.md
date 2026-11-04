@@ -43,6 +43,6 @@ To reproduce the raster capture with a browser:
 
 For a retina README raster, use `hero.svg`, a 1600×800 viewport at device scale factor 1, and save to a chosen PNG path. The README already uses the vector original, so this extra capture is optional.
 
-## Future design-output demonstrations
+## Corrected design-output demonstrations
 
-The repository has no completed comparative model evaluation. A future example should retain the exact brief, model/host, permitted input assets, generated source, reproduction commands, and unedited captures of the result. Label a mockup as a mockup and separate visual judgment from measured task behavior. Use the [evaluation scenarios](../evals/form-design.md) to choose a concrete workflow.
+The [corrected-output record](../evals/paired-2026-11-03/results.md) retains rejected drafts and four corrected fictional interfaces. It is iterative acceptance evidence, not a controlled model ranking. New examples should retain the exact brief, model/host, permitted input assets, generated source, reproduction commands, and unedited captures of the result. Label a mockup as a mockup and separate visual judgment from measured task behavior. Use the [evaluation scenarios](../evals/form-design.md) to choose a concrete workflow.

@@ -1,0 +1,510 @@
+{
+  "review_type": "Independent cross-review; not a blinded or fresh-context benchmark",
+  "mode": "Audit only; no artifact edits",
+  "artifact": "outputs/holdout/final-draft/index.html",
+  "artifact_sha256": "632f5f300eabd1505b51999809208ef91262c901111945199c4729a5c07f5421",
+  "brief": "reviews/evidence/holdout/audit/brief.json",
+  "skill": "skills/form-unslop",
+  "skill_resources_used": [
+    "SKILL.md",
+    "references/signals.md",
+    "references/repair-method.md",
+    "references/browser-inspection.md",
+    "scripts/inspect-page.mjs"
+  ],
+  "input_boundary": "Reviewed the supplied HTML, original holdout brief, indicated skill and actual browser observations only. No handoffs, author conclusions, earlier case outputs or evaluation notes were read for this review.",
+  "summary": "The actual bicycle has a strong role, configuration choices and quote data operate accurately, and enlarged controls/totals reflow. No decorative indicator lights or ordinary-action arrows were found, including SVG and pseudo-elements. One low-priority artwork placement/contrast issue remains.",
+  "remaining_issues": [
+    {
+      "id": "R1",
+      "severity": "low",
+      "kind": "SVG artwork registration and contrast",
+      "decision": "change",
+      "location": "#bicycle-illustration > text (the pale Kite decal at x=546, y=320, rotated -31 degrees)",
+      "condition": "Normal desktop render with Ochre and Forest selected; visible in magnified actual-browser captures",
+      "observation": "The pale Kite wordmark is positioned just above the diagonal frame tube, on the pale page background, rather than on the painted tube. The close-ups show the letters floating above the frame. Its #f6f4df fill against #f1f3ed is approximately 1.01:1, so it nearly disappears at ordinary size.",
+      "consequence": "This small illustration detail looks detached from the physical bicycle and loses legibility. It does not prevent identifying or configuring the product because the main Kite brand and current paint labels remain clear.",
+      "correction": "Align and size the decal as a mark on the actual tube, then check its contrast against all three paint choices; alternatively remove the nonessential decal. Preserve the original bicycle geometry and do not add a backing pill or decorative arrow.",
+      "evidence": [
+        "illustration-wordmark-ochre-closeup.png",
+        "illustration-wordmark-forest-closeup.png",
+        "desktop-initial.png",
+        "desktop-configuration-forest.png"
+      ],
+      "signal_relationship": [
+        "U07"
+      ],
+      "boundary": "This is a concrete placement/legibility problem in an otherwise justified illustration role, not evidence that brand marks or detailed bicycle artwork are generic."
+    }
+  ],
+  "signal_review": [
+    {
+      "id": "U01",
+      "group": "19-signal checklist",
+      "signal": "Tags & pills",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".sizes .size-choice",
+        ".colours .colour-choice",
+        ".wheels .wheel-choice"
+      ],
+      "observation_and_reason": "The rectangular size choices, paint samples and radio choices are actual configuration controls. Selected fills/borders reflect real choices; none is an ornamental status pill.",
+      "related_findings": []
+    },
+    {
+      "id": "U02",
+      "group": "19-signal checklist",
+      "signal": "Excessive italics",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".product-copy",
+        ".configurator",
+        "#quote-dialog",
+        "#bicycle-illustration text"
+      ],
+      "observation_and_reason": "No italic font treatment occurs. The small SVG brand decal is rotated to follow the diagonal tube; rotation is an illustration-placement role, not an italic headline accent. Its registration issue is R1.",
+      "related_findings": []
+    },
+    {
+      "id": "U03",
+      "group": "19-signal checklist",
+      "signal": "Instrument Serif",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        "body",
+        "button",
+        "input",
+        "#bicycle-illustration text"
+      ],
+      "observation_and_reason": "Instrument Serif is absent. The interface uses system sans-serif stacks, with Arial for the SVG decal. No font substitution is indicated.",
+      "related_findings": []
+    },
+    {
+      "id": "U04",
+      "group": "19-signal checklist",
+      "signal": "Negative kerning",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".brand",
+        ".product-copy h1",
+        ".headline",
+        ".total",
+        "#quote-title",
+        "#bicycle-illustration text"
+      ],
+      "observation_and_reason": "No negative letter spacing is authored or apparent. Headings, totals and quote values reflow under enlarged text without colliding.",
+      "related_findings": []
+    },
+    {
+      "id": "U05",
+      "group": "19-signal checklist",
+      "signal": "Over-the-top detailed UI",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".configurator",
+        "#quote-dialog",
+        ".details"
+      ],
+      "observation_and_reason": "The controls, selected outputs, totals and summary operate on the supplied choices. There are no fabricated reviews, availability claims, delivery claims, performance metrics or inactive commerce controls.",
+      "related_findings": []
+    },
+    {
+      "id": "U06",
+      "group": "19-signal checklist",
+      "signal": "Overusing dividers",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".navigation",
+        ".configurator",
+        ".quote-content",
+        ".detail-list"
+      ],
+      "observation_and_reason": "Sections use spacing rather than repeated horizontal rules. The Configure underline is a navigation affordance; control borders and focus outlines are not redundant section dividers.",
+      "related_findings": []
+    },
+    {
+      "id": "U07",
+      "group": "19-signal checklist",
+      "signal": "Color shades & opacities",
+      "decision": "change",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        "body",
+        ".description",
+        ".proposal-note",
+        "dialog::backdrop",
+        "#bicycle-illustration text"
+      ],
+      "observation_and_reason": "The interface colors have clear text, surface, selection and paint roles. The dark translucent backdrop communicates modality. R1 is a localized exception: the pale decal lies on the similarly pale page, with about 1.01:1 contrast; correct its placement/actual background relationship instead of globally darkening the palette.",
+      "related_findings": [
+        "R1"
+      ]
+    },
+    {
+      "id": "U08",
+      "group": "19-signal checklist",
+      "signal": "Containers with borders",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".size-choice",
+        ".colour-choice:has(input:checked)",
+        ".close-button",
+        ".primary-button"
+      ],
+      "observation_and_reason": "The borders identify actual size choices, selected paint and actionable buttons. They do not fragment ordinary content into equal-priority boxed cards. Preserve control and focus boundaries.",
+      "related_findings": []
+    },
+    {
+      "id": "U09",
+      "group": "19-signal checklist",
+      "signal": "Overly detailed diagrams",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        "#bicycle-illustration",
+        "#wheel-drawing",
+        "#spokes",
+        "#steel-frame",
+        "#steel-fork"
+      ],
+      "observation_and_reason": "The original side-view bicycle is the product illustration explicitly requested by the brief. Spokes, rims, chain and frame make the object recognizable; they are not a fake technical dashboard or diagram. The adjacent note explicitly limits component/proportion accuracy, so the drawing is not presented as an additional specification.",
+      "related_findings": []
+    },
+    {
+      "id": "U10",
+      "group": "19-signal checklist",
+      "signal": "Verbose, redundant text",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".product-copy",
+        ".bicycle-figure figcaption",
+        ".proposal-note",
+        ".currency-note",
+        ".order-note",
+        "#quote-disclaimer"
+      ],
+      "observation_and_reason": "Model, headline and description each add distinct supplied information. The preview label binds the actual painted object to the current color; proposal, estimate and no-payment notices preserve honest boundaries. Repeating current data in the quote is the requested review task, not duplicate framing.",
+      "related_findings": []
+    },
+    {
+      "id": "U11",
+      "group": "19-signal checklist",
+      "signal": "Code breadcrumbs",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".product-copy h1",
+        ".configurator",
+        "#quote-dialog",
+        ".site-footer"
+      ],
+      "observation_and_reason": "No source paths or fake implementation labels decorate the page. Everyday / 01 is the supplied model name, not a code breadcrumb.",
+      "related_findings": []
+    },
+    {
+      "id": "U12",
+      "group": "19-signal checklist",
+      "signal": "Section numbering",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".product-copy h1",
+        ".details",
+        "#quote-dialog"
+      ],
+      "observation_and_reason": "There is no ornamental section sequence. The 01 belongs to the supplied model name and should be preserved; prices are actual configuration data.",
+      "related_findings": []
+    },
+    {
+      "id": "U13",
+      "group": "19-signal checklist",
+      "signal": "Eyebrows",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".configurator legend",
+        ".selection-output",
+        ".bicycle-figure figcaption",
+        ".quote-model"
+      ],
+      "observation_and_reason": "Fieldset legends label actual choices and selected outputs confirm current values. The preview caption and quote model identify their distinct content. There is no repeated eyebrow-heading-description scaffold.",
+      "related_findings": []
+    },
+    {
+      "id": "U14",
+      "group": "19-signal checklist",
+      "signal": "ASCII images",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        "#bicycle-illustration",
+        "main"
+      ],
+      "observation_and_reason": "No ASCII or terminal-style imagery occurs. The bicycle is actual original SVG geometry.",
+      "related_findings": []
+    },
+    {
+      "id": "U15",
+      "group": "19-signal checklist",
+      "signal": "Squiggles",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        "#bicycle-illustration path",
+        "#bicycle-illustration ellipse"
+      ],
+      "observation_and_reason": "Curves depict the brake cable, fork, saddle, chain and wheel geometry. The flat ground shadow places the object. These marks are assigned to the bicycle illustration, not free-floating doodles or ornamental emphasis.",
+      "related_findings": []
+    },
+    {
+      "id": "U16",
+      "group": "19-signal checklist",
+      "signal": "Excessive mono fonts",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        "body",
+        ".total",
+        "#quote-total",
+        "#bicycle-illustration text"
+      ],
+      "observation_and_reason": "No monospace font is used. Tabular numeric settings stabilize prices in an ordinary sans-serif face; they are meaningful data formatting, not a technical costume.",
+      "related_findings": []
+    },
+    {
+      "id": "U17",
+      "group": "19-signal checklist",
+      "signal": "ALL CAPS subtitles",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".navigation",
+        ".description",
+        ".configurator legend",
+        ".currency-note",
+        "#quote-dialog",
+        "#bicycle-illustration text"
+      ],
+      "observation_and_reason": "Supporting labels are sentence case. GBP is the real currency abbreviation, not repeated all-caps scaffolding. The decal reads Kite in normal title case.",
+      "related_findings": []
+    },
+    {
+      "id": "U18",
+      "group": "19-signal checklist",
+      "signal": "Gradient backgrounds",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        "body",
+        "dialog",
+        "#bicycle-illustration defs",
+        "#bicycle-illustration use"
+      ],
+      "observation_and_reason": "There are no gradient backgrounds or SVG gradient fills. Solid strokes/highlights articulate the illustrative bicycle material, rather than ambient haze behind the interface.",
+      "related_findings": []
+    },
+    {
+      "id": "U19",
+      "group": "19-signal checklist",
+      "signal": "Periods in UI",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".headline",
+        ".description",
+        ".order-note",
+        ".quote-disclaimer",
+        ".site-footer",
+        "button",
+        ".navigation"
+      ],
+      "observation_and_reason": "Buttons and short navigation labels do not carry ornamental periods. The supplied headline and descriptive/disclaimer sentences keep normal punctuation.",
+      "related_findings": []
+    },
+    {
+      "id": "A01",
+      "group": "Additional FORM default",
+      "signal": "Additional default: indicator lights",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".brand",
+        ".selection-output",
+        ".wheel-choice input",
+        "#bicycle-illustration circle",
+        ".paint-sample"
+      ],
+      "observation_and_reason": "No decorative activity, availability, demo or brand lights occur. The wheel-option circles are native radio controls with real selection meaning; circular hubs/rims belong to the bicycle object. Paint samples communicate the supplied color choices. None should be removed merely because it is a small colored shape.",
+      "related_findings": []
+    },
+    {
+      "id": "A02",
+      "group": "Additional FORM default",
+      "signal": "Additional default: arrow glyphs and icons",
+      "decision": "keep",
+      "unsupported_ornamental_default_observed": false,
+      "locations_checked": [
+        ".navigation",
+        ".primary-button",
+        ".close-button",
+        ".site-footer",
+        "#bicycle-illustration"
+      ],
+      "observation_and_reason": "No ordinary action or caption has an appended arrow or chevron. The cable, handlebar, crank and derailleur paths depict bicycle parts rather than drawn arrows. Pseudo-element inspection found no generated before/after content.",
+      "related_findings": []
+    }
+  ],
+  "justified_exceptions": [
+    {
+      "treatment": "Native wheel radio circles and real size/color selection boundaries",
+      "role": "Actual mutually exclusive selections, verified through clicks, keyboard changes and quote output. They are not decorative indicator lights or arbitrary bordered containers."
+    },
+    {
+      "treatment": "Rectangular paint samples and selected color border",
+      "role": "The supplied color data is represented visually and in text; both the frame and fork change to that color. The selected border distinguishes the current paint even for Chalk."
+    },
+    {
+      "treatment": "Detailed SVG wheels, hubs, spokes, cable and drivetrain",
+      "role": "The brief explicitly requires an original illustration giving the actual bicycle a strong visual role. These shapes construct that object, and the visible caption states that components/proportions are illustrative."
+    },
+    {
+      "treatment": "Model suffix 01, GBP and supplied sentence punctuation",
+      "role": "These preserve actual supplied identity, currency and language rather than ornamental section numbering or UI punctuation."
+    },
+    {
+      "treatment": "Proposal, local-estimate and no-order/payment text in configuration and quote",
+      "role": "These communicate distinct provisional and demo boundaries in the relevant action contexts."
+    },
+    {
+      "treatment": "Modal backdrop and visible focus outlines",
+      "role": "These communicate modality and keyboard focus. No decorative ::before/::after content was observed."
+    }
+  ],
+  "actual_checks": {
+    "environment": "Headless Chromium through the supplied local Playwright installation; file:// loading with no external requests",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "normal_configuration_coverage": "All 18 combinations of three sizes, three colors and two wheel options at each viewport: 36 combinations in total.",
+    "operated_and_verified": [
+      "Initial Medium/Ochre/City wheels selection is explicitly an editable proposal",
+      "Size and color outputs match the checked choices",
+      "Both actual SVG frame and fork strokes change to the selected supplied hex color",
+      "Preview caption and accessible SVG title follow color selection",
+      "City wheels total is £1,650; All-road wheels total is £1,770",
+      "Every combination opens a quote with current size, color, wheel name, extra and total",
+      "Quote states no order or payment is created and nothing is sent",
+      "Escape closes every normal quote and returns focus to Review quote",
+      "Visible Close and Return to configuration both close and restore focus",
+      "Keyboard Enter opens quote; initial Close focus and forward/backward Tab wrap work",
+      "Radio arrow keys change Medium to Large, Forest to Chalk and City wheels to All-road wheels",
+      "Reduced-motion mode sets document scrolling to auto",
+      "At enlarged text, change to Large/Chalk/All-road wheels, inspect quote, reach Return, close and restore focus; Escape also works"
+    ],
+    "assertions_passed": 324,
+    "assertion_failures": [],
+    "page_errors": [],
+    "external_requests": [],
+    "pseudo_element_observation": [
+      {
+        "viewport": "desktop",
+        "generatedContent": []
+      },
+      {
+        "viewport": "mobile",
+        "generatedContent": []
+      }
+    ],
+    "enlarged_text_method": "Doubled all HTML computed font sizes, including containers so em-based sizing relationships scale; SVG artwork stays proportionally unchanged. This is a controlled text stress test, not a full browser zoom audit.",
+    "enlarged_observations": [
+      {
+        "viewport": "desktop",
+        "method": "All HTML computed font sizes at 200%, with container em relationships included; SVG artwork remains proportionally unchanged",
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440,
+        "quoteGeometry": {
+          "clientWidth": 500,
+          "scrollWidth": 500,
+          "clientHeight": 960,
+          "scrollHeight": 971
+        },
+        "sizeGridColumns": "160px 160px"
+      },
+      {
+        "viewport": "mobile",
+        "method": "All HTML computed font sizes at 200%, with container em relationships included; SVG artwork remains proportionally unchanged",
+        "documentScrollWidth": 390,
+        "viewportWidth": 390,
+        "quoteGeometry": {
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "clientHeight": 804,
+          "scrollHeight": 1143
+        },
+        "sizeGridColumns": "342px"
+      }
+    ],
+    "enlarged_result": "No horizontal document or quote overflow. Size choices reflow to one column at 390px and two columns at 1440px. Wheel prices and totals wrap into readable groups. The quote remains vertically scrollable and its Return action was operated at both sizes.",
+    "rendered_states_inspected": [
+      "Initial desktop and mobile product/configuration",
+      "Ochre, Forest and Chalk actual bicycle treatment",
+      "Normal quote with current All-road configuration",
+      "Enlarged desktop and mobile configuration",
+      "Enlarged quote top and lower content at both sizes",
+      "Magnified actual SVG decal region in Ochre and Forest"
+    ],
+    "representative_contrast_pairs": [
+      {
+        "foreground": "#243740",
+        "background": "#f1f3ed",
+        "ratio": "11.08:1"
+      },
+      {
+        "foreground": "#53616a",
+        "background": "#f1f3ed",
+        "ratio": "5.72:1"
+      },
+      {
+        "foreground": "#243740",
+        "background": "#fcfcf8",
+        "ratio": "12.04:1"
+      },
+      {
+        "foreground": "#f6f4df",
+        "background": "#f1f3ed",
+        "ratio": "1.01:1",
+        "context": "Misregistered SVG decal; R1"
+      },
+      {
+        "foreground": "#9ca9a8",
+        "background": "#f1f3ed",
+        "ratio": "2.17:1",
+        "context": "Unselected control edge; labels and keyboard focus remain strongly visible. No whole-component conformance conclusion is drawn from this pair."
+      }
+    ],
+    "contrast_boundary": "Opaque pair measurements only; not a complete accessibility or graphic contrast audit."
+  },
+  "evidence_directory": "<evaluation-workspace>/holdout-cross-review-evidence",
+  "limits": [
+    "Headless Chromium only; no physical-device, other-engine, screen-reader or complete accessibility audit.",
+    "Enlargement used CSS font-size stress rather than actual browser zoom.",
+    "No production, ordering, payment or availability system exists or was inferred.",
+    "The page source was not changed, and nothing was published or sent."
+  ],
+  "publicationNote": "Original cross-review of preserved draft; local paths normalized. The floating decal was subsequently removed."
+}

@@ -1,0 +1,5 @@
+{
+  "sourceBeforeSha256": "632f5f300eabd1505b51999809208ef91262c901111945199c4729a5c07f5421",
+  "change": "Remove the pale, floating SVG frame decal identified by cross-review. Brand identity remains in the real page heading and accessible illustration title.",
+  "verification": "No visible SVG text decal remains; configuration and frame-colour checks are run against the corrected artifact."
+}

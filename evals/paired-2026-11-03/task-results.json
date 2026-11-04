@@ -1,0 +1,341 @@
+{
+  "scope": "Saved-artifact brief-level task checks; not a beauty metric or full accessibility audit.",
+  "results": [
+    {
+      "case": "festival",
+      "condition": "current",
+      "width": 1440,
+      "flow": "room filtering and factual programme",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "current",
+      "width": 1440,
+      "flow": "save, personal programme, unsave and empty recovery",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "current",
+      "width": 1440,
+      "flow": "day-pass truth and dismissible detail",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "current",
+      "width": 390,
+      "flow": "room filtering and factual programme",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "current",
+      "width": 390,
+      "flow": "save, personal programme, unsave and empty recovery",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "current",
+      "width": 390,
+      "flow": "day-pass truth and dismissible detail",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "width": 1440,
+      "flow": "room filtering and factual programme",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "width": 1440,
+      "flow": "save, personal programme, unsave and empty recovery",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "width": 1440,
+      "flow": "day-pass truth and dismissible detail",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "width": 390,
+      "flow": "room filtering and factual programme",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "width": 390,
+      "flow": "save, personal programme, unsave and empty recovery",
+      "passed": true
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "width": 390,
+      "flow": "day-pass truth and dismissible detail",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "width": 1440,
+      "flow": "loan facts, combined search/filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "width": 1440,
+      "flow": "return, row/count consistency and latest undo",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "width": 1440,
+      "flow": "detail discoverability and applicable keyboard close",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "width": 390,
+      "flow": "loan facts, combined search/filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "width": 390,
+      "flow": "return, row/count consistency and latest undo",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "width": 390,
+      "flow": "detail discoverability and applicable keyboard close",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "width": 1440,
+      "flow": "loan facts, combined search/filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "width": 1440,
+      "flow": "return, row/count consistency and latest undo",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "width": 1440,
+      "flow": "detail discoverability and applicable keyboard close",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "width": 390,
+      "flow": "loan facts, combined search/filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "width": 390,
+      "flow": "return, row/count consistency and latest undo",
+      "passed": true
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "width": 390,
+      "flow": "detail discoverability and applicable keyboard close",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "width": 1440,
+      "flow": "search, combined state filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "width": 1440,
+      "flow": "all reading states and shelf consistency",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "width": 1440,
+      "flow": "all supplied detail facts, visible close and Escape/focus",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "width": 390,
+      "flow": "search, combined state filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "width": 390,
+      "flow": "all reading states and shelf consistency",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "width": 390,
+      "flow": "all supplied detail facts, visible close and Escape/focus",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "width": 1440,
+      "flow": "search, combined state filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "width": 1440,
+      "flow": "all reading states and shelf consistency",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "width": 1440,
+      "flow": "all supplied detail facts, visible close and Escape/focus",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "width": 390,
+      "flow": "search, combined state filter, empty/reset",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "width": 390,
+      "flow": "all reading states and shelf consistency",
+      "passed": true
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "width": 390,
+      "flow": "all supplied detail facts, visible close and Escape/focus",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "width": 1440,
+      "flow": "all 18 configurations and accurate total",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "width": 1440,
+      "flow": "colour changes the actual bicycle drawing",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "width": 1440,
+      "flow": "truthful current quote, visible close and Escape",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "width": 390,
+      "flow": "all 18 configurations and accurate total",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "width": 390,
+      "flow": "colour changes the actual bicycle drawing",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "width": 390,
+      "flow": "truthful current quote, visible close and Escape",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "width": 1440,
+      "flow": "all 18 configurations and accurate total",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "width": 1440,
+      "flow": "colour changes the actual bicycle drawing",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "width": 1440,
+      "flow": "truthful current quote, visible close and Escape",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "width": 390,
+      "flow": "all 18 configurations and accurate total",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "width": 390,
+      "flow": "colour changes the actual bicycle drawing",
+      "passed": true
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "width": 390,
+      "flow": "truthful current quote, visible close and Escape",
+      "passed": true
+    }
+  ]
+}

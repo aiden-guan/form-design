@@ -1,0 +1,18 @@
+{
+  "currentTag": "v1.1.0",
+  "currentCommit": "4bbe5c1",
+  "currentSkillTreeSha256": "87e332aff2fdce9742ccbcb413c55ef6d6ffe5f9f44c805a08ed13dfcb18a6eb",
+  "revisedSkillTreeSha256": "400d37870a7a300a0b37d1d1fa0b6282089306c7f893d4da1ed34b813b2b080f",
+  "treeHashMethod": "sorted relative POSIX path + NUL + file bytes + NUL, SHA-256",
+  "stage": "Final revision after owner rejection of initial candidates",
+  "basis": "Owner identified decorative indicator lights, repeated arrow glyphs, exaggerated italics and remaining unslop-list violations. Normal task-flow success did not satisfy visual acceptance.",
+  "changes": [
+    "Read and apply the complete anti-generic defaults before substantial implementation and before delivery.",
+    "Use clear labels without decorative dots or appended arrows; start without italic accents, pills, eyebrows, negative tracking and related ornamental defaults.",
+    "Inspect SVG artwork, pseudo-elements and all relevant states; exceptions need explicit approval or task necessity."
+  ],
+  "priorCandidateRetained": "revision-1.json and outputs/*/revised/",
+  "holdoutOutputInspectedBeforeFreeze": false,
+  "generationSkillTreeSha256": "b333089988923d347d4383ac5424d4b86a97f512e077bcbe15b61c341f9d1303",
+  "afterGenerationClarification": "Cross-review treated an Undo arrow as conventional. The final skill explicitly requires clear labelled Undo/Redo actions without an added arrow; corrected examples are reviewed repairs, not unassisted fresh-run claims."
+}

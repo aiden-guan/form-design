@@ -16,6 +16,8 @@ Use this after building, during a redesign, or for a critique request. Do not as
 
 Separate a subjective judgment (“the crop weakens the focal point”) from a demonstrable failure (“the image covers the action at this width”). Both can matter; evidence should fit the claim.
 
+Review the screen at reading size as well as as a thumbnail. The thumbnail shows visual mass; reading size reveals repeated framing, weak labels, cramped controls, and the actual amount of useful work in view. On a frequent-use surface, justify promotional or instructional chrome by a current need. On an expressive entrance, preserve atmosphere when it serves the brief.
+
 For each material issue record **where → observation → consequence → specific correction**. Prefer “the label has the same contrast as the value, so the account balance is difficult to scan; lower the label emphasis and align amounts” over “improve hierarchy.”
 
 ## A useful review pass
@@ -26,6 +28,8 @@ For each material issue record **where → observation → consequence → speci
 4. Stop when the requested scope is complete and material problems are resolved. Avoid endless polishing or unrelated redesign.
 
 Representative checks: primary action; keyboard focus and order; open/close and Escape for relevant overlays; hover-independent access; loading/empty/error states; long content; narrow viewport and intermediate wrap point; zoom or enlarged text; reduced motion; missing/slow imagery. Select checks that match the artifact rather than claiming a comprehensive audit.
+
+For enlarged text, inspect the relationships most likely to collide and the relevant state, rather than only checking `scrollWidth`. Text can overlap within a page that reports no overflow. When a check fails, record the affected content/control, correct its sizing relationship, and repeat that check. Do not claim the tested failure is resolved from a different viewport or state.
 
 For faithful matching, align viewport, DPR, crop, loaded fonts, content, and interaction state. Compare proportion and position before microdetails. A pixel difference concerns a capture, not every state or overall usability.
 

@@ -1,0 +1,17 @@
+{
+  "currentTag": "v1.1.0",
+  "currentCommit": "4bbe5c1",
+  "currentSkillTreeSha256": "87e332aff2fdce9742ccbcb413c55ef6d6ffe5f9f44c805a08ed13dfcb18a6eb",
+  "revisedSkillTreeSha256": "8a9a5efa5902df28ef361040072a3bf9d4ec065979b379896b4108dc91010f38",
+  "treeHashMethod": "sorted relative POSIX path + NUL + file bytes + NUL, SHA-256",
+  "changes": [
+    "Allocate first-screen space to use frequency and remove redundant framing.",
+    "Inspect enlarged-text relationships inside rows and controls, beyond page overflow."
+  ],
+  "basis": {
+    "observedFailure": "Current festival at doubled text: time/artist collisions and labels escaping fixed-height controls.",
+    "qualitativeConcern": "Repeated framing in current repeat-use reading and lending apps."
+  },
+  "holdoutSeen": false,
+  "additionalCurrentObservationAfterFreeze": "The shared doubled-text check also flags Reading/Finished filter labels extending outside their control boxes in the current reading app. No revision change was made after this observation."
+}

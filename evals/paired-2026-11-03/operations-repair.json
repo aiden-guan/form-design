@@ -1,0 +1,12 @@
+{
+  "sourceBeforeSha256": "10b3ae24afcad89ac599428412d70b17e1e5af428e3795bbfb27b98fc2fb2b49",
+  "changes": [
+    "Remove the redundant curved arrow from the labelled Undo action.",
+    "Use the approved blue focus outline.",
+    "Remove the inaccurate desktop Escape hint and its decorative keycaps.",
+    "Hide the skip link by its actual content height until focused.",
+    "Remove outer table/detail framing; retain real input/control boundaries and comparison rules.",
+    "Consolidate repeated device-local header wording."
+  ],
+  "basis": "Owner arrow/default criteria, cross-review CR-01\u201303 and maintainer full-checklist review."
+}

@@ -1,0 +1,57 @@
+{
+  "project": "Margin / a personal reading shelf",
+  "audience": "A frequent reader who manages a small personal shelf mainly on a phone.",
+  "request": "Build a beautiful mobile-first reading app with the warmth and clarity of a good bookshop. The primary task is to find a book, open its details, and move it between reading states. Give it an individual visual identity and usable wide layout too.",
+  "facts": {
+    "name": "Margin",
+    "tagline": "A little room for the next chapter.",
+    "books": [
+      {
+        "id": "b1",
+        "title": "The Shape of Quiet",
+        "author": "Leah Mensah",
+        "kind": "Essays",
+        "pages": 224,
+        "state": "Reading",
+        "note": "Attention, ordinary places, and the pleasure of noticing."
+      },
+      {
+        "id": "b2",
+        "title": "A Map of Small Distances",
+        "author": "Tomas Velez",
+        "kind": "Fiction",
+        "pages": 312,
+        "state": "Want to read",
+        "note": "Two neighbours trace the history of the street they share."
+      },
+      {
+        "id": "b3",
+        "title": "Night Gardens",
+        "author": "Hana Mori",
+        "kind": "Poetry",
+        "pages": 96,
+        "state": "Finished",
+        "note": "A collection about growth after the city falls asleep."
+      },
+      {
+        "id": "b4",
+        "title": "Ways of Making and Remaking a Home",
+        "author": "N. K. Adeyemi",
+        "kind": "Essays",
+        "pages": 280,
+        "state": "Want to read",
+        "note": "Rooms, repairs, and the many meanings of belonging."
+      }
+    ]
+  },
+  "required_behavior": [
+    "Search title or author and filter by reading state; show a useful empty state and reset.",
+    "Open each book detail and change its state between Want to read, Reading and Finished; shelf and counts must update.",
+    "Allow closing details with keyboard Escape and a visible control, and preserve sensible focus."
+  ],
+  "constraints": [
+    "All books and authors are fictional demo data: do not imply real reviews, ratings or external availability.",
+    "Use original typographic covers or simple SVG artwork; no external assets/fonts/network requests.",
+    "Use system fonts; avoid fake inactive tabs or decorative controls that appear functional."
+  ]
+}

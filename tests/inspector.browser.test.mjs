@@ -119,3 +119,48 @@ test('comparison lab varies type and palette independently and exports a proposa
   assert.match(await page.locator('#action-result').innerText(),/No booking was sent/);
  }finally{await page.close()}
 });
+
+test('optional text bounds locate control overflow and deliberate clipping without editing the page',async()=>{
+ const page=await browser.newPage({viewport:{width:320,height:700}});
+ try{
+  await page.setContent('<main><button id="action" style="width:55px;height:22px;white-space:nowrap;font:24px Arial">Confirm return</button><p id="excerpt" style="width:80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:18px Arial">An intentionally shortened description</p><h1 id="title" style="font:64px Arial;white-space:nowrap">An extraordinarily long title</h1></main>');
+  const before=await page.content();
+  const result=await page.evaluate(inspectPage,{measureTextBounds:true});
+  assert.equal(await page.content(),before);
+  assert.ok(result.candidates.textOutsideControl.samples.some(s=>s.selector==='#action'));
+  assert.ok(result.candidates.textClippedByContainer.samples.some(s=>s.selector==='#excerpt'));
+  assert.ok(result.candidates.textBeyondViewport.samples.some(s=>s.selector==='#title'));
+  assert.equal(result.scan.textBounds.enabled,true);
+  assert.ok(result.scan.textBounds.fragments>0);
+  assert.deepEqual(Object.keys(result.candidates.textClippedByContainer).sort(),['count','samples']);
+ }finally{await page.close()}
+});
+
+test('text bounds remain opt-in and bounded, and exclude explicitly clipped accessibility text',async()=>{
+ const page=await browser.newPage({viewport:{width:320,height:700}});
+ try{
+  await page.setContent('<button id="fits" style="padding:20px">Open details</button><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">A very long accessibility-only label</span><p id="many" style="font:18px Arial;width:40px"></p>');
+  await page.locator('#many').evaluate(el=>{for(let i=0;i<20;i++)el.append(document.createTextNode('many words '))});
+  const normal=await page.evaluate(inspectPage);
+  assert.equal(normal.scan.textBounds.enabled,false);assert.equal(normal.scan.textBounds.fragments,0);
+  const result=await page.evaluate(inspectPage,{measureTextBounds:true,maxSamples:1});
+  assert.equal(result.scan.textBounds.truncated,true);
+  assert.equal(result.candidates.textOutsideControl.count,0);
+  assert.ok(!result.candidates.textBeyondViewport.samples.some(s=>s.text.includes('accessibility-only')));
+  for(const bucket of Object.values(result.candidates))assert.ok(bucket.samples.length<=1);
+ }finally{await page.close()}
+});
+
+test('observations expose decorative arrow/marker patterns and inline SVG italics without issuing a verdict',async()=>{
+ const page=await browser.newPage();
+ try{
+  await page.setContent('<span id="light" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#159447"></span><span>Local demo</span><button id="open">Open ↗</button><svg width="120" height="60"><text id="cover-title" x="2" y="30" font-size="24" font-style="italic">Quiet</text></svg>');
+  const result=await page.evaluate(inspectPage);
+  assert.equal(result.candidates.smallRoundMarker.count,1);
+  assert.equal(result.candidates.smallRoundMarker.samples[0].selector,'#light');
+  assert.equal(result.candidates.arrowGlyph.count,1);
+  assert.equal(result.candidates.arrowGlyph.samples[0].selector,'#open');
+  assert.ok(result.candidates.italicText.samples.some(s=>s.selector==='#cover-title'&&s.text==='Quiet'));
+  for(const name of ['smallRoundMarker','arrowGlyph'])assert.deepEqual(Object.keys(result.candidates[name]).sort(),['count','samples']);
+ }finally{await page.close()}
+});

@@ -1,0 +1,164 @@
+{
+  "basis": "Owner rejection overrides functional passes. Original cross-reviews are retained; parent corrections and exact-state verification close their findings.",
+  "cases": [
+    {
+      "case": "festival",
+      "review": "reviews/festival.json",
+      "signalsReviewed": [
+        "A01",
+        "A02",
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19"
+      ],
+      "corrections": [
+        "Remove the added punctuated dialog heading and ornamental result-caption flourish.",
+        "Use plain empty-state headings and clear Save labels.",
+        "Correct doubled-text timetable/header/dialog reflow and keep artwork clear of the wordmark."
+      ],
+      "explicitExceptions": [
+        "Control borders identify real Save/Close/day-pass controls; row rules separate actual chronological records.",
+        "The supplied tagline and necessary full sentences retain punctuation.",
+        "The sound graphic is subject artwork, not a data diagram or decorative indicator light."
+      ],
+      "sourceSha256": "bd0287275621f808172155141d114fab46e4272904a09a3b8ab9d38fced2a357",
+      "checklistIssuesLeftOpen": [],
+      "limit": "Maintainer acceptance of the recorded criteria, not a universal aesthetic verdict or a complete accessibility audit."
+    },
+    {
+      "case": "operations",
+      "review": "reviews/operations.json",
+      "signalsReviewed": [
+        "A01",
+        "A02",
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19"
+      ],
+      "corrections": [
+        "Remove the curved Undo arrow and decorative shortcut keycaps.",
+        "Keep status in words; retain real equipment/loan facts and selected state.",
+        "Strengthen focus contrast and hide the skip link by its own content height.",
+        "Remove unnecessary outer table/detail frames."
+      ],
+      "explicitExceptions": [
+        "Loan IDs and model abbreviations are supplied facts, not decorative code or uppercase subtitles.",
+        "Input boundaries, selected state and record separators support the actual desk workflow.",
+        "Relevant equipment-category glyphs and a native selection disclosure carry actual meaning; the redundant Undo arrow is removed."
+      ],
+      "sourceSha256": "e217cf26097a461d41041340afab7a7634b37a1f7ea1572a9cd528b47ec66965",
+      "checklistIssuesLeftOpen": [],
+      "limit": "Maintainer acceptance of the recorded criteria, not a universal aesthetic verdict or a complete accessibility audit."
+    },
+    {
+      "case": "reading",
+      "review": "reviews/reading.json",
+      "signalsReviewed": [
+        "A01",
+        "A02",
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19"
+      ],
+      "corrections": [
+        "Rebuild with upright covers, plain status labels, natural tracking and no arrows/dots/eyebrows.",
+        "Stack mobile detail content so enlarged titles keep whole words."
+      ],
+      "explicitExceptions": [
+        "The real search field needs a boundary and filters need a selected state.",
+        "Original covers are content artwork; all cover type is upright.",
+        "Sentence punctuation remains in the supplied descriptions and necessary local-state notices."
+      ],
+      "sourceSha256": "0e47ec9f9f54c4b4ca03efd61ef5d6e5a833c0211596330f90c6f9f344ea8428",
+      "checklistIssuesLeftOpen": [],
+      "limit": "Maintainer acceptance of the recorded criteria, not a universal aesthetic verdict or a complete accessibility audit."
+    },
+    {
+      "case": "holdout",
+      "review": "reviews/holdout.json",
+      "signalsReviewed": [
+        "A01",
+        "A02",
+        "U01",
+        "U02",
+        "U03",
+        "U04",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U16",
+        "U17",
+        "U18",
+        "U19"
+      ],
+      "corrections": [
+        "Remove the pale, floating frame decal.",
+        "Retain actual native selection controls and physical bicycle illustration geometry."
+      ],
+      "explicitExceptions": [
+        "Small/Medium/Large, colors and wheel choices are actual form controls; their selected boundaries/native radio state are necessary.",
+        "Everyday / 01 is the supplied model name, not ornamental section numbering.",
+        "The small round-marker observation is a physical bicycle joint in the SVG, not a UI status light."
+      ],
+      "sourceSha256": "220f7079dcf213349f3636b49fdc433385ebf98182fb5ff28e9b5139b39a741d",
+      "checklistIssuesLeftOpen": [],
+      "limit": "Maintainer acceptance of the recorded criteria, not a universal aesthetic verdict or a complete accessibility audit."
+    }
+  ]
+}

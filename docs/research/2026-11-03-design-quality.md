@@ -71,3 +71,10 @@ Use the same brief, model/version, host, tools, factual content, permitted asset
 Present outputs under neutral labels and randomized order to reviewers who do not know the condition. Have reviewers assess task clarity, subject specificity, hierarchy, type/color coherence, actual behavior, accessibility evidence, preservation of constraints, and maintenance cost. Keep subjective preference distinct from observed failures. Include multiple briefs and repeated runs before generalizing.
 
 The supplied [scenario suite](../../evals/scenarios.json), [author-run rehearsal](../../evals/rehearsal.md), and browser tests support iteration. The rehearsal is synthetic and authored with knowledge of the intended repair; it is not an independent or blinded evaluation. Two [fresh-context forward tasks](../../evals/forward-tests-2026-11-03.md) separately exercised contextual critique and interactive exploration, with actual outputs and observed limits retained. They are limited qualitative checks, not repeated or matched rival comparisons. No claim that FORM outperforms Impeccable, Emil's skills, or another model is made by this release.
+
+
+## Follow-up: owner rejection and corrected outputs
+
+The owner rejected the initial candidate interfaces for still using decorative lights, ordinary-action arrows, exaggerated italics and other supplied tells. Their working interactions did not establish visual acceptance. The revised defaults now apply all 19 signals before implementation and delivery; explicit lights/arrows guidance is separate from the Charles Liu attribution. Artwork and pseudo-elements are included in review.
+
+The [development record](../../evals/paired-2026-11-03/results.md) retains the initial plan, rejected outputs, amended criteria, guided repairs, actual captures, task/style checks and cross-reviews. It identifies fresh and continued-context work rather than reporting a controlled win rate. The later clarification that a labelled Undo action needs no added arrow follows an observed exception loophole; it is not inferred from a general design principle.

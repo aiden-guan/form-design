@@ -1,0 +1,18 @@
+{
+  "festival": {
+    "A": "current",
+    "B": "revised"
+  },
+  "operations": {
+    "A": "revised",
+    "B": "current"
+  },
+  "reading": {
+    "A": "current",
+    "B": "revised"
+  },
+  "holdout": {
+    "A": "revised",
+    "B": "current"
+  }
+}

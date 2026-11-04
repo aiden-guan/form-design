@@ -1,0 +1,490 @@
+{
+  "verificationType": "Targeted repair verification, not an independent preference study",
+  "context": "Continued-context verification of the public operations artifact",
+  "target": "outputs/operations/final/index.html",
+  "brief": "reviews/evidence/operations/verified/brief.json",
+  "skill": "skills/form-unslop/SKILL.md",
+  "checkedAt": "2026-11-04T05:31:22.007Z",
+  "engine": "Playwright Chromium headless",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "source": {
+    "sha256": "b37e7db81c18c1861175022e8754bf89366cbac2602b3a02d595c5e30ce54bb4",
+    "sha256After": "b37e7db81c18c1861175022e8754bf89366cbac2602b3a02d595c5e30ce54bb4",
+    "unchanged": true,
+    "edited": false
+  },
+  "issues": [
+    {
+      "id": "CR-01",
+      "status": "resolved",
+      "finding": "Focus-indicator contrast",
+      "measurements": {
+        "outlineColor": "rgb(34, 85, 204)",
+        "outlineWidth": "3px",
+        "outlineOffset": "3px",
+        "outlineStyle": "solid",
+        "focusVisible": true,
+        "inputBackground": "rgb(255, 255, 255)",
+        "canvasBackground": "rgb(243, 245, 248)",
+        "contrastOnWhite": 6.48,
+        "contrastOnCanvas": 5.94
+      },
+      "observation": "Rendered search focus now uses approved blue, retaining its 3px ring and 3px offset."
+    },
+    {
+      "id": "CR-02",
+      "status": "resolved",
+      "finding": "Inaccurate desktop Escape hint",
+      "measurements": {
+        "keyboardTipElements": 0,
+        "footerText": "Fictional lending data. Returns affect this demo on this device only.",
+        "advertisesEscape": false,
+        "desktopPaneStaysVisible": true,
+        "paneUnchanged": true
+      },
+      "observation": "The inaccurate hint is absent. The desktop detail pane remains persistent; mobile Escape is independently confirmed working."
+    },
+    {
+      "id": "CR-03",
+      "status": "resolved",
+      "finding": "Enlarged-text skip-link leakage",
+      "measurements": [
+        {
+          "viewport": [
+            1440,
+            1000
+          ],
+          "textScale": 1,
+          "hidden": {
+            "rect": {
+              "x": 20,
+              "y": -52.296875,
+              "width": 146.703125,
+              "height": 44.296875,
+              "top": -52.296875,
+              "right": 166.703125,
+              "bottom": -8,
+              "left": 20
+            },
+            "transform": "matrix(1, 0, 0, 1, 0, -60.2969)",
+            "top": "8px",
+            "fontSize": "14px",
+            "focused": false
+          },
+          "focused": {
+            "rect": {
+              "x": 20,
+              "y": 8,
+              "width": 146.703125,
+              "height": 44.296875,
+              "top": 8,
+              "right": 166.703125,
+              "bottom": 52.296875,
+              "left": 20
+            },
+            "transform": "none",
+            "fontSize": "14px",
+            "focused": true
+          },
+          "activated": {
+            "activeId": "loan-search",
+            "hash": "#loan-search"
+          }
+        },
+        {
+          "viewport": [
+            1440,
+            1000
+          ],
+          "textScale": 2,
+          "hidden": {
+            "rect": {
+              "x": 20,
+              "y": -72.59375,
+              "width": 250.625,
+              "height": 64.59375,
+              "top": -72.59375,
+              "right": 270.625,
+              "bottom": -8,
+              "left": 20
+            },
+            "transform": "matrix(1, 0, 0, 1, 0, -80.5938)",
+            "top": "8px",
+            "fontSize": "28px",
+            "focused": false
+          },
+          "focused": {
+            "rect": {
+              "x": 20,
+              "y": 8,
+              "width": 250.625,
+              "height": 64.59375,
+              "top": 8,
+              "right": 270.625,
+              "bottom": 72.59375,
+              "left": 20
+            },
+            "transform": "none",
+            "fontSize": "28px",
+            "focused": true
+          },
+          "activated": {
+            "activeId": "loan-search",
+            "hash": "#loan-search"
+          }
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "textScale": 1,
+          "hidden": {
+            "rect": {
+              "x": 20,
+              "y": -52.296875,
+              "width": 146.703125,
+              "height": 44.296875,
+              "top": -52.296875,
+              "right": 166.703125,
+              "bottom": -8,
+              "left": 20
+            },
+            "transform": "matrix(1, 0, 0, 1, 0, -60.2969)",
+            "top": "8px",
+            "fontSize": "14px",
+            "focused": false
+          },
+          "focused": {
+            "rect": {
+              "x": 20,
+              "y": 8,
+              "width": 146.703125,
+              "height": 44.296875,
+              "top": 8,
+              "right": 166.703125,
+              "bottom": 52.296875,
+              "left": 20
+            },
+            "transform": "none",
+            "fontSize": "14px",
+            "focused": true
+          },
+          "activated": {
+            "activeId": "loan-search",
+            "hash": "#loan-search"
+          }
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "textScale": 2,
+          "hidden": {
+            "rect": {
+              "x": 20,
+              "y": -72.59375,
+              "width": 250.625,
+              "height": 64.59375,
+              "top": -72.59375,
+              "right": 270.625,
+              "bottom": -8,
+              "left": 20
+            },
+            "transform": "matrix(1, 0, 0, 1, 0, -80.5938)",
+            "top": "8px",
+            "fontSize": "28px",
+            "focused": false
+          },
+          "focused": {
+            "rect": {
+              "x": 20,
+              "y": 8,
+              "width": 250.625,
+              "height": 64.59375,
+              "top": 8,
+              "right": 270.625,
+              "bottom": 72.59375,
+              "left": 20
+            },
+            "transform": "none",
+            "fontSize": "28px",
+            "focused": true
+          },
+          "activated": {
+            "activeId": "loan-search",
+            "hash": "#loan-search"
+          }
+        }
+      ],
+      "observation": "Content-relative transform keeps the unfocused skip link fully outside the viewport at both text sizes, while preserving keyboard revelation and navigation."
+    },
+    {
+      "id": "UNDO-ARROW",
+      "status": "resolved",
+      "finding": "Unnecessary curved arrow beside labelled Undo",
+      "rule": "Under the updated strict rule, conventional Undo/Redo icons are unnecessary beside clear labels; no conventionality exception is applied.",
+      "measurements": {
+        "initial": [
+          {
+            "text": "Undo last return",
+            "id": "undo",
+            "disabled": true,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 1269.359375,
+              "y": 113.984375,
+              "width": 130.640625,
+              "height": 40,
+              "top": 113.984375,
+              "right": 1400,
+              "bottom": 153.984375,
+              "left": 1269.359375
+            }
+          }
+        ],
+        "desktopAfterReturn": [
+          {
+            "text": "Undo last return",
+            "id": "undo",
+            "disabled": false,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 1269.359375,
+              "y": 113.984375,
+              "width": 130.640625,
+              "height": 40,
+              "top": 113.984375,
+              "right": 1400,
+              "bottom": 153.984375,
+              "left": 1269.359375
+            }
+          },
+          {
+            "text": "Undo",
+            "id": "",
+            "disabled": false,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 1341.03125,
+              "y": 189.984375,
+              "width": 41.96875,
+              "height": 28,
+              "top": 189.984375,
+              "right": 1383,
+              "bottom": 217.984375,
+              "left": 1341.03125
+            }
+          },
+          {
+            "text": "Undo this return",
+            "id": "",
+            "disabled": false,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 1099,
+              "y": 658.4375,
+              "width": 278,
+              "height": 40,
+              "top": 658.4375,
+              "right": 1377,
+              "bottom": 698.4375,
+              "left": 1099
+            }
+          }
+        ],
+        "mobileAfterReturn": [
+          {
+            "text": "Undo last return",
+            "id": "undo",
+            "disabled": false,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 252.140625,
+              "y": 108.0625,
+              "width": 117.859375,
+              "height": 38,
+              "top": 108.0625,
+              "right": 370,
+              "bottom": 146.0625,
+              "left": 252.140625
+            }
+          },
+          {
+            "text": "Undo",
+            "id": "",
+            "disabled": false,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 317.359375,
+              "y": 188.015625,
+              "width": 39.640625,
+              "height": 28,
+              "top": 188.015625,
+              "right": 357,
+              "bottom": 216.015625,
+              "left": 317.359375
+            }
+          },
+          {
+            "text": "Undo this return",
+            "id": "",
+            "disabled": false,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "Undo this return",
+            "id": "",
+            "disabled": false,
+            "svgCount": 0,
+            "imageCount": 0,
+            "backgroundImage": "none",
+            "before": "none",
+            "after": "none",
+            "arrowGlyph": false,
+            "rect": {
+              "x": 39,
+              "y": 573.15625,
+              "width": 312,
+              "height": 40,
+              "top": 573.15625,
+              "right": 351,
+              "bottom": 613.15625,
+              "left": 39
+            }
+          }
+        ]
+      },
+      "observation": "Undo last return, Undo this return and notification Undo are rendered as text-only buttons; no SVG, image, background image, pseudo-element arrow or arrow glyph remains."
+    }
+  ],
+  "mobileEscape": {
+    "closed": true,
+    "focusReturnedTo": "L-1044"
+  },
+  "largeDialog": {
+    "clientWidth": 328,
+    "scrollWidth": 328,
+    "clientHeight": 812,
+    "scrollHeight": 1127
+  },
+  "checks": [
+    {
+      "name": "Desktop person, item and ID search; combined status; empty state; reset",
+      "result": "passed",
+      "details": "Amara -> L-1042; recorder -> L-1043; L-1047 -> L-1047. Amara + Overdue -> empty; reset restores all six and clears query/filter."
+    },
+    {
+      "name": "Desktop local return, persistence and labelled Undo",
+      "result": "passed",
+      "details": "L-1043 return updates row and counts, survives reload in isolated local storage, and Undo restores Overdue / 6 active / 0 returned."
+    },
+    {
+      "name": "Latest-return undo semantics",
+      "result": "passed",
+      "details": "After returning L-1042 and then L-1045, one Undo restores only L-1045. Earlier L-1042 remains Returned."
+    },
+    {
+      "name": "Mobile filter, long loan details, Escape, local return, undo and close",
+      "result": "passed",
+      "details": "On loan + Alexandria shows L-1044 with all supplied facts. Escape closes details and restores Open focus; return and Undo this return restore state/counts; visible close still works."
+    },
+    {
+      "name": "Skip navigation at both original widths and both text sizes",
+      "result": "passed",
+      "details": "At 1440×1000 and 390×844, normal and doubled text: hidden skip-link bounds stay fully above viewport; first Tab reveals the link; Enter moves focus to loan-search."
+    },
+    {
+      "name": "Mobile enlarged-text detail and Escape",
+      "result": "passed",
+      "details": "L-1044 details remain vertically scrollable with equal client/scroll widths. Escape still closes and returns focus to Open after enlargement."
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "desktop.png",
+    "desktop-focus.png",
+    "desktop-detail.png",
+    "desktop-empty.png",
+    "desktop-returned.png",
+    "mobile.png",
+    "mobile-full.png",
+    "mobile-detail.png",
+    "mobile-returned.png",
+    "desktop-text-1-hidden-skip.png",
+    "desktop-text-1-focused-skip.png",
+    "desktop-text-2-hidden-skip.png",
+    "desktop-text-2-focused-skip.png",
+    "mobile-text-1-hidden-skip.png",
+    "mobile-text-1-focused-skip.png",
+    "mobile-text-2-hidden-skip.png",
+    "mobile-text-2-focused-skip.png",
+    "mobile-detail-text-200.png"
+  ],
+  "evidenceDirectory": "<evaluation-workspace>/operations-final-verification-assets/",
+  "limits": [
+    "This verifies the four named repairs and key workflow regressions; it is not a fresh/blinded review or a new complete 21-signal audit.",
+    "Doubled HTML font sizes reproduce the original stress method; actual browser zoom was not tested.",
+    "Chromium headless/touch emulation only; no physical device, other engine or screen-reader testing.",
+    "Opaque focus-color pairs were measured, not a complete accessibility conformance audit.",
+    "Returns and persistence were exercised only in isolated browser storage, not a live lending backend.",
+    "No network, publication, delegation or target-file edit was performed."
+  ],
+  "publicationNote": "Substantive observations retained; local paths normalized. Audit findings concern the preserved pre-repair snapshot; repair verification concerns the corrected example."
+}

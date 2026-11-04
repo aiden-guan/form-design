@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "case": "festival",
+      "condition": "current",
+      "file": "outputs/festival/current/index.html",
+      "captures": "outputs/festival/current/captures"
+    },
+    {
+      "case": "festival",
+      "condition": "final",
+      "file": "outputs/festival/final/index.html",
+      "captures": "outputs/festival/final/captures"
+    },
+    {
+      "case": "operations",
+      "condition": "current",
+      "file": "outputs/operations/current/index.html",
+      "captures": "outputs/operations/current/captures"
+    },
+    {
+      "case": "operations",
+      "condition": "final",
+      "file": "outputs/operations/final/index.html",
+      "captures": "outputs/operations/final/captures"
+    },
+    {
+      "case": "reading",
+      "condition": "current",
+      "file": "outputs/reading/current/index.html",
+      "captures": "outputs/reading/current/captures"
+    },
+    {
+      "case": "reading",
+      "condition": "final",
+      "file": "outputs/reading/final/index.html",
+      "captures": "outputs/reading/final/captures"
+    },
+    {
+      "case": "holdout",
+      "condition": "current",
+      "file": "outputs/holdout/current/index.html",
+      "captures": "outputs/holdout/current/captures"
+    },
+    {
+      "case": "holdout",
+      "condition": "final",
+      "file": "outputs/holdout/final/index.html",
+      "captures": "outputs/holdout/final/captures"
+    }
+  ]
+}

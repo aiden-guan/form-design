@@ -3,7 +3,7 @@ name: form-design
 description: Design and build distinctive websites, apps, and interfaces with strong art direction, typography, composition, and purposeful motion. Use for new visual designs, creative frontend implementation, redesigns, design exploration, and visual critique. Supports reference matching when requested; preserve existing brand systems and task scope.
 license: See LICENSE.txt and NOTICE.md
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # FORM — design with a point of view
@@ -11,6 +11,8 @@ metadata:
 Turn a product's purpose into a coherent visual experience. Aim for work that feels authored, communicates clearly, and remains satisfying after the first impression. Beauty comes from relationships among content, type, space, image, color, and behavior; an effect collection alone is not a design.
 
 This skill works without an account, paid service, framework, MCP server, or network connection. Its bundled reference search needs Node.js 18+. Use the written methods without running scripts when a shell is unavailable. Original previews and linked handoffs require internet access.
+
+Before a substantial new visual design or redesign, read [anti-generic.md](references/anti-generic.md). Apply its restrained starting point during implementation and its full review before delivery. Do not wait until the draft already feels generic. Decorative status dots, repeated arrow glyphs, italic headline accents, pill labels, eyebrows, and ornamental microcopy are not finishing touches to add by default.
 
 ## Start with the actual assignment
 
@@ -67,11 +69,13 @@ Read [visual-craft.md](references/visual-craft.md) for composition, type, color,
 
 Implement a representative slice with real or clearly labeled sample content: the opening composition for a site, the primary task and its states for a product, or the requested component. Resolve the hard relationships here before repeating the system everywhere.
 
+Allocate the opening view by use frequency. An event's expressive entrance can earn its space; a repeat-use app should put the work within reach. Each heading, caption, and framing block should introduce distinct information. Keep the subject's character while removing repeated promises, tutorial copy, or shell regions that do not help the actual task. Read the surface guidance before treating either spaciousness or density as a default.
+
 Define a compact set of reusable tokens in the project's existing conventions. Give colors semantic jobs, type distinct roles, spacing a visible grouping logic, and depth a consistent environment. Choose values by looking at actual content. Treat numeric starting ranges in the references as tuning aids, not universal laws.
 
 Compose the rest around the information, not a predetermined list of sections. A studio portfolio, operations app, store, and reading tool should not inherit the same layout. Avoid invented testimonials, fabricated statistics, or decorative product mockups that imply nonexistent functionality.
 
-Read [anti-generic.md](references/anti-generic.md) when the result feels templated or the user asks to remove AI-design tells. Diagnose the relationship causing the problem before deleting a familiar style. Changing a font or removing every border does not fix an interchangeable information structure. Dithering is not an anti-slop criterion in FORM.
+Use [anti-generic.md](references/anti-generic.md) to check the rendered design against all the supplied signals. Diagnose the composition as well as the decoration. Correct unjustified defaults before delivery; a genre description such as “warm bookshop” or “experimental festival” does not justify adding them. Dithering is not an anti-slop criterion in FORM.
 
 ## Design behavior as carefully as appearance
 
@@ -82,6 +86,8 @@ For each meaningful animation, identify its purpose, trigger, spatial relationsh
 ## Look at the result and improve it
 
 When a render or browser tool is available, inspect the actual output at a representative wide and narrow viewport and at the width where the composition changes. Compare the real primary task and relevant states. Correct the largest problems first: message and composition, then type and spacing, then imagery/material, then details and motion.
+
+Stress the relationships that made the design work: enlarge text, use the longest real label, and inspect the affected controls and adjacent columns. A normal-size screenshot can hide collisions between time and title, price and action, or icon and label. Let groups reflow and controls grow; do not conceal the failure by clipping important content or shrinking the text back down. Recheck those same relationships after correction.
 
 Ask what in the composition depends on this project's actual subject. Then test the opposite failure: did simplification remove useful status, discoverability, density, personality, or a choice the user deliberately made? Keep justified detail. Judge against the brief and evidence, not the number of fashionable effects removed.
 

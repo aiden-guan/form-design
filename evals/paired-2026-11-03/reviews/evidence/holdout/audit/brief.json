@@ -1,0 +1,58 @@
+{
+  "project": "Kite / independent bicycle frame builder",
+  "audience": "People comparing a small made-to-order bicycle range; phone and desktop use.",
+  "request": "Build a beautiful product page and compact configurator for a bicycle frame builder. Give the actual bicycle a strong visual role using original SVG illustration. Help someone understand and inspect their choices, with a clear honest local quote summary.",
+  "facts": {
+    "name": "Kite",
+    "model": "Everyday / 01",
+    "headline": "Made for the long way home.",
+    "description": "A made-to-order steel bicycle for daily rides and unhurried weekends.",
+    "basePrice": 1650,
+    "currency": "GBP",
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      {
+        "name": "Ochre",
+        "hex": "#c6852a"
+      },
+      {
+        "name": "Forest",
+        "hex": "#315c49"
+      },
+      {
+        "name": "Chalk",
+        "hex": "#e4dfd3"
+      }
+    ],
+    "wheelOptions": [
+      {
+        "name": "City wheels",
+        "extra": 0
+      },
+      {
+        "name": "All-road wheels",
+        "extra": 120
+      }
+    ],
+    "details": [
+      "Steel frame and fork",
+      "Two bottle mounts",
+      "Mudguard and rack eyelets",
+      "Built to order in small batches"
+    ]
+  },
+  "required_behavior": [
+    "Select frame size, colour and wheel option; labels and selected states must reflect those choices.",
+    "Colour choice changes the actual visible bicycle frame treatment; wheel choice updates the displayed total and summary accurately.",
+    "Open a local quote summary showing the current configuration and total. Clearly state no order or payment is created; allow a visible close and Escape."
+  ],
+  "constraints": [
+    "Fictional offline demonstration. Do not invent availability, delivery deadlines, specifications, reviews or performance claims.",
+    "Use system font stacks and original SVG/CSS artwork. No external assets, libraries or requests.",
+    "Initial selection is an editable proposal, not a confirmed order."
+  ]
+}

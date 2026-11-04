@@ -1,0 +1,5 @@
+{
+  "reason": "Cross-review: fixed cover column leaves enlarged mobile titles too narrow and breaks words.",
+  "sourceBeforeSha256": "ddbfe1e4c6b4949ea44da2f948d95dfb001f329dd8e33828422341bbee3f77d2",
+  "change": "Stack the mobile detail cover and text so enlarged titles use the full reading width."
+}

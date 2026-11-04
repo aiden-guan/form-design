@@ -15,6 +15,8 @@ Use this to avoid transplanting a marketing-page aesthetic into every interface.
 
 Start from the primary task, not the app shell. Map what someone needs to compare, edit, or act on together. Design tables for comparison, lists for scanning, and cards for independent objects. Group commands by consequence and frequency. Keep filters and selection state visible enough to explain the current view.
 
+For a repeat-use view, inspect how much of the first reading-sized screen is work. A tagline, welcome block, section eyebrow, section title, explanatory line, and result caption may repeat one idea while pushing the first useful object away. Keep labels that explain scope or state; consolidate the rest. A navigation rail with only one destination or a permanent tutorial may consume space without improving orientation. Use either when the surrounding product or audience actually needs it. This is an allocation decision, not a ban on headers, sidebars, or expressive product identity.
+
 Include realistic data and at least the states the task depends on: loading, no data, no search results, partial data, error/retry, success, and relevant permissions. A polished empty screenshot does not demonstrate a working product. Do not invent additional backend behavior simply to fill a visual concept.
 
 ## Mobile and native

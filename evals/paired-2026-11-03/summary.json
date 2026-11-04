@@ -1,0 +1,11 @@
+{
+  "cases": 4,
+  "taskFlows": {
+    "earlier": 24,
+    "corrected": 24
+  },
+  "visualCheckCasesPassed": 4,
+  "crossReviews": 4,
+  "signalsPerReview": 21,
+  "generationLimits": "Two fresh-context drafts, one maintainer rebuild, one continued-context draft; subsequent guided repairs. No causal/equal-effort win-rate claim."
+}

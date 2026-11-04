@@ -7,3 +7,5 @@ See the individual notices for [Design](skills/form-design/NOTICE.md), [Unslop](
 This repository contains the portable skills and their supporting documentation, tests, and release tools. It excludes the private library application and its project source, user-supplied screenshots, creator media, and source bundles. No endorsement by referenced practitioners or publishers is implied.
 
 The included rehearsal captures show original synthetic fixtures authored for evaluation, not a client's private product or third-party artwork. The signal list adapts supplied Charles Liu notes with explicit provenance; the original reel was not independently retrieved. Comparative skill research does not relicense or redistribute competitor code and does not establish a performance ranking.
+
+The corrected-output record additionally contains original fictional briefs, generated and guided implementations, rejected drafts, actual screenshots, and cross-reviews. Owner-identified indicator-light and arrow defaults are separate additions to the attributed 19-signal list. The record is iterative acceptance evidence, not a controlled model ranking.
